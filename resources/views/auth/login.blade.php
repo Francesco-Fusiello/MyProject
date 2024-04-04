@@ -10,7 +10,7 @@
                         @csrf
                         <div class="mb-3 text-light ">
                             <p
-                                class="text-center title_login fs-1 bg-light p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+                                class="text-center fs-1 bg-black p-3 bg-info bg-opacity-10 border border-info">
                                 Login:</p>
 
                             <hr class="border border-primary border-2 opacity-50">

@@ -8,36 +8,34 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('login')}}">Login</a>
+                        <a class="nav-link" href="{{ route('login') }}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('register')}}">Registrazione</a>
+                        <a class="nav-link" href="{{ route('register') }}">Registrazione</a>
                     </li>
                 @else
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                       {{Auth::user()->name}}
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" id="tab-login" data-mdb-pill-init href="#" role="tab"
-                                aria-controls="pills-logout" aria-selected="true"
-                                onclick="
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            {{ Auth::user()->name }}
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" id="tab-login" data-mdb-pill-init href="#" role="tab"
+                                    aria-controls="pills-logout" aria-selected="true"
+                                    onclick="
                             event.preventDefault();
                             getElementById('form-logout').submit();
                             ">Logout</a>
-                            <form action="/logout" method="POST" id="form-logout">@csrf</form>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
+                                <form action="/logout" method="POST" id="form-logout">@csrf</form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             @endguest
         </div>
     </div>
