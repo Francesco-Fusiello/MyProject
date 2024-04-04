@@ -7,7 +7,7 @@
     @endif --}}
 
 
-    <header class="container-fluid p-5 verdesf text-center text-white">
+    <header class="container-fluid p-5 verdesf text-center ">
         <div class="row justify-content-center">
 
                 <h1 class="display-1">
