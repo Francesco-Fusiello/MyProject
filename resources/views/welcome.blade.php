@@ -11,7 +11,7 @@
         <div class="row justify-content-center">
 
                 <h1 class="display-1">
-                    Prestissimo
+                   Prestoo
                 </h1>
         </div>
     </header>
