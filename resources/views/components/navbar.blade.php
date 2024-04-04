@@ -22,7 +22,15 @@
                         Dropdown link
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                            <a class="dropdown-item" id="tab-login" data-mdb-pill-init href="#" role="tab"
+                                aria-controls="pills-logout" aria-selected="true"
+                                onclick="
+                            event.preventDefault();
+                            getElementById('form-logout').submit();
+                            ">Logout</a>
+                            <form action="/logout" method="POST" id="form-logout">@csrf</form>
+                        </li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
