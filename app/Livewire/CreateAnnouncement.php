@@ -5,6 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Announcement;
 use Livewire\Attributes\Validate;
+use Illuminate\Support\Facades\Auth;
 
 class CreateAnnouncement extends Component
 {
@@ -16,17 +17,21 @@ class CreateAnnouncement extends Component
     public $body;
     #[Validate('required', message:'Il prezzo è richiesto')] 
     public $price;
+    #[Validate('required', message:'La Categoria è richiesta')]
+    public $id_category;
 
     public function store(){
 
         $this->validate();
-
+        
         Announcement::create([
             'title'=>$this->title,
             'body'=>$this->body,
-            'price'=>$this->price
+            'price'=>$this->price,
+            'id_category'=>$this->id_category,
+            'id_user'=>Auth::user()->id
         ]);
-
+        
         $this->reset();
         session()->flash('success','Annuncio creato con successo');
     }
