@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class category extends Model
 {
     use HasFactory;
-    protected $fillable=['title', 'body'];
+    protected $fillable=['name'];
 
     public function announcements(){
         return $this->hasMany(Announcement::class);

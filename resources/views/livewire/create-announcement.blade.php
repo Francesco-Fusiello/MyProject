@@ -1,4 +1,10 @@
 <div>
+    @if (session()->has('success'))
+    <div class="alert alert-success">
+    {{session('success')}}
+    </div>
+    @endif
+    
     <h2 class="text-center">Crea il tuo annuncio</h2>
 
     <form wire:submit.prevent="store">
@@ -28,4 +34,5 @@
 
         <button type="submit" class="btn btn-primary">Crea</button>
     </form>
+
 </div>

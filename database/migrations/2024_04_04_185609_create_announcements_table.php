@@ -17,11 +17,11 @@ return new class extends Migration
             $table->text('body');
             $table->integer('price');
             
-            $table->unsignedBigInteger('id_category');
-            $table->foreign('id_category')->references('id')->on('categories');
+            $table->unsignedBigInteger('id_category')->nullable();
+            $table->foreign('id_category')->references('id')->on('categories')->onDelete('SET NULL');
             
-            $table->unsignedBigInteger('id_user');
-            $table->foreign('id_user')->references('id')->on('users');
+            $table->unsignedBigInteger('id_user')->nullable();
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('SET NULL');
             
             $table->timestamps();
         });

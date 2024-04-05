@@ -28,6 +28,7 @@ class CreateAnnouncement extends Component
         ]);
 
         $this->reset();
+        session()->flash('success','Annuncio creato con successo');
     }
 
 
