@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-black">
+<nav class="navbar navbar-expand-lg bg-body-primary text-white ">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Presto_Flay</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
