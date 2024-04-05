@@ -1,5 +1,45 @@
+body{
+    background-color: rgb(2, 5, 29);
+}
+
 .login{
+background: rgb(252,252,255);
+background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(13, 26, 102) 0%, rgba(253,253,255,1) 100%);
+
+}
+
+.title_login{
+    
+        -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        background: #a4d3f5;
+        color: rgb(60, 87, 175);
+        text-shadow: 2px 3px 2px rgb(51, 43, 42);
+}
+
+.foto{
+    width:20%;
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.verdesf{
+    margin: 10px;
+    padding: 20px;
+    background: rgb(252,252,255);
+    background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(102, 13, 57) 0%, rgba(253,253,255,1) 100%);
+}
+
+.btn_ver{
+    margin: 10px;
+    padding: 20px;
+    background: rgb(252,252,255);
+    background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(170, 241, 4) 0%, rgba(253,253,255,1) 100%);
+}
+
+
+/* .login{
+    width: 50vh;
     background: rgb(252,252,255);
     background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(13, 26, 102) 0%, rgba(253,253,255,1) 100%);
     
-    }
+    } */
