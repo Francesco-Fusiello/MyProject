@@ -18,7 +18,7 @@ class CreateAnnouncement extends Component
     #[Validate('required', message:'Il prezzo è richiesto')] 
     public $price;
     #[Validate('required', message:'La Categoria è richiesta')]
-    public $id_category;
+    public $category_id;
 
     public function store(){
 
@@ -28,8 +28,8 @@ class CreateAnnouncement extends Component
             'title'=>$this->title,
             'body'=>$this->body,
             'price'=>$this->price,
-            'id_category'=>$this->id_category,
-            'id_user'=>Auth::user()->id
+            'category_id'=>$this->category_id,
+            'user_id'=>Auth::user()->id
         ]);
         
         $this->reset();

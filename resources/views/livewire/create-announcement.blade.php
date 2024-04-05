@@ -34,13 +34,13 @@
 
         <div class="mb-3">
             <label  class="form-label color-primary">Categoria</label>
-            <select wire:model.change='id_category' class="form-select @error('id_category') is-invalid @enderror">
+            <select wire:model.change='category_id' class="form-select @error('category_id') is-invalid @enderror">
                 <option >Seleziona una categoria</option>
                 @foreach (App\Models\Category::all() as $category)
                     <option value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
             </select>
-            @error('id_category')
+            @error('category_id')
                 <span class="text-danger fw-bold">{{$message}}</span>
             @enderror
         </div>
