@@ -13,7 +13,21 @@
                 <h1 class="display-1">
                    Prestoo
                 </h1>
+                {{-- <p class="h2 my-2 fw-bold">Ecco i nostri annunci</p>
+                <div class="row">
+                    @foreach($announcements as $announcement)
+                    <div class="col-12 col-md-4 my-4">
+                        <div class="card shadow" style='width: 18rem;'>
+                            <img src="https://picsum.photos/200" alt="" class='card-img-top p-3 rounded'>
+                            <div class="card-body">
+                                <h5 class="card-title">{{$announcement->title}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach --}}
+                </div>
         </div>
+
     </header>
 
 
