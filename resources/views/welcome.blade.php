@@ -13,7 +13,7 @@
                 <h1 class="display-1">
                    Prestoo
                 </h1>
-                {{-- <p class="h2 my-2 fw-bold">Ecco i nostri annunci</p>
+                <p class="h2 my-2 fw-bold">Ecco i nostri annunci</p>
                 <div class="row">
                     @foreach($announcements as $announcement)
                     <div class="col-12 col-md-4 my-4">
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                     </div>
-                    @endforeach --}}
+                    @endforeach
                 </div>
         </div>
 
