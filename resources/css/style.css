@@ -14,6 +14,15 @@ background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(1
         text-shadow: 2px 3px 2px rgb(51, 43, 42);
 }
 
+.title_cat{
+    
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    background: #045a53;
+    color: rgb(239, 240, 243);
+    text-shadow: 2px 3px 2px rgb(51, 43, 42);
+}
+
 .foto{
     width:20%;
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);

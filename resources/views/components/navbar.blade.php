@@ -32,8 +32,7 @@
                         <a class="nav-link" href="{{ route('register') }}">Registrazione</a>
                     </li>
                 @else
-                    <a class="nav-link active" aria-current="page" href="{{ route('announcements.create') }}">Crea un
-                        annuncio</a>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -51,6 +50,8 @@
                             </li>
                         </ul>
                     </li>
+                    <a class="nav-link active" aria-current="page" href="{{ route('announcements.create') }}">Crea un
+                        annuncio</a>
                 </ul>
             @endguest
         </div>
