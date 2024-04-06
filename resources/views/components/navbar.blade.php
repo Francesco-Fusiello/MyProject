@@ -10,6 +10,20 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Categorie
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                        @foreach ($categories as $category)
+                        <li><a class="dropdown-item"  href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a></li>
+                        @endforeach
+                    </ul>
+
+
+
                 @guest
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">Login</a>
@@ -18,7 +32,8 @@
                         <a class="nav-link" href="{{ route('register') }}">Registrazione</a>
                     </li>
                 @else
-                <a class="nav-link active" aria-current="page" href="{{ route('announcements.create') }}">Crea un annuncio</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('announcements.create') }}">Crea un
+                        annuncio</a>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
