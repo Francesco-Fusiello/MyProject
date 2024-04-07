@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\RevisorController;
 use App\Http\Controllers\AnnouncementController;
 
 /*
@@ -23,3 +24,5 @@ Route::get('/nuovo/annuncio', [AnnouncementController::class, 'createAnnouncemen
 Route::get('/dettaglio/annuncio/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->name('announcements.show');
 
 Route::get('/tutti/annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcements.index');
+
+Route::get('/revisor/home',[RevisorController::class, 'index'])->name('revisor.index');

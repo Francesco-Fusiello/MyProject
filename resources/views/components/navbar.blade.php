@@ -54,8 +54,24 @@
                     </li>
                     <a class="nav-link active" aria-current="page" href="{{ route('announcements.create') }}">Crea un
                         annuncio</a>
-                </ul>
-            @endguest
+                        
+                        @if (Auth::user()->is_revisor)
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-success btn-sm position-relative"
+                             aria-current="page" href="{{route('revisor.index')}}">
+                             Area Revisore
+                             <span class="position-absolute top-0 start-100 translate-middle badge 
+                             rounded-pill bg-danger">
+                             {{App\Models\Announcement::toBeRevisionedCount()}}
+                             <span class="visually-hidden">Messaggio non letto</span>
+                            </span>
+                            </a>
+                        </li>
+                        @endif
+                    </ul>
+                @endguest
         </div>
     </div>
 </nav>
+                            
+                
