@@ -15,7 +15,7 @@ class AnnouncementController extends Controller
         return view ('announcements.show', compact('announcement'));
     }
     public function indexAnnouncement(){
-        $announcements = Announcement::paginate(6);
+        $announcements = Announcement::where('is_accepted', true)->paginate(6);
         return view ('announcements.index', compact('announcements'));
     }
 

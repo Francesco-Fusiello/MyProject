@@ -39,17 +39,5 @@
         </div>
 
     </header>
-
-{{-- 
-    <div class="container-fluid">
-        <div class="row justify-content-center ">
-            <div class="col-4">
-                <livewire:create-announcement>
-            </div>
-            <div class="col-8">
-                <livewire:author.index>
-            </div>
-        </div>
-    </div> --}}
     
 </x-layout>
