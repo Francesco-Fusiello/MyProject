@@ -1,10 +1,17 @@
 <x-layout>
-{{-- 
-    @if(session()->has('nmsg'))
-    <div class="alert alert-success" role="alert">
-      {{session('nmsg')}}
+
+    @if(session()->has('access.denied'))
+    <div class="alert alert-danger" role="alert">
+      {{session('access.denied')}}
     </div>
-    @endif --}}
+    @endif 
+
+
+    @if(session()->has('message'))
+    <div class="alert alert-success" role="alert">
+      {{session('message')}}
+    </div>
+    @endif 
 
 
     <header class="container-fluid verdesf">
