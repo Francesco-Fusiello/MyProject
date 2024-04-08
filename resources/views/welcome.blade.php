@@ -13,6 +13,7 @@
                 <h1 class="display-1 text-center p-3">
                 Prestoo
                 </h1>
+
                 <h2 class="h2 p-3 my-2 fw-bold text-light bg-success bg-gradient ">I nostri annunci</h2>
                 <div class="row">
                     @foreach($announcements as $announcement)
@@ -29,6 +30,7 @@
                                 </p>
                                 <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/y')}}</p>
                                 <p class="card-text fs-6 fst-italic ">Autore: {{$announcement->user->name}}</p>
+                                
                             </div>
                         </div>
                     </div>

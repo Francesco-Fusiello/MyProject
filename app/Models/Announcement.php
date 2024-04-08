@@ -33,5 +33,4 @@ class Announcement extends Model
         return Announcement::where('is_accepted',null)->count();
     }
 
-  
 }
