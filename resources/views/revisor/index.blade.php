@@ -19,15 +19,15 @@
                             <div class="carousel-item active">
                                 <img src="https://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded"
                                     alt="...">
-                                </div>
-                                <div class="carousel-item">
+                            </div>
+                            <div class="carousel-item">
                                 <img src="https://picsum.photos/id/28/1200/400" class="img-fluid p-3 rounded"
                                     alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="https://picsum.photos/id/29/1200/400" class="img-fluid p-3 rounded"
                                     alt="...">
-                                </div>
+                        </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                             data-bs-slide="prev">
@@ -42,7 +42,7 @@
                     </div>
 
                    
-
+                    
                         <div class="card shadow ms-3" style='width: 75rem;'>
                             <div class="card-body">
                                 
@@ -51,31 +51,32 @@
                                 <p class="card-text">Descrizione: {{ $announcement_to_check->body }}</p>
                                 <p class="card-footer">Pubblicato il:
                                     {{ $announcement_to_check->created_at->format('d/m/y') }}</p>
-                                </div>
+                                
                             </div>
                         </div>
-                    </div>
+                        
                
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 text-center ">
                     <form
                     action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
                     method="POST">
                     @csrf
                     @method('PATCH')
-                    <button type="submit" class="btn btn-success shadow">Accetta</button>
+                    <button type="submit" class="bn632-hover bn22">Accetta</button>
                 </form>
             </div>
-            <div class="col-12 col-md-6 text-end">
+            <div class="col-12 col-md-6 text-center">
                 <form
                 action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
                 method="POST">
                 @csrf
                 @method('PATCH')
-                <button type="submit" class="btn btn-danger shadow">Rifiuta</button>
-            </form>
+                <button type="submit" class="bn632-hover bn28">Rifiuta</button>
+                </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-@endif
+    @endif
 </x-layout>
+
