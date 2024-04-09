@@ -70,6 +70,13 @@
                         @endif
                     </ul>
                 @endguest
+                <div class=" justify-content-end ">
+                    <form action="{{route('announcement.search')}}" method="GET" class="d-flex">
+                        <input type="search" name="searched" class="form-control me-2" placeholder='Cosa stai cercando?' aria-label='Search'>
+                        <button class="btn btn-outline-success" type='submit'>Cerca</button>
+                    </form>  
+                </div>
+             
         </div>
     </div>
 </nav>

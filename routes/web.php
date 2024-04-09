@@ -39,3 +39,5 @@ Route::get('/richiesta/revisore',[RevisorController::class, 'becomeRevisor'])->m
 //Rendi utente Revisore
 Route::get('/rendi/revisore/{user}',[RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
+//Ricerca annuncio
+Route::get('/ricerca/annuncio', [PageController::class, 'searchAnnouncements'])->name('announcement.search');
