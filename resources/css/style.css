@@ -207,3 +207,19 @@ background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(1
         top: 0;
         border-radius: 10px;
       }
+  
+     .card-img-left {
+        width: 45%;
+        /* Link to your background image using in the property below! */
+        background: scroll center url('https://picsum.photos/700');
+        background-size: cover;
+      }
+      
+      .btn-login {
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+        padding: 0.75rem 1rem;
+      }
+      
+      
+      
