@@ -18,7 +18,7 @@
         <div class="row justify-content-center">
 
                 <h1 class="display-1 text-center p-3">
-                Prestoo
+                Prestoo test
                 </h1>
 
                 <h2 class="h2 p-3 my-2 fw-bold text-light bg-success bg-gradient ">I nostri annunci</h2>
