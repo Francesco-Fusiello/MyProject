@@ -1,3 +1,21 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.raleway-regular{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 .login{
 background: rgb(252,252,255);
 background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(13, 26, 102) 0%, rgba(253,253,255,1) 100%);

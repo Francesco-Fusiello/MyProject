@@ -44,7 +44,7 @@
 
     <section class="light">
         <div class="container py-2">
-            <div class="h1 text-center text-dark" id="pageHeaderTitle">Gli annunci più recenti</div>
+            <div class="h1 text-center text-dark raleway-Thin" id="pageHeaderTitle">Gli annunci più recenti</div>
             @foreach($announcements as $announcement)
             <article class="postcard light red">
                 <a class="postcard__img_link" href="#">
