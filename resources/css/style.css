@@ -355,7 +355,7 @@ a, a:hover {
       transition: background-color 0.3s;
 
 
-      &:hover {
+      &:hoveer {
         background: rgba(83, 83, 83, 0.8);
       }
     }
