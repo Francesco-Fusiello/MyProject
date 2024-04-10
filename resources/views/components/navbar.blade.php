@@ -1,6 +1,11 @@
 <nav class="navbar navbar-expand-lg bg-body-primary text-white ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Presto_Flay</a>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a href="#"><img src="{{ asset('images/logo.png') }}" style="width:200px; height:84px" alt="Logo del sito"></a>
+            </div>
+          </nav>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,13 +59,13 @@
                     </li>
                     <a class="nav-link active" aria-current="page" href="{{ route('announcements.create') }}">Crea un
                         annuncio</a>
-                        
+
                         @if (Auth::user()->is_revisor)
                         <li class="nav-item">
                             <a class="nav-link btn btn-outline-success btn-sm position-relative"
                              aria-current="page" href="{{route('revisor.index')}}">
                              Area Revisore
-                             <span class="position-absolute top-0 start-100 translate-middle badge 
+                             <span class="position-absolute top-0 start-100 translate-middle badge
                              rounded-pill bg-danger">
                              {{App\Models\Announcement::toBeRevisionedCount()}}
                              <span class="visually-hidden">Messaggio non letto</span>
@@ -74,11 +79,11 @@
                     <form action="{{route('announcement.search')}}" method="GET" class="d-flex">
                         <input type="search" name="searched" class="form-control me-2" placeholder='Cosa stai cercando?' aria-label='Search'>
                         <button class="btn btn-outline-success" type='submit'>Cerca</button>
-                    </form>  
+                    </form>
                 </div>
-             
+
         </div>
     </div>
 </nav>
-                            
-                
+
+
