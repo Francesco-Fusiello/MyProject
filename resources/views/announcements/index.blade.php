@@ -1,5 +1,7 @@
 <x-layout>
-<div class="col-12">
+    <x-barraricerca/>
+
+    <div class="col-12">
     <div class="row">
         @forelse($announcements as $announcement)
             <div class="col-12 col-md-4 my-4">

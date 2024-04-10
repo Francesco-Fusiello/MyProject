@@ -1,5 +1,8 @@
 <x-layout>
 
+    <x-barraricerca/>
+
+
     @if(session()->has('access.denied'))
     <div class="alert alert-danger" role="alert">
       {{session('access.denied')}}
