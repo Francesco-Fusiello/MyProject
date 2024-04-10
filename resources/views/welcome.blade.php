@@ -63,7 +63,7 @@
                         </time>
                     </div>
                     <div class="postcard__bar"></div>
-                    <div class="postcard__preview-txt">{{$announcement->body}}</div>
+                    <div class="postcard__preview-txt"> {{$announcement->body}}</div>
                     <ul class="postcard__tagbox">
                         <li class="tag__item"><i class="fas fa-tag mr-2"></i>Valore: {{$announcement->price}}</li>
                         <br>
