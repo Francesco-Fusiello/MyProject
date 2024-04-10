@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function home() {
-        $announcements= Announcement::where('is_accepted', true)->take(6)->get()->sortByDesc('id');
+        $announcements= Announcement::where('is_accepted', true)->orderBy('created_at','desc')->paginate(6);
         return view('welcome',compact('announcements'));
 }
 

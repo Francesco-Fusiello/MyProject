@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <nav class="navbar bg-body-tertiary">
             <div class="container">
-                <a href="#"><img src="{{ asset('images/logo.png') }}" style="width:200px; height:84px" alt="Logo del sito"></a>
+                <a href="#"><img src="{{ asset('images/logo.png') }}" style="width:120px;" alt="Logo del sito"></a>
             </div>
           </nav>
         <a class="navbar-brand" href="#"></a>
