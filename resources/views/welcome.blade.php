@@ -14,13 +14,8 @@
     @endif 
 
 
-    <header class="container-fluid verdesf">
-        <div class="row justify-content-center">
-
-        <h1 class="display-1 text-center p-3">
-        Prestoo                
-        </h1>
-    </div>
+    <header class="container-fluid ">
+        
     </header>
 
                 {{-- {{-- <h2 class="h2 p-3 my-2 fw-bold text-light bg-success bg-gradient ">I nostri annunci</h2>
@@ -49,7 +44,7 @@
 
     <section class="light">
         <div class="container py-2">
-            <div class="h1 text-center text-dark" id="pageHeaderTitle">I nostri Annunci</div>
+            <div class="h1 text-center text-dark" id="pageHeaderTitle">Gli annunci più recenti</div>
             @foreach($announcements as $announcement)
             <article class="postcard light red">
                 <a class="postcard__img_link" href="#">
