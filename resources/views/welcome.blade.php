@@ -22,28 +22,32 @@
 
 
 {{-- BUTTON CON ICONE --}}
-<ul class="wrapper">
-    <li class="icon facebook">
-      <span class="tooltip">Facebook</span>
-      <span><i class="fab fa-facebook-f"></i></span>
-    </li>
-    <li class="icon twitter">
-      <span class="tooltip">Twitter</span>
-      <span><i class="fab fa-twitter"></i></span>
-    </li>
-    <li class="icon instagram">
-      <span class="tooltip">Instagram</span>
-      <span><i class="fab fa-instagram"></i></span>
-    </li>
-    <li class="icon github">
-      <span class="tooltip">Github</span>
-      <span><i class="fab fa-github"></i></span>
-    </li>
-    <li class="icon youtube">
-      <span class="tooltip">Youtube</span>
-      <span><i class="fab fa-youtube"></i></span>
-    </li>
-  </ul>
+<div class="container">
+    <div class="row justify-content-center">
+            <ul class="wrapper">
+                <li class="icon twitter">
+                  <span class="tooltip">Abbigliamento</span>
+                  <span><i class="fa-solid fa-shirt"></i></span>
+                </li>
+                <li class="icon facebook">
+                  <span class="tooltip">Informatica</span>
+                  <span><i class="fa-solid fa-computer"></i></span>
+                </li>
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <span><i class="fab fa-instagram"></i></span>
+                </li>
+                <li class="icon github">
+                  <span class="tooltip">Github</span>
+                  <span><i class="fab fa-github"></i></span>
+                </li>
+                <li class="icon youtube">
+                  <span class="tooltip">Youtube</span>
+                  <span><i class="fab fa-youtube"></i></span>
+                </li>
+              </ul>
+        </div>
+</div>
 
 
         
