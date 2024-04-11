@@ -1,6 +1,6 @@
 <x-layout>
 
-    <x-barraricerca/>
+
 
 
     @if(session()->has('access.denied'))
@@ -16,10 +16,42 @@
     </div>
     @endif 
 
+    <x-barraricerca/>
 
-    <header class="container-fluid ">
+    {{-- <header class="container-fluid "> --}}
+
+
+{{-- BUTTON CON ICONE --}}
+<div class="container">
+    <div class="row justify-content-center">
+            <ul class="wrapper">
+                <li class="icon twitter">
+                  <span class="tooltip">Abbigliamento</span>
+                  <span><i class="fa-solid fa-shirt"></i></span>
+                </li>
+                <li class="icon facebook">
+                  <span class="tooltip">Informatica</span>
+                  <span><i class="fa-solid fa-computer"></i></span>
+                </li>
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <span><i class="fab fa-instagram"></i></span>
+                </li>
+                <li class="icon github">
+                  <span class="tooltip">Github</span>
+                  <span><i class="fab fa-github"></i></span>
+                </li>
+                <li class="icon youtube">
+                  <span class="tooltip">Youtube</span>
+                  <span><i class="fab fa-youtube"></i></span>
+                </li>
+              </ul>
+        </div>
+</div>
+
+
         
-    </header>
+    {{-- </header> --}}
 
                 {{-- {{-- <h2 class="h2 p-3 my-2 fw-bold text-light bg-success bg-gradient ">I nostri annunci</h2>
                 <div class="row justify-content-center ">
@@ -45,8 +77,12 @@
                 </div> --}}
         
 
-    <section class="light">
-        <div class="container py-2">
+
+
+
+
+    <section class="light">     
+           <div class="container py-2">
             <div class="h1 text-center text-dark raleway-Thin" id="pageHeaderTitle">Gli annunci più recenti</div>
             @foreach($announcements as $announcement)
             <article class="postcard light red">

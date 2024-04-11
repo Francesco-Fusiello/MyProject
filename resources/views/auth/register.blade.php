@@ -48,10 +48,10 @@
                 </div>
   
                 <div class="d-grid mb-2">
-                  <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Registrati</button>
+                  <button class="btn btn-outline-primary btn-login fw-bold text-uppercase" type="submit">Registrati</button>
                 </div>
-  
-                <a class="d-block text-center mt-2 small" href="/login">Hai già un account? Accedi</a>
+                
+                <p class="d-block text-center small">Hai già un account?<a class="d-block text-center small" href="/login">Accedi</a></p>
   
                 <hr class="my-4">
   
