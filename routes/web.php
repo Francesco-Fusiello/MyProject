@@ -31,6 +31,8 @@ Route::patch('/accetta/annuncio/{announcement}',[RevisorController::class, 'acce
 
 Route::patch('/rifiuta/annuncio/{announcement}',[RevisorController::class, 'rejectAnnouncement'])->name('revisor.reject_announcement');
 
+Route::get('/announcements/reset-last-accepted', [RevisorController::class, 'resetLastAcceptedAnnouncement'])->name('announcements.reset-last-accepted');
+
 
 
 // Richiedi di diventare revisore

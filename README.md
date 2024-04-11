@@ -67,4 +67,38 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 
+// Funzione per eseguire l'annullamento dell'ultima operazione
+public function undoLastOperation()
+{
+    // Controlla se c'è un'operazione da annullare nella sessione
+    if(session()->has('last_operation')) {
+        // Recupera l'ultima operazione eseguita
+        $lastOperation = session()->get('last_operation');
+
+        // Annulla l'ultima operazione
+        switch($lastOperation['type']) {
+            case 'accept':
+                // Se l'ultima operazione era un'accettazione, annullala settando il valore opposto
+                $lastOperation['announcement']->setAccepted(!$lastOperation['accepted']);
+                break;
+            case 'reject':
+                // Se l'ultima operazione era un rifiuto, annullala settando il valore opposto
+                $lastOperation['announcement']->setAccepted(!$lastOperation['accepted']);
+                break;
+            // Aggiungi altri tipi di operazioni se necessario
+        }
+
+        // Rimuovi l'ultima operazione dalla sessione poiché è stata annullata
+        session()->forget('last_operation');
+
+        // Ritorna alla pagina precedente con un messaggio di successo
+        return redirect()->back()->with('message', "Ultima operazione annullata con successo.");
+    } else {
+        // Se non c'è nessuna operazione da annullare, ritorna alla pagina precedente con un messaggio di errore
+        return redirect()->back()->with('error', "Nessuna operazione da annullare.");
+    }
+}
+
+
+
 
