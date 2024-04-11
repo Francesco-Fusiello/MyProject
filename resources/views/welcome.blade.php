@@ -16,10 +16,38 @@
     </div>
     @endif 
 
+    <x-barraricerca/>
 
-    <header class="container-fluid ">
+    {{-- <header class="container-fluid "> --}}
+
+
+{{-- BUTTON CON ICONE --}}
+<ul class="wrapper">
+    <li class="icon facebook">
+      <span class="tooltip">Facebook</span>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </li>
+    <li class="icon twitter">
+      <span class="tooltip">Twitter</span>
+      <span><i class="fab fa-twitter"></i></span>
+    </li>
+    <li class="icon instagram">
+      <span class="tooltip">Instagram</span>
+      <span><i class="fab fa-instagram"></i></span>
+    </li>
+    <li class="icon github">
+      <span class="tooltip">Github</span>
+      <span><i class="fab fa-github"></i></span>
+    </li>
+    <li class="icon youtube">
+      <span class="tooltip">Youtube</span>
+      <span><i class="fab fa-youtube"></i></span>
+    </li>
+  </ul>
+
+
         
-    </header>
+    {{-- </header> --}}
 
                 {{-- {{-- <h2 class="h2 p-3 my-2 fw-bold text-light bg-success bg-gradient ">I nostri annunci</h2>
                 <div class="row justify-content-center ">
@@ -45,7 +73,7 @@
                 </div> --}}
         
 
-                <x-barraricerca/>
+
 
 
 
