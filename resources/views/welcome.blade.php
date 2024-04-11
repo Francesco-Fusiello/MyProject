@@ -1,6 +1,6 @@
 <x-layout>
 
-    <x-barraricerca/>
+
 
 
     @if(session()->has('access.denied'))
@@ -45,8 +45,12 @@
                 </div> --}}
         
 
-    <section class="light">
-        <div class="container py-2">
+                <x-barraricerca/>
+
+
+
+    <section class="light">     
+           <div class="container py-2">
             <div class="h1 text-center text-dark raleway-Thin" id="pageHeaderTitle">Gli annunci più recenti</div>
             @foreach($announcements as $announcement)
             <article class="postcard light red">
