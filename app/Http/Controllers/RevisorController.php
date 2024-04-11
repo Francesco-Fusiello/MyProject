@@ -40,3 +40,6 @@ class RevisorController extends Controller
       return redirect('/')->with('message',"Complimenti! L'utente è diventato revisore ");
     }
 }
+
+
+
