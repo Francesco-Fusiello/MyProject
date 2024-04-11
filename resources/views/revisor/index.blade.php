@@ -80,11 +80,11 @@
             
         </div>
         @endif
-        <div class="col-12 col-md-6 text-center ">
+        {{-- <div class="col-12 col-md-6 text-center ">
             <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
                 @csrf
                 <button type="submit" class="btn btn-primary">Resetta Ultimo Accettato</button>
             </form>
-        </div>
+        </div> --}}
 </x-layout>
 

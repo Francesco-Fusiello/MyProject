@@ -40,18 +40,17 @@ class RevisorController extends Controller
       return redirect('/')->with('message',"Complimenti! L'utente è diventato revisore ");
     }
 
-    public function resetLastAcceptedAnnouncement(Announcement $announcement)
-    {
-        // Trova l'ultimo annuncio accettato
-        $lastAcceptedAnnouncement = Announcement::whereNotNull('is_accepted')->orderBy('updated_at', 'desc')->first();
+    // public function resetLastAcceptedAnnouncement(Announcement $announcement)
+    // {
+    //     // Trova l'ultimo annuncio accettato
+    //     $lastAcceptedAnnouncement = Announcement::whereNotNull('is_accepted')->orderBy('updated_at', 'desc')->first();
             
-            // Se è stato trovato un annuncio accettato, resetta il campo 'is_accepted' a null
-           
-                $lastann-> update$lastAcceptedAnnouncement->update('is_accepted')->null();
-            return redirect()->back()->with('success', 'Ultimo annuncio accettato resettato correttamente.');
+    //         // Se è stato trovato un annuncio accettato, resetta il campo 'is_accepted' a null
+    //             $lastann-> update$lastAcceptedAnnouncement->update('is_accepted')->null();
+    //         return redirect()->back()->with('success', 'Ultimo annuncio accettato resettato correttamente.');
             
             
-        }
+    //     }
         
 }
 
