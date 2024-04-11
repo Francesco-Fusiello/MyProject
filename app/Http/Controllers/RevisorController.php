@@ -39,4 +39,19 @@ class RevisorController extends Controller
     Artisan::call('presto:makeUserRevisor',['email'=> $user->email]);
       return redirect('/')->with('message',"Complimenti! L'utente è diventato revisore ");
     }
+
+    public function resetLastAcceptedAnnouncement()
+    {
+        // Trova l'ultimo annuncio accettato
+        $lastAcceptedAnnouncement = Announcement::whereNotNull('is_accepted')->orderBy('updated_at', 'desc')->first();
+            
+            // Se è stato trovato un annuncio accettato, resetta il campo 'is_accepted' a null
+           
+                $lastAcceptedAnnouncement->update('is_accepted')->null();
+            return redirect()->back()->with('success', 'Ultimo annuncio accettato resettato correttamente.');
+            
+            
+        }
+        
 }
+
