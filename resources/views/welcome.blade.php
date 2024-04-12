@@ -27,7 +27,7 @@
             <ul class="wrapper">
                 <li class="icon twitter">
                   <span class="tooltip">Abbigliamento</span>
-                  <span><i class="fa-solid fa-shirt"></i></span>
+                  <span><a class="" href="{{ route('categoryShow', 1)}}"></a><i class="fa-solid fa-shirt"></i></span>
                 </li>
                 <li class="icon facebook">
                   <span class="tooltip">Informatica</span>
