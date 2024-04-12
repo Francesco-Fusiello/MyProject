@@ -1,10 +1,10 @@
 <x-layout>
-    <div class='container-fluid p-5 bg-gradient bg-success p-5 shadow mb-4'>
+    <div class='container-fluid bg-gradient shadow mb-3'>
         <div class="row">
-            <div class="col-12 text-light p-5">
-                <h1 class="display-2">
-                    {{ $announcement_to_check ? "Ecco l'annuncio da revisionare" : 'Non ci sono annunci da revisionare' }}
-                </h1>
+            <div class="col-12 p-2">
+                <h2 class="text-center" >
+                    {{ $announcement_to_check ? "Ecco gli annunci da revisionare" : 'Non ci sono annunci da revisionare' }}
+                </h2>
             </div>
         </div>
     </div>
@@ -80,11 +80,14 @@
             
         </div>
         @endif
-        <div class="col-12 col-md-6 text-center ">
-            <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
-                @csrf
-                <button type="submit" class="btn btn-primary">Annulla ultima azione</button>
-            </form>
+        <div class="row">
+            <div class="col-12 col-md-12 text-center justify-content-center">
+                <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
+                    @csrf
+                    <button type="submit" class="bn632-hover yellow   ">Annulla ultima azione</button>
+                </form>
+            </div>
         </div>
+       
 </x-layout>
 

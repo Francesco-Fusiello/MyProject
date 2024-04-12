@@ -110,7 +110,7 @@ background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(1
       }
 
       .bn632-hover {
-        width: 160px;
+        width: 260px;
         font-size: 16px;
         font-weight: 600;
         color: #fff;
@@ -146,6 +146,17 @@ background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(1
           #f15e64,
           #e14e53,
           #e2373f
+        );
+        box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+      }
+
+      .bn632-hover.yellow {
+        background-image: linear-gradient(
+          to right,
+          #cbc108,
+          #d6d051,
+          #e3dc56,
+          #bdb40b
         );
         box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
       }
