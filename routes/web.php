@@ -31,15 +31,13 @@ Route::patch('/accetta/annuncio/{announcement}',[RevisorController::class, 'acce
 
 Route::patch('/rifiuta/annuncio/{announcement}',[RevisorController::class, 'rejectAnnouncement'])->name('revisor.reject_announcement');
 
-// Route::get('/announcements/reset-last-accepted', [RevisorController::class, 'resetLastAcceptedAnnouncement'])->name('announcements.reset-last-accepted');
-
-
 
 // Richiedi di diventare revisore
 Route::get('/richiesta/revisore',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
-
 //Rendi utente Revisore
 Route::get('/rendi/revisore/{user}',[RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
+//Annullare l'ultima operazione(accettazione/rifiuto annuncio))
+Route::get('/announcements/reset-last-accepted', [RevisorController::class, 'resetLastAcceptedAnnouncement'])->name('announcements.reset-last-accepted');
 //Ricerca annuncio
 Route::get('/ricerca/annuncio', [PageController::class, 'searchAnnouncements'])->name('announcement.search');

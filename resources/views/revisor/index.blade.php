@@ -68,7 +68,7 @@
             </div>
             <div class="col-12 col-md-6 text-center">
                 <form
-                action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
+                action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
                 method="POST">
                 @csrf
                 @method('PATCH')
@@ -80,11 +80,11 @@
             
         </div>
         @endif
-        {{-- <div class="col-12 col-md-6 text-center ">
+        <div class="col-12 col-md-6 text-center ">
             <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
                 @csrf
-                <button type="submit" class="btn btn-primary">Resetta Ultimo Accettato</button>
+                <button type="submit" class="btn btn-primary">Annulla ultima azione</button>
             </form>
-        </div> --}}
+        </div>
 </x-layout>
 
