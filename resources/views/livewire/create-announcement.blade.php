@@ -1,5 +1,14 @@
 <div>
     
+    @if (session()->has('message'))
+    <div class="alert alert-success" role="alert">
+        {{ session('message') }}
+    </div>
+@endif
+
+
+
+
     <h2 class="text-center">Crea il tuo annuncio</h2>
     @if (session()->has('success'))
     <div class="alert alert-success">
@@ -26,7 +35,7 @@
 
         <div class="mb-3">
             <label  class="form-label">Prezzo</label>
-            <input wire:model.change='price' type="number" class="form-control">
+            <input wire:model.change='price' type="number" class="form-control" min="1">
             @error('price')
             <span class="text-danger">{{$message}}</span>
             @enderror
