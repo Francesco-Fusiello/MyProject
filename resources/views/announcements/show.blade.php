@@ -55,7 +55,7 @@
 
 
 
-    <!-- Page Content -->
+    {{-- <!-- Page Content -->
 <div class="container">
 
     <!-- Portfolio Item Heading -->
@@ -120,6 +120,6 @@
   </div>
   <!-- /.container -->
   
-
+ --}}
 
 </x-layout>
