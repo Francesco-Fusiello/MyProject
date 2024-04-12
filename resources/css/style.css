@@ -781,3 +781,12 @@ body {
   background: #CD201F;
   color: #ffffff;
 }
+
+
+.iconaante {
+  color:rgb(0, 0, 0)
+}
+
+.iconaante:hover {
+  color:rgb(255, 255, 255)
+}
