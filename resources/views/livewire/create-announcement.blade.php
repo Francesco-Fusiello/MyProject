@@ -44,7 +44,7 @@
         <div class="mb-3">
             <label  class="form-label color-primary">Categoria</label>
             <select wire:model.change='category_id' class="form-select @error('category_id') is-invalid @enderror">
-                <option >Seleziona una categoria</option>
+                <option value="">Seleziona una categoria</option>
                 @foreach (App\Models\Category::all() as $category)
                     <option value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
