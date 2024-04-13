@@ -22,4 +22,6 @@ public function searchAnnouncements(Request $request){
     return view('announcements.index',compact('announcements'));
 }
 
+
+
 }

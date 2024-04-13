@@ -8,12 +8,15 @@
         </nav> --}}
         <a class="navbar-brand" href="#"><img src="{{ asset('images/logo.png') }}" style="width:120px;"
             alt="Logo del sito"></a>
+           
+            
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page"
                             href="{{ route('announcements.index') }}">Annunci</a>
@@ -33,6 +36,8 @@
                     </li>
                 </ul>
 
+                      
+       
                 <ul class="navbar-nav ms-auto montserrat-regular fs-6 me-4">
                     {{-- <li class="d-flex "> --}}
                     @guest

@@ -33,13 +33,13 @@
                     <span class="tooltip">Informatica</span>
                     <span><a class="iconaante" href="{{route('categoryShow', 2)}}"><i class="fa-solid fa-computer"></a></i></span>
                 </li>
+                <li class="icon github">
+                    <span class="tooltip">Elettrodomestici</span>
+                    <span><a class="iconaante" href="{{route('categoryShow', 3)}}"><i class="fa-solid fa-blender-phone"></a></i></span>
+                </li>
                 <li class="icon instagram">
                     <span class="tooltip">Libri</span>
-                    <span><i class="fa-solid fa-book"></i></span>
-                </li>
-                <li class="icon github">
-                    <span class="tooltip">Github</span>
-                    <span><i class="fab fa-github"></i></span>
+                    <span><a class="iconaante" href="{{route('categoryShow', 4)}}"><i class="fa-solid fa-book"></a></i></span>
                 </li>
                 <li class="icon youtube">
                     <span class="tooltip">Youtube</span>
