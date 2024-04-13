@@ -13,6 +13,18 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mb-2 mb-lg-0">
+{{-- bandiere --}}
+
+                <li class="nav-item">
+                    <x-_locale lang='it' nation='it'/>
+                </li>
+
+
+                <li class="nav-item">
+                    <x-_locale lang='en' nation='gb'/>
+                </li>
+
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>

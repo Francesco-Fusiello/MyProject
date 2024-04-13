@@ -41,3 +41,7 @@ Route::get('/rendi/revisore/{user}',[RevisorController::class, 'makeRevisor'])->
 Route::get('/announcements/reset-last-accepted', [RevisorController::class, 'resetLastAcceptedAnnouncement'])->name('announcements.reset-last-accepted');
 //Ricerca annuncio
 Route::get('/ricerca/annuncio', [PageController::class, 'searchAnnouncements'])->name('announcement.search');
+
+
+//Lingua
+Route::post('/lingua/{lang}', [PageController::class, 'setLanguage'])->name('set_language_locale');
