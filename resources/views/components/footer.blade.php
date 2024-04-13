@@ -8,9 +8,9 @@
         <!-- Section: Text -->
         <section class="mb-2">
             <div>
-                <h3>Vuoi lavorare con noi?</h3>
-                <p>Registrati e clicca qui!</p>
-                <a href="{{route('become.revisor')}}" class='bn5'>Diventa revisore</a>
+                <h3>{{__('ui.work')}}</h3>
+                <p>{{__('ui.cl')}}</p>
+                <a href="{{route('become.revisor')}}" class='bn5'>{{__('ui.revisor')}}</a>
             </div>
         </section>
         <!-- Section: Text -->

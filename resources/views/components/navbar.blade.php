@@ -34,12 +34,12 @@
                     
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page"
-                            href="{{ route('announcements.index') }}">Annunci</a>
+                            href="{{ route('announcements.index') }}">{{__('ui.nav_ann')}}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorie
+                            {{__('ui.cat')}}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
                             @foreach ($categories as $category)
@@ -60,7 +60,7 @@
                             <a class="nav-link" href="{{ route('login') }}">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">Registrazione</a>
+                            <a class="nav-link" href="{{ route('register') }}"> {{__('ui.register')}}</a>
                         </li>
                     @else
                     <li>
