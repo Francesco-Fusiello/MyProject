@@ -758,41 +758,75 @@ body {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background: #1877F2;
+.wrapper .inform:hover,
+.wrapper .inform:hover .tooltip,
+.wrapper .inform:hover .tooltip::before {
+  background: #06c4aa;
   color: #ffffff;
 }
 
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
+.wrapper .abbigl:hover,
+.wrapper .abbigl:hover .tooltip,
+.wrapper .abbigl:hover .tooltip::before {
   background: #1DA1F2;
   color: #ffffff;
 }
 
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
+.wrapper .libri:hover,
+.wrapper .libri:hover .tooltip,
+.wrapper .libri:hover .tooltip::before {
   background: #E4405F;
   color: #ffffff;
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background: #333333;
+.wrapper .elettro:hover,
+.wrapper .elettro:hover .tooltip,
+.wrapper .elettro:hover .tooltip::before {
+  background: #7c095f;
   color: #ffffff;
 }
 
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-  background: #CD201F;
+.wrapper .giochi:hover,
+.wrapper .giochi:hover .tooltip,
+.wrapper .giochi:hover .tooltip::before {
+  background: #1fcd59;
   color: #ffffff;
 }
 
+.wrapper .sport:hover,
+.wrapper .sport:hover .tooltip,
+.wrapper .sport:hover .tooltip::before {
+  background: #a41fcd;
+  color: #ffffff;
+}
+
+.wrapper .telef:hover,
+.wrapper .telef:hover .tooltip,
+.wrapper .telef:hover .tooltip::before {
+  background: #1fcdb0;
+  color: #ffffff;
+}
+
+.wrapper .servizi:hover,
+.wrapper .servizi:hover .tooltip,
+.wrapper .servizi:hover .tooltip::before {
+  background: #cd1f7f;
+  color: #ffffff;
+}
+
+.wrapper .arredo:hover,
+.wrapper .arredo:hover .tooltip,
+.wrapper .arredo:hover .tooltip::before {
+  background: #cd731f;
+  color: #ffffff;
+}
+
+.wrapper .vgame:hover,
+.wrapper .vgame:hover .tooltip,
+.wrapper .vgame:hover .tooltip::before {
+  background: #d4e023;
+  color: #ffffff;
+}
 
 .iconaante {
   color:rgb(0, 0, 0)
