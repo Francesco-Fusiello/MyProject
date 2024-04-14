@@ -95,7 +95,7 @@
                             <li class="tag__item"><i class="fas fa-tag mr-2"></i>{{__('ui.value')}} {{ $announcement->price }}</li>
                             <br>
                             <li class="tag__cat play red">
-                                <a href="#"><i class="fas fa-play mr-2"></i> {{__('ui.category')}}
+                                <a href="{{route('categoryShow', ['category'=>$announcement->category])}}"><i class="fas fa-play mr-2"></i> {{__('ui.category')}}
                                     {{ $announcement->category->name }}</a>
                             </li>
                         </ul>
