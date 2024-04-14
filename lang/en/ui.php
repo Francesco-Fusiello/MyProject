@@ -2,7 +2,7 @@
 return[
     'allAnnouncements'=>'Latest announcements',
     'nav_ann'=>'Announcements',
-    'cat'=>'Category',
+    // 'cat'=>'Category',
     'register'=>'Registration',
     'searchart'=>'Find an article',
     'search'=>'Search',
@@ -22,4 +22,14 @@ return[
     'cPassword'=>'Confirm Password',
     'account'=>'Do you already have an account?',
     'author'=>'Author:',
+    'abbigliamento'=>'Clothing',
+    'informatica'=>'Informatics',
+    'elettrodom'=>'HomeAppliances',
+    'libri'=>'Books',
+    'giochi'=>'Games',
+    'tel'=>'Telephony',
+    'serv'=>'Services',
+    'arred'=>'Furniture',
+    'videog'=>'VideoGames',
+
 ];

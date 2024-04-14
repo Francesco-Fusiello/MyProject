@@ -22,4 +22,13 @@ return[
     'cPassword'=>'Confirmez le mot de passe',
     'account'=>'Avez-vous déjà un compte?',
     'author'=>'Auteur:',
+    'abbigliamento'=>'Vêtements',
+    'informatica'=>'Informatique',
+    'elettrodom'=>'Électroménagers',
+    'libri'=>'Livres',
+    'giochi'=>'Jeux',
+    'tel'=>'Téléphonie',
+    'serv'=>'Services',
+    'arred'=>'Meubles',
+    'videog'=>'JeuxVideo',
 ];

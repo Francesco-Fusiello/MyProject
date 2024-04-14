@@ -22,6 +22,15 @@ return[
     'cPassword'=>'Conferma Password',
     'account'=>'Hai già un account?',
     'author'=>'Autore:',
+    'abbigliamento'=>'Abbigliamento',
+    'informatica'=>'Informatica',
+    'elettrodom'=>'Elettrodomestici',
+    'libri'=>'Libri',
+    'giochi'=>'Giochi',
+    'tel'=>'Telefonia',
+    'serv'=>'Servizi',
+    'arred'=>'Arredamento',
+    'videog'=>'VideoGames',
 ];
 
 
