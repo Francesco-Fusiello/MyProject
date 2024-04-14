@@ -21,4 +21,5 @@ return[
     'name'=>'Name',
     'cPassword'=>'Confirm Password',
     'account'=>'Do you already have an account?',
+    'author'=>'Author:',
 ];

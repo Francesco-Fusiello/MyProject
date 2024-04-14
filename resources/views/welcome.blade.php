@@ -99,7 +99,7 @@
                                     {{ $announcement->category->name }}</a>
                             </li>
                         </ul>
-                        <p class="card-text fs-6 fst-italic ">Autore: {{ $announcement->user->name }}</p>
+                        <p class="card-text fs-6 fst-italic ">{{__('ui.author')}} {{ $announcement->user->name }}</p>
                     </div>
                 </article>
             @endforeach

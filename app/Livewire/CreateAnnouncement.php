@@ -6,9 +6,16 @@ use Livewire\Component;
 use App\Models\Announcement;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
+use Livewire\WithFileUploads;
 
 class CreateAnnouncement extends Component
 {
+    use WithFileUploads;
+
+    public $temporary_images;
+    public $images = [];
+    
+
     #[Validate('required', message:'Il titolo è richiesto')]
     #[Validate('max:50', message:'Il titolo è troppo lungo')] 
     public $title;

@@ -21,6 +21,7 @@ return[
     'name'=>'Nome',
     'cPassword'=>'Conferma Password',
     'account'=>'Hai già un account?',
+    'author'=>'Autore:',
 ];
 
 
