@@ -9,5 +9,16 @@ return[
     'work'=>'Do you want to work with us?',
     'cl'=>'Register, then click here!',
     'revisor'=>'Become a reviewer',
-    'exporaCat'=> 'Explore categories:'
+    'exporaCat'=> 'Explore categories:',
+    'value'=> 'Value:',
+    'category'=> 'Category:',
+    'pub'=> 'Published on:',
+    'login'=>'Login',
+    'password'=>'Password',
+    'accedi'=>'Log In',
+    'nReg'=>'You are not registered?',
+    'reg'=>'Sing In',
+    'name'=>'Name',
+    'cPassword'=>'Confirm Password',
+    'account'=>'Do you already have an account?',
 ];

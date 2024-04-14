@@ -85,17 +85,17 @@
                         </h1>
                         <div class="postcard__subtitle small">
                             <time datetime="2020-05-25 12:00:00">
-                                <i class="fas fa-calendar-alt mr-2"> Pubblicato il:
+                                <i class="fas fa-calendar-alt mr-2"> {{__('ui.pub')}}
                                     {{ $announcement->created_at->format('d/m/y') }}</i>
                             </time>
                         </div>
                         <div class="postcard__bar"></div>
                         <div class="postcard__preview-txt"> {{ $announcement->body }}</div>
                         <ul class="postcard__tagbox">
-                            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Valore: {{ $announcement->price }}</li>
+                            <li class="tag__item"><i class="fas fa-tag mr-2"></i>{{__('ui.value')}} {{ $announcement->price }}</li>
                             <br>
                             <li class="tag__cat play red">
-                                <a href="#"><i class="fas fa-play mr-2"></i>Categoria:
+                                <a href="#"><i class="fas fa-play mr-2"></i> {{__('ui.category')}}
                                     {{ $announcement->category->name }}</a>
                             </li>
                         </ul>

@@ -10,13 +10,13 @@
               <!-- Background image for card set in CSS! -->
             </div>
             <div class="card-body p-4 p-sm-5">
-              <h5 class="card-title text-center mb-5 fw-light fs-5">Registrati</h5>
+              <h5 class="card-title text-center mb-5 fw-light fs-5">{{__('ui.reg')}}</h5>
               <form method="POST" action="/register">
                 @csrf
   
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" name="name" id="floatingInputUsername"  value="{{ @old('name') }}" placeholder="myusername" required autofocus>
-                  <label for="floatingInputUsername">Nome</label>
+                  <label for="floatingInputUsername">{{__('ui.name')}}</label>
                   @error('name')
                       <span> {{ $message }} </span>
                   @enderror
@@ -26,7 +26,7 @@
   
                 <div class="form-floating mb-3">
                   <input type="email" name="email" class="form-control" id="floatingInputEmail" value="{{ @old('email') }}" placeholder="name@example.com">
-                  <label for="floatingInputEmail">Email</label>
+                  <label for="floatingInputEmail">E-mail</label>
                 @error('email')
                     <span> {{ $message }} </span>
                 @enderror
@@ -36,7 +36,7 @@
   
                 <div class="form-floating mb-3">
                   <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
-                  <label for="floatingPassword">Password</label>
+                  <label for="floatingPassword">{{__('ui.password')}}</label>
                     @error('password')
                         <span> {{ $message }} </span>
                     @enderror
@@ -44,14 +44,14 @@
   
                 <div class="form-floating mb-3">
                   <input type="password"  name="password_confirmation" class="form-control" id="floatingPasswordConfirm" placeholder="Confirm Password">
-                  <label for="floatingPasswordConfirm">Confirm Password</label>
+                  <label for="floatingPasswordConfirm">{{__('ui.cPassword')}}</label>
                 </div>
   
                 <div class="d-grid mb-2">
-                  <button class="btn btn-outline-primary btn-login fw-bold text-uppercase" type="submit">Registrati</button>
+                  <button class="btn btn-outline-primary btn-login fw-bold text-uppercase" type="submit">{{__('ui.reg')}}</button>
                 </div>
                 
-                <p class="d-block text-center small">Hai già un account?<a class="d-block text-center small" href="/login">Accedi</a></p>
+                <p class="d-block text-center small">{{__('ui.account')}}<a class="d-block text-center small" href="/login">{{__('ui.accedi')}}</a></p>
   
                 <hr class="my-4">
   
