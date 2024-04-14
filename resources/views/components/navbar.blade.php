@@ -36,7 +36,9 @@
                         <a class="nav-link active" aria-current="page"
                             href="{{ route('announcements.index') }}">{{__('ui.nav_ann')}}</a>
                     </li>
-                    <li class="nav-item dropdown">
+
+                    {{-- DropDown categorie --}}
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{__('ui.cat')}}
@@ -48,7 +50,7 @@
                                 </li>
                             @endforeach
                         </ul>
-                    </li>
+                    </li> --}}
                 </ul>
 
                       

@@ -9,4 +9,5 @@ return[
     'work'=>'Voi lavorare con noi?',
     'cl'=>'Registrati e clicca qui!',
     'revisor'=>'Diventa revisore',
+    'exporaCat'=> 'Esplora categorie:'
 ];

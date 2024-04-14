@@ -824,7 +824,7 @@ body {
 .wrapper .vgame:hover,
 .wrapper .vgame:hover .tooltip,
 .wrapper .vgame:hover .tooltip::before {
-  background: #d4e023;
+  background: #0a2cc2;
   color: #ffffff;
 }
 

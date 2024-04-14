@@ -22,6 +22,7 @@
     {{-- BUTTON CON ICONE --}}
     <div class="container">
         <div class="row justify-content-center">
+            <h2>{{__('ui.exporaCat')}}</h2>
             <ul class="wrapper">
                 <li class="icon abbigl">
                     <span class="tooltip">Abbigliamento</span>
