@@ -6,7 +6,7 @@
     </button>
         {{-- <nav class="navbar bg-body-tertiary">
         </nav> --}}
-        <a class="navbar-brand" href="#"><img src="{{ asset('images/logo.png') }}" style="width:120px;"
+        <a class="navbar-brand" href="#"><img src="{{ asset('storage/logo.png') }}" style="width:120px;"
             alt="Logo del sito"></a>
            
             

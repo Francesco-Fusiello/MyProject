@@ -3,10 +3,11 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\Category;
 use App\Models\Announcement;
+use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
-use Livewire\WithFileUploads;
 
 class CreateAnnouncement extends Component
 {
@@ -20,22 +21,34 @@ class CreateAnnouncement extends Component
     public $form_id;
     public $annoncement;
 
+    #[Validate('required', message:'Il titolo è richiesto')]
+    #[Validate('max:50', message:'Il titolo è troppo lungo')] 
+    public $title;
+    #[Validate('required',message:'La descrizione è richiesta')]
+    #[Validate('max:300', message:'La descrizione è troppo lunga')]  
+    public $body;
+    #[Validate('required', message:'Il prezzo è richiesto')] 
+    public $price;
+    #[Validate('required', message:'La Categoria è richiesta')]
+    public $category_id;
+
+
     protected $rules= [
-        'title'=>'required|min:4',
-        'body'=>'required|min:8',
-        'category'=>'required',
+        // 'title'=>'required|min:4',
+        // 'body'=>'required|min:8',
+        // 'category_id'=>'required',
         'images.*'=>'image|max:1024',
         'temporary_images.*'=>'image|max:1024',
     ];
 
     protected $messages =[
-        'required'=>'Il campo :attribute è richiesto',
-        'min'=>'Il campo :attribute è troppo corto',
-        'temporary_images.required'=>"L\'immagine è richiesta",
+        // 'required'=>'Il campo :attribute è richiesto',
+        // 'min'=>'Il campo :attribute è troppo corto',
+        'temporary_images.required'=>"L'immagine è richiesta",
         'temporary_images.*.image'=>'I file devono essere immagini',
-        'temporary_images.*.max'=>"L\'immagine dev\'essere massimo di 1mb",
-        'images.image'=> "L\'immagine dev\'essere un\'immagine",
-        'images.max'=> "L\'immagine dev\'essere massimo di 1mb",
+        'temporary_images.*.max'=>"L'immagine dev'essere massimo di 1mb",
+        'images.image'=> "L'immagine dev'essere un'immagine",
+        'images.max'=> "L'immagine dev'essere massimo di 1mb",
     ];
 
     public function updateTemporaryImages()
@@ -57,25 +70,15 @@ class CreateAnnouncement extends Component
     }
     
 
-    #[Validate('required', message:'Il titolo è richiesto')]
-    #[Validate('max:50', message:'Il titolo è troppo lungo')] 
-    public $title;
-    #[Validate('required',message:'La descrizione è richiesta')]
-    #[Validate('max:300', message:'La descrizione è troppo lunga')]  
-    public $body;
-    #[Validate('required', message:'Il prezzo è richiesto')] 
-    public $price;
-    #[Validate('required', message:'La Categoria è richiesta')]
-    public $category_id;
 
     public function store(){
 
         $this->validate();
         
-        $this->announcement = Category::find($this->category)->announcements()->create($this->validate());
+        $this->announcement = Category::find($this->category_id)->announcements()->create($this->validate());
         if(count($this->images)){
-            foreach ($this->images as $images) {
-                $thi->announcement->images()->create(['path'=>$image->store('images','public')]);
+            foreach ($this->images as $image) {
+                $this->announcement->images()->create(['path'=>$image->store('images','public')]);
             }
         }
 
