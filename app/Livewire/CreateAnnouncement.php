@@ -51,7 +51,7 @@ class CreateAnnouncement extends Component
         'images.max'=> "L'immagine dev'essere massimo di 1mb",
     ];
 
-    public function updateTemporaryImages()
+    public function updatedTemporaryImages()
     {
         if($this->validate([
             'temporary_images.*'=>'image|max:1024',
@@ -102,7 +102,7 @@ class CreateAnnouncement extends Component
     {
         $this->title = '';
         $this->body='';
-        $this->category='';
+        $this->category_id='';
         $this->image='';
         $this->images=[];
         $this->temporary_images=[];
