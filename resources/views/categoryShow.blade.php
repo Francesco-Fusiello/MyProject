@@ -1,6 +1,6 @@
 <x-layout>
     <x-barraricerca/>
-<h1 class="p-4 text-center  ">Esplora la categoria: {{ $category->name }}</h1>
+<h1 class="p-4 text-center  ">Esplora la categoria: {{ __("ui.$category->name")}}</h1>
     <div class="mt-5 col-12">
         <div class="row">
             @forelse($category->announcements as $announcement)
