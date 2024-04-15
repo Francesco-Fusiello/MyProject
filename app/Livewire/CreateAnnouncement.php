@@ -18,7 +18,6 @@ class CreateAnnouncement extends Component
     public $temporary_images;
     public $images = [];
     public $image;
-    public $form_id;
     public $annoncement;
 
     #[Validate('required', message:'Il titolo è richiesto')]
@@ -103,10 +102,9 @@ class CreateAnnouncement extends Component
         $this->title = '';
         $this->body='';
         $this->category_id='';
-        $this->image='';
         $this->images=[];
         $this->temporary_images=[];
-        $this->form_id=rand();
+       
     }
 
 

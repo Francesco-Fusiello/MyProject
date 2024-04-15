@@ -15,11 +15,17 @@
                 <div class="col-12">
 
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        @if($announcement_to_check->images)
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded"
-                                    alt="...">
+                            @foreach ($announcement_to_check->images as $image)
+                            <div class="carousel-item @if($loop->first) active @endif">
+                                <img src="{{Storage::url($image->path)}}" class="img-fluid p-3 rounded"
+                                    alt="...">                                
+                                </div>
+                            @endforeach
                             </div>
+                            @else
+                            <div class="carousel-inner">
                             <div class="carousel-item">
                                 <img src="https://picsum.photos/id/28/1200/400" class="img-fluid p-3 rounded"
                                     alt="...">
@@ -29,6 +35,7 @@
                                     alt="...">
                         </div>
                         </div>
+                        @endif
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
