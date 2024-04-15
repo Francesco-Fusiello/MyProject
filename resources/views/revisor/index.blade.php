@@ -24,6 +24,7 @@
                                 @endforeach
                             </div>
                         @else
+                        
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="https://picsum.photos/id/28/1200/400" class="img-fluid p-3 rounded"
@@ -38,6 +39,9 @@
                                         alt="...">
                                 </div>
                             </div>
+                        
+
+
                         @endif
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                             data-bs-slide="prev">
