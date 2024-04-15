@@ -14,6 +14,45 @@ class CreateAnnouncement extends Component
 
     public $temporary_images;
     public $images = [];
+    public $image;
+    public $form_id;
+    public $annoncement;
+
+    protected $rules= [
+        'title'=>'required|min:4',
+        'body'=>'required|min:8',
+        'category'=>'required',
+        'images.*'=>'image|max:1024',
+        'temporary_images.*'=>'image|max:1024',
+    ];
+
+    protected $messages =[
+        'required'=>'Il campo :attribute è richiesto',
+        'min'=>'Il campo :attribute è troppo corto',
+        'temporary_images.required'=>"L\'immagine è richiesta",
+        'temporary_images.*.image'=>'I file devono essere immagini',
+        'temporary_images.*.max'=>"L\'immagine dev\'essere massimo di 1mb",
+        'images.image'=> "L\'immagine dev\'essere un\'immagine",
+        'images.max'=> "L\'immagine dev\'essere massimo di 1mb",
+    ];
+
+    public function updateTemporaryImages()
+    {
+        if($this->validate([
+            'temporary_images.*'=>'image|max:1024',
+        ])){
+            foreach ($this->temporary_images as $image){
+                $this->images[] = $image;
+            }
+        }
+    }
+
+    public function removeImage($key)
+    {
+        if (in_array($key, array_keys($this->images))){
+            unset($this->images[$key]);
+        }
+    }
     
 
     #[Validate('required', message:'Il titolo è richiesto')]
