@@ -11,7 +11,9 @@ use Livewire\WithFileUploads;
 class CreateAnnouncement extends Component
 {
     use WithFileUploads;
-
+    
+    public $message;
+    public $validated;
     public $temporary_images;
     public $images = [];
     public $image;
@@ -70,16 +72,38 @@ class CreateAnnouncement extends Component
 
         $this->validate();
         
-        Announcement::create([
-            'title'=>$this->title,
-            'body'=>$this->body,
-            'price'=>$this->price,
-            'category_id'=>$this->category_id,
-            'user_id'=>Auth::user()->id
-        ]);
+        $this->announcement = Category::find($this->category)->announcements()->create($this->validate());
+        if(count($this->images)){
+            foreach ($this->images as $images) {
+                $thi->announcement->images()->create(['path'=>$image->store('images','public')]);
+            }
+        }
+
+        // Announcement::create([
+        //     'title'=>$this->title,
+        //     'body'=>$this->body,
+        //     'price'=>$this->price,
+        //     'category_id'=>$this->category_id,
+        //     'user_id'=>Auth::user()->id
+        // ]);
         
-        $this->reset();
-        session()->flash('success','Annuncio creato con successo');
+        // $this->reset();
+        session()->flash('success','Annuncio creato con successo, sarà pubblicato dopo la revisione');
+        $this->cleanForm();
+    }
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
+    }
+    public function cleanForm()
+    {
+        $this->title = '';
+        $this->body='';
+        $this->category='';
+        $this->image='';
+        $this->images=[];
+        $this->temporary_images=[];
+        $this->form_id=rand();
     }
 
 
