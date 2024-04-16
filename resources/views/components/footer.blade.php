@@ -7,11 +7,19 @@
 
         <!-- Section: Text -->
         <section class="mb-2">
+            @if(Auth::user()->is_revisor == 0)
             <div>
                 <h3>{{__('ui.work')}}</h3>
                 <p>{{__('ui.cl')}}</p>
                 <a href="{{route('become.revisor')}}" class='bn5'>{{__('ui.revisor')}}</a>
             </div>
+            @else
+            <div>
+            <h3 class="m-4">Se la qualità degli annunci è impeccabile, è merito del tuo lavoro straordinario.<br>
+                🙏 Grazie! 🙏
+            </h3>
+            </div>
+            @endif
         </section>
         <!-- Section: Text -->
 
