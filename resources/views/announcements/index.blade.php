@@ -4,7 +4,7 @@
     <div class="container py-5">
         <!-- For Demo Purpose-->
         <header class="text-center mb-5">
-            <h1 class="display-4 font-weight-bold">Tutti i nostri annunci</h1>
+            <h1 class="display-4 font-weight-bold"> {{ __('ui.tuttiAnn') }}</h1>
         </header>
 
         <!-- First Row [Prosucts]-->
@@ -18,23 +18,23 @@
 
                             <h5 class="card-title text-center ">{{ $announcement->title }}</h5>
                             <p class="card-text">{{ $announcement->body }}</p>
-                            <p class="card-text">Valore: {{ $announcement->price }}</p>
+                            <p class="card-text">{{ __('ui.value') }} {{ $announcement->price }}</p>
                             <a href="{{ route('announcements.show', $announcement) }}"
-                                class="btn btn-primary shadow w-50">Visualizza</a>
+                                class="btn btn-primary shadow w-50">{{ __('ui.visua') }}</a>
                             <p>
                                 <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
-                                    class="w-100 my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-success ">Categoria:
+                                    class="w-100 my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-success ">{{ __('ui.category') }}
                                     {{ $announcement->category->name }}</a>
                             </p>
-                            <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/y') }}</p>
-                            <p class="card-text fs-6 fst-italic ">Autore: {{ $announcement->user->name }}</p>
+                            <p class="card-footer">{{ __('ui.pub') }} {{ $announcement->created_at->format('d/m/y') }}</p>
+                            <p class="card-text fs-6 fst-italic ">{{ __('ui.author') }} {{ $announcement->user->name }}</p>
                         </div>
                     </div>
                 </div>
             @empty
                 <div class="col-12">
                     <div class="alert alert-warning py-3 shadow">
-                        <p class="lead">Nessun articolo trovato</p>
+                        <p class="lead">{{ __('ui.nessA') }}</p>
                     </div>
                 </div>
             @endforelse

@@ -10,8 +10,8 @@
             {{-- @dd({{Auth::user()}}) --}}
             @if (Auth::check() && Auth::user()->is_revisor)
             <div>
-            <h3 class="m-4">Se la qualità degli annunci è impeccabile, è merito del tuo lavoro straordinario.<br>
-                🙏 Grazie! 🙏
+            <h3 class="m-4">{{__('ui.footer1')}}.<br>
+                🙏 {{__('ui.footer2')}}! 🙏
             </h3>
             </div>
             @else
