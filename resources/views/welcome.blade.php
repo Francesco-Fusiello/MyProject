@@ -70,8 +70,15 @@
             </ul>
         </div>
     </div>
-<div>
-    <img class="img-fluid" src="{{__('ui.banner')}}" alt="">
+<div class="container-fluid">
+    <div class="row justify-content-center ">
+        <div class="col-11">
+            <img style="position-relative" class="img-fluid rounded-5 " src="{{__('ui.banner')}}"  alt="">
+            <a href="{{route('categoryShow', 9)}}"><button class="button-1">Scoprili tutti</button></a>
+           
+        </div>
+        
+    </div>   
 </div>
     <section class="light">
         <div class="container py-2">
