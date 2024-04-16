@@ -49,6 +49,7 @@ return[
     'footer2' => 'Grazie',
     'acc' => 'Accetta',
     'rif' => 'Rifiuta',
+    'annu' => 'Annula ultima azione',
     
 
 

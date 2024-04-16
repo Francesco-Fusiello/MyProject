@@ -99,7 +99,7 @@
         <div class="col-12 col-md-12 text-center justify-content-center">
             <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
                 @csrf
-                <button type="submit" class="bn632-hover yellow   ">Annulla ultima azione</button>
+                <button type="submit" class="bn632-hover yellow">{{__('ui.annu')}}</button>
             </form>
         </div>
     </div>

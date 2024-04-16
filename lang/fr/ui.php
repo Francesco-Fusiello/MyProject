@@ -48,6 +48,7 @@ return[
     'footer2' => 'Merci',
     'acc' => 'Accepter',
     'rif' => 'Refuser',
+    'annu' => 'Annuler la dernière action',
     
     
 ];
