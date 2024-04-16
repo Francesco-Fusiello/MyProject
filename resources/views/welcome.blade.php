@@ -77,7 +77,7 @@
             @foreach ($announcements as $announcement)
                 <article class="postcard light red">
                     <a class="postcard__img_link" href="#">
-                        <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />
+                        <img class="postcard__img" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement ->images()->first() ->path) : 'https://picsum.photos/200' }}" alt="Image Title" />
                     </a>
                     <div class="postcard__text t-dark">
                         <h1 class="postcard__title red"><a

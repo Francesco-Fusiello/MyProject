@@ -69,7 +69,6 @@ class CreateAnnouncement extends Component
     }
     
 
-
     public function store(){
 
         $this->validate();
@@ -90,10 +89,6 @@ class CreateAnnouncement extends Component
             }
         }
 
-
-
-
-        
         // $this->reset();
         session()->flash('success','Annuncio creato con successo, sarà pubblicato dopo la revisione');
         $this->cleanForm();
@@ -109,7 +104,6 @@ class CreateAnnouncement extends Component
         $this->category_id='';
         $this->images=[];
         $this->temporary_images=[];
-       
     }
 
 
