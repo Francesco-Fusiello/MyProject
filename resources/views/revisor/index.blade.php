@@ -15,7 +15,8 @@
                 <div class="col-12">
 
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                        @if ($announcement_to_check->images)
+                        @if ($announcement_to_check && $announcement_to_check->images && $announcement_to_check->images->count() > 0)
+                        <div class="container">
                             <div class="carousel-inner">
                                 @foreach ($announcement_to_check->images as $image)
                                     <div class="carousel-item @if ($loop->first) active @endif">

@@ -9,13 +9,12 @@
 
         <!-- First Row [Prosucts]-->
 
-        <div class="row pb-5 mb-4">
-            @forelse($announcements as $announcement)
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <!-- Card-->
-                    <div class="card rounded shadow-sm border-0">
-                        <div class="card-body p-4"> <img src="https://picsum.photos/200" alt=""
-                                class='img-fluid d-block mx-auto mb-3'>
+    <div class="row pb-5 mb-4">
+  @forelse($announcements as $announcement)
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-4">  <img src="https://picsum.photos/200" alt="" class='img-fluid d-block mx-auto mb-3'>
 
                             <h5 class="card-title text-center ">{{ $announcement->title }}</h5>
                             <p class="card-text">{{ $announcement->body }}</p>

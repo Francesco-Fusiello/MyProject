@@ -2,9 +2,9 @@
 
   <x-barraricerca/>
 
-    <div class="container-fluid p-5 bg-gradient bg-success shadow mb-4">
+    <div class="container-fluid p-2 bg-gradient  shadow mb-4">
         <div class="row">
-            <div class="col-12 text-light p-5">
+            <div class="col-12 p-2">
                 <h1 class="display-2">Annuncio {{ $announcement->title }}</h1>
             </div>
         </div>
@@ -14,7 +14,19 @@
             <div class="col-12">
 
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                    <div class="carousel-inner">
+                  @if ( $announcement->images->count() > 0)
+                        <div class="container">
+                            <div class="carousel-inner">
+                                @foreach ($announcement->images as $image)
+                                    <div class="carousel-item @if ($loop->first) active @endif">
+                                        <img src="{{ Storage::url($image->path) }}" class="d-block w-100" alt="..."> 
+                                    </div>   
+                                      {{-- img-fluid p-3 rounded --}}
+                                @endforeach
+                            </div>
+                        @else  
+                  
+                  <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="https://picsum.photos/id/27/1200/200" class="d-block w-100" alt="...">
                         </div>
@@ -25,6 +37,7 @@
                             <img src="https://picsum.photos/id/29/1200/200" class="d-block w-100" alt="...">
                         </div>
                     </div>
+                    @endif
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

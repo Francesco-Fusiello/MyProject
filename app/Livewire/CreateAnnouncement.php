@@ -69,26 +69,26 @@ class CreateAnnouncement extends Component
     }
     
 
-
     public function store(){
 
         $this->validate();
         
-        $this->announcement = Category::find($this->category_id)->announcements()->create($this->validate());
+        // $this->announcement = Category::find($this->category_id)->announcements()->create($this->validate());
+
+        $announcement = Announcement::create([
+            'title'=>$this->title,
+            'body'=>$this->body,
+            'price'=>$this->price,
+            'category_id'=>$this->category_id,
+            'user_id'=>Auth::user()->id
+        ]);
+
         if(count($this->images)){
             foreach ($this->images as $image) {
-                $this->announcement->images()->create(['path'=>$image->store('images','public')]);
+                $announcement->images()->create(['path'=>$image->store('images','public')]);
             }
         }
 
-        // Announcement::create([
-        //     'title'=>$this->title,
-        //     'body'=>$this->body,
-        //     'price'=>$this->price,
-        //     'category_id'=>$this->category_id,
-        //     'user_id'=>Auth::user()->id
-        // ]);
-        
         // $this->reset();
         session()->flash('success','Annuncio creato con successo, sarà pubblicato dopo la revisione');
         $this->cleanForm();
@@ -104,7 +104,6 @@ class CreateAnnouncement extends Component
         $this->category_id='';
         $this->images=[];
         $this->temporary_images=[];
-       
     }
 
 
