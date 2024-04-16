@@ -31,5 +31,6 @@ return[
     'serv'=>'Services',
     'arred'=>'Furniture',
     'videog'=>'VideoGames',
+    'banner'=>'\Banner\bisson 09012024.jpg',
 
 ];

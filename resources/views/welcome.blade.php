@@ -71,7 +71,7 @@
         </div>
     </div>
 <div>
-    <img class="img-fluid" src="/Banner/2.png" alt="">
+    <img class="img-fluid" src="{{__('ui.banner')}}" alt="">
 </div>
     <section class="light">
         <div class="container py-2">

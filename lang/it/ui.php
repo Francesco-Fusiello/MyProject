@@ -31,6 +31,7 @@ return[
     'serv'=>'Servizi',
     'arred'=>'Arredamento',
     'videog'=>'VideoGames',
+    'banner'=>'\Banner\2.png',
 ];
 
 
