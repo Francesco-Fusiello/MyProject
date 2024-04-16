@@ -70,7 +70,9 @@
             </ul>
         </div>
     </div>
-
+<div>
+    <img class="img-fluid" src="/Banner/2.png" alt="">
+</div>
     <section class="light">
         <div class="container py-2">
             <div class="h1 text-center text-dark raleway-Thin" id="pageHeaderTitle">{{__('ui.allAnnouncements')}}</div>
