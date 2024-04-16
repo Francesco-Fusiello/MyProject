@@ -7,7 +7,7 @@
 
         <!-- Section: Text -->
         <section class="mb-2">
-            @if(Auth::user()->is_revisor == 0)
+            @if(Auth::user()->is_revisor==0)
             <div>
                 <h3>{{__('ui.work')}}</h3>
                 <p>{{__('ui.cl')}}</p>
