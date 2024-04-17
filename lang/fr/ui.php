@@ -49,6 +49,6 @@ return[
     'acc' => 'Accepter',
     'rif' => 'Refuser',
     'annu' => 'Annuler la dernière action',
-    'banner'=>'\Banner\3-FR.png',
+    'banner'=>'\Banner\3.FR.png',
     
 ];

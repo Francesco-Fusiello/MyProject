@@ -32,7 +32,7 @@ return[
     'serv'=>'Services',
     'arred'=>'Furniture',
     'videog'=>'VideoGames',
-    'banner'=>'\Banner\2-EN.png',
+    'banner'=>'\Banner\2.EN.png',
     'tuttiAnn' => 'All our ads',
     'nessA' => 'No articles found',
     'visua' => 'View',
