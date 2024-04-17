@@ -50,6 +50,7 @@ return[
     'acc' => 'Accept',
     'rif' => 'Refuse',
     'annu' => 'Undo last action',
+    'scoprili' => 'check them out!',
     
 
 ];

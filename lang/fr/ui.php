@@ -50,5 +50,6 @@ return[
     'rif' => 'Refuser',
     'annu' => 'Annuler la dernière action',
     'banner'=>'\Banner\3.FR.png',
+    'scoprili' => 'Découvrez-les tous!'
     
 ];

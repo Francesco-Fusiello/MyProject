@@ -50,6 +50,7 @@ return[
     'acc' => 'Accetta',
     'rif' => 'Rifiuta',
     'annu' => 'Annula ultima azione',
+    'scoprili' => 'Scoprili tutti!'
     
 
 
