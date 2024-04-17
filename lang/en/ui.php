@@ -32,7 +32,7 @@ return[
     'serv'=>'Services',
     'arred'=>'Furniture',
     'videog'=>'VideoGames',
-    'banner'=>'\Banner\bisson 09012024.jpg',
+    'banner'=>'\Banner\2-EN.png',
     'tuttiAnn' => 'All our ads',
     'nessA' => 'No articles found',
     'visua' => 'View',
