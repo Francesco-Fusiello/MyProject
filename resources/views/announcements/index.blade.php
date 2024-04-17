@@ -42,7 +42,9 @@
                     </div>
                 </div>
             @endforelse
-            {{ $announcements->links() }}
+            <div class="d-flex m-5">
+                {{ $announcements->links() }}
+            </div>
         </div>
     </div>
 </x-layout>
