@@ -6,7 +6,7 @@ return[
     'register'=>'Registration',
     'searchart'=>'Find an article',
     'search'=>'Search',
-    'work'=>'Do you want to work with us?',
+    'work'=>'Career opportunities',
     'cl'=>'Register, then click here!',
     'revisor'=>'Become a reviewer',
     'exporaCat'=> 'Explore categories:',
