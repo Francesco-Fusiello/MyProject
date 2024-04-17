@@ -11,6 +11,7 @@ return[
     'revisor'=>'Diventa revisore',
     'exporaCat'=> 'Esplora categorie:',
     'value'=> 'Valore:',
+    'value1'=> 'Valore',
     'category'=> 'Categoria:',
     'pub'=> 'Pubblicato il:',
     'login'=>'Login',
@@ -32,6 +33,29 @@ return[
     'arred'=>'Arredamento',
     'videog'=>'VideoGames',
     'banner'=>'\Banner\2.png',
+    'tuttiAnn' => 'Tutti i nostri Annunci',
+    'nessA' => 'Nessun articolo trovato',
+    'visua' => 'Visualizza',
+    'creaA' => 'Crea il tuo annuncio',
+    'titolo' => 'Titolo',
+    'descri' => 'Descrizione',
+    'selCat' => 'Seleziona Categoria',
+    'phoPrew' => 'Anteprima Foto',
+    'canc' => 'Cancella',
+    'crea' => 'Crea',
+    'creaNav' => 'Crea un annuncio',
+    'areaRev' => 'Area Revisore',
+    'footer1' => 'Se la qualità degli annunci è impeccabile, è merito del tuo lavoro straordinario',
+    'footer2' => 'Grazie',
+    'acc' => 'Accetta',
+    'rif' => 'Rifiuta',
+    'annu' => 'Annula ultima azione',
+    
+
+
+
+    
+    
 ];
 
 

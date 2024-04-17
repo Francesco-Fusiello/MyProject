@@ -62,9 +62,9 @@
                         <div class="card-body">
 
 
-                            <h5 class="card-title">Titolo: {{ $announcement_to_check->title }}</h5>
-                            <p class="card-text">Descrizione: {{ $announcement_to_check->body }}</p>
-                            <p class="card-footer">Pubblicato il:
+                            <h5 class="card-title">{{__('ui.titolo')}}: {{ $announcement_to_check->title }}</h5>
+                            <p class="card-text">{{__('ui.descri')}}: {{ $announcement_to_check->body }}</p>
+                            <p class="card-footer">{{__('ui.pub')}}
                                 {{ $announcement_to_check->created_at->format('d/m/y') }}</p>
 
                         </div>
@@ -78,7 +78,7 @@
                                 method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button type="submit" class="bn632-hover bn22">Accetta</button>
+                                <button type="submit" class="bn632-hover bn22">{{__('ui.acc')}}</button>
                             </form>
                         </div>
                         <div class="col-12 col-md-6 text-center">
@@ -87,7 +87,7 @@
                                 method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button type="submit" class="bn632-hover bn28">Rifiuta</button>
+                                <button type="submit" class="bn632-hover bn28">{{__('ui.rif')}}</button>
                             </form>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
         <div class="col-12 col-md-12 text-center justify-content-center">
             <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
                 @csrf
-                <button type="submit" class="bn632-hover yellow   ">Annulla ultima azione</button>
+                <button type="submit" class="bn632-hover yellow">{{__('ui.annu')}}</button>
             </form>
         </div>
     </div>

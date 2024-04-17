@@ -6,7 +6,7 @@
     </button>
         {{-- <nav class="navbar bg-body-tertiary">
         </nav> --}}
-        <a class="navbar-brand" href="#"><img src="{{ asset('logo.png') }}" style="width:120px;"
+        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('logo.png') }}" style="width:120px;"
             alt="Logo del sito"></a>
            
             
@@ -59,14 +59,14 @@
                     {{-- <li class="d-flex "> --}}
                     @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Login</a>
+                            <a class="nav-link" href="{{ route('login') }}">{{__('ui.login')}}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('register') }}"> {{__('ui.register')}}</a>
                         </li>
                     @else
                     <li>
-                        <a class="nav-link active" aria-current="page" href="{{ route('announcements.create') }}">Crea un annuncio</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('announcements.create') }}">{{ __('ui.creaNav') }}</a>
                     </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-semibold fst-italic text-info" href="#" role="button" data-bs-toggle="dropdown"
@@ -90,7 +90,7 @@
                             <li class="nav-item">
                                 <a class="nav-link btn btn-outline-info btn-sm position-relative" aria-current="page"
                                     href="{{ route('revisor.index') }}">
-                                    Area Revisore
+                                    {{ __('ui.areaRev') }}
                                     <span
                                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                         {{ App\Models\Announcement::toBeRevisionedCount() }}
