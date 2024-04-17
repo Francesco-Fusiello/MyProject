@@ -23,15 +23,15 @@ return[
     'cPassword'=>'Confirmez le mot de passe',
     'account'=>'Avez-vous déjà un compte?',
     'author'=>'Auteur:',
-    'abbigliamento'=>'Vêtements',
-    'informatica'=>'Informatique',
-    'elettrodom'=>'Électroménagers',
-    'libri'=>'Livres',
-    'giochi'=>'Jeux',
-    'tel'=>'Téléphonie',
-    'serv'=>'Services',
-    'arred'=>'Meubles',
-    'videog'=>'JeuxVideo',
+    'Abbigliamento'=>'Vêtements',
+    'Informatica'=>'Informatique',
+    'Elettrodomestici'=>'Électroménagers',
+    'Libri'=>'Livres',
+    'Giochi'=>'Jeux',
+    'Telefonia'=>'Téléphonie',
+    'Servizi'=>'Services',
+    'Arredamento'=>'Meubles',
+    'VideoGame'=>'JeuxVideo',
     'tuttiAnn' => 'Toutes nos annonces',
     'nessA' => 'Aucun article trouvé',
     'visua' => 'Voir',
@@ -51,6 +51,11 @@ return[
     'annu' => 'Annuler la dernière action',
     'banner'=>'\Banner\3.FR.png',
     'scoprili' => 'Découvrez-les tous!',
-    
+    'titRev' => 'Voici les annonces à examiner',
+    'titRev1' => "Il n'y a aucune annonce à examiner",
+    'annuncio' => 'Annonce',
+    'EspCat'=>'Explorez la catégorie',
+    'success'=>'Annonce créée avec succès, sera publiée après examen'
+
     
 ];

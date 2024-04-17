@@ -42,7 +42,7 @@
                     </div>
                 </div>
             @endforelse
-            <div class="d-flex m-5">
+            <div class=" m-3">
                 {{ $announcements->links() }}
             </div>
         </div>

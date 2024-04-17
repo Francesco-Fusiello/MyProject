@@ -20,7 +20,7 @@ class CreateAnnouncement extends Component
     public $image;
     public $annoncement;
 
-    #[Validate('required', message:'Il titolo è richiesto')]
+    #[Validate('required', )]
     #[Validate('max:50', message:'Il titolo è troppo lungo')] 
     public $title;
     #[Validate('required',message:'La descrizione è richiesta')]
@@ -90,7 +90,7 @@ class CreateAnnouncement extends Component
         }
 
         // $this->reset();
-        session()->flash('success','Annuncio creato con successo, sarà pubblicato dopo la revisione');
+        session()->flash('success', '');
         $this->cleanForm();
     }
     public function updated($propertyName)

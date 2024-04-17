@@ -70,7 +70,7 @@
                                             <a
                                                 href="{{ route('categoryShow', ['category' => $announcement->category]) }}"><i
                                                     class="fas fa-play mr-2"></i> {{ __('ui.category') }}
-                                                {{ $announcement->category->name }}</a>
+                                                    {{ __('ui.'.$announcement->category->name) }}</a>
                                         </li>
                                     </ul>
                                     <p class="card-text fs-6 fst-italic ">{{ __('ui.author') }}
