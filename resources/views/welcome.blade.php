@@ -144,12 +144,12 @@
 
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="carousel-control-prev-icon bg-primary mt-5" aria-hidden="true"></span>
+                        <span class="visually-hidden  ">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-primary mt-5" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
 
@@ -162,8 +162,8 @@
 
 
 
-    {{-- Card --}}
-    <section class="light">
+    {{-- Card una sotto l'altra--}}
+    {{-- <section class="light">
         <div class="container py-2">
             <div class="h1 text-center text-dark raleway-Thin" id="pageHeaderTitle">{{ __('ui.allAnnouncements') }}
             </div>
@@ -202,7 +202,7 @@
                 </article>
             @endforeach
         </div>
-    </section>
+    </section> --}}
 
 
 
