@@ -107,7 +107,7 @@
                         <div class="carousel-item active">
                             <article class="postcard light red">
                                 <a class="postcard__img_link" href="#">
-                                    <img class="postcard__img"
+                                    <img class="postcard__img img-fluid "
                                         src="{{ !$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200' }}"
                                         alt="Image Title" />
                                 </a>
@@ -144,12 +144,12 @@
 
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-primary mt-5" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden  ">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-primary mt-5" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
 
