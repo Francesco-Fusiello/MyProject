@@ -107,7 +107,7 @@
                         <div class="carousel-item active">
                             <article class="postcard light red">
                                 <a class="postcard__img_link" href="#">
-                                    <img class="postcard__img img-fluid "
+                                    <img class="postcard__img"
                                         src="{{ !$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200' }}"
                                         alt="Image Title" />
                                 </a>
