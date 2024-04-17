@@ -43,7 +43,7 @@ return[
     'canc' => 'Annuler',
     'crea' => 'Créer',
     'creaNav' => 'Créer une annonce',
-    'areaRev' => 'Réviseur de zone',
+    'areaRev' => 'Zone Réviseur',
     'footer1' => "Si la qualité des annonces est impeccable, c'est le mérite de votre travail extraordinaire",
     'footer2' => 'Merci',
     'acc' => 'Accepter',

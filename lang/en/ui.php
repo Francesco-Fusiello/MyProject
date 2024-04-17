@@ -44,7 +44,7 @@ return[
     'canc' => 'Delete',
     'crea' => 'Create',
     'creaNav' => 'Create an announcement',
-    'areaRev' => 'Area Review',
+    'areaRev' => 'Reviewer Area',
     'footer1' => 'If the quality of the announcement is impeccable, it is the merit of your standard service',
     'footer2' => 'Thank you',
     'acc' => 'Accept',
