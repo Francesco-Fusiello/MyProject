@@ -1,5 +1,5 @@
     
-    <div class="container justify-content-center mb-3">
+    <div class="container mt-2 justify-content-center mb-3">
         <div class="row ">
 
             <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">

@@ -302,7 +302,7 @@ a, a:hover {
   flex-wrap: wrap;
   display: flex;
   
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 8px 2px 1px rgba(10, 109, 159, 0.088);
   border-radius: 10px;
   margin: 0 0 2rem 0;
   overflow: hidden;
@@ -736,7 +736,7 @@ a, a:hover {
 
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px -1px 0px rgba(167, 15, 15, 0.63);
 }
 
 .wrapper .inform:hover,
@@ -744,13 +744,15 @@ a, a:hover {
 .wrapper .inform:hover .tooltip::before {
   background: #06c4aa;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 255, 94, 0.512);
 }
 
 .wrapper .abbigl:hover,
 .wrapper .abbigl:hover .tooltip,
 .wrapper .abbigl:hover .tooltip::before {
-  background: #1DA1F2;
+  background: #7dc4f0;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(1, 181, 246, 0.471);
 }
 
 .wrapper .libri:hover,
@@ -758,13 +760,15 @@ a, a:hover {
 .wrapper .libri:hover .tooltip::before {
   background: #E4405F;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(255, 0, 0, 0.496);
 }
 
 .wrapper .elettro:hover,
 .wrapper .elettro:hover .tooltip,
 .wrapper .elettro:hover .tooltip::before {
-  background: #7c095f;
+  background: #766c74;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(101, 90, 95, 0.507);
 }
 
 .wrapper .giochi:hover,
@@ -772,6 +776,7 @@ a, a:hover {
 .wrapper .giochi:hover .tooltip::before {
   background: #1fcd59;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(41, 234, 27, 0.501);
 }
 
 .wrapper .sport:hover,
@@ -779,20 +784,23 @@ a, a:hover {
 .wrapper .sport:hover .tooltip::before {
   background: #a41fcd;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(255, 0, 204, 0.474);
 }
 
 .wrapper .telef:hover,
 .wrapper .telef:hover .tooltip,
 .wrapper .telef:hover .tooltip::before {
-  background: #1fcdb0;
+  background: #c8c100;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(255, 247, 0, 0.474);
 }
 
 .wrapper .servizi:hover,
 .wrapper .servizi:hover .tooltip,
 .wrapper .servizi:hover .tooltip::before {
-  background: #cd1f7f;
+  background: #f52597;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(233, 41, 191, 0.518);
 }
 
 .wrapper .arredo:hover,
@@ -800,13 +808,15 @@ a, a:hover {
 .wrapper .arredo:hover .tooltip::before {
   background: #cd731f;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(255, 157, 0, 0.552);
 }
 
 .wrapper .vgame:hover,
 .wrapper .vgame:hover .tooltip,
 .wrapper .vgame:hover .tooltip::before {
-  background: #0a2cc2;
+  background: #00058a;
   color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 140, 255, 0.579);
 }
 
 .iconaante {
