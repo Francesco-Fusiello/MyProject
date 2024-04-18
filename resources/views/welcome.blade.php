@@ -22,7 +22,7 @@
         <div class="row justify-content-center">
             <div class="col-11 position-relative">
                 <a href="{{ route('categoryShow', 9) }}">
-                    <img class="img-fluid rounded-5"  src="{{ __('ui.banner') }}" alt="">
+                    <img class="img-fluid banner rounded-5"  src="{{ __('ui.banner') }}" alt="">
                 </a>
                 <a href="{{ route('categoryShow', 9) }}">
                     <button class="button-1">{{ __('ui.scoprili') }}</button>

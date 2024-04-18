@@ -1,6 +1,6 @@
     {{-- BUTTON CON ICONE --}}
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container d-flex flex-nowrap">
+        <div class="row ">
             <h2>{{ __('ui.exporaCat') }}</h2>
             <ul class="wrapper">
                 <li class="icon abbigl">

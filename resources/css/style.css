@@ -27,9 +27,9 @@
 }
 
 
-.login{
-background: rgb(252,252,255);
-background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(13, 26, 102) 0%, rgba(253,253,255,1) 100%);
+.banner{
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -659,11 +659,12 @@ a, a:hover {
 }
 
 
-
-
 .wrapper {
-  display: inline-flex;
-  list-style: none;
+  /* display: inline-flex; */
+  /* list-style: none; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .wrapper .icon {
@@ -882,4 +883,5 @@ a, a:hover {
       display: none;
   }
 }
+
 
