@@ -58,6 +58,11 @@ return[
     'EspCat'=>'Esplora la categoria',
     'success'=>'Annuncio creato con successo, sarà pubblicato dopo la revisione',
     'noann'=>'Non ci sono annunci per la categoria selezionata!',
+    'titMail'=>'Un utente ha richiesto di lavorare con noi',
+    'mail2'=>'Ecco i suoi dati',
+    'mail3'=>'Vuoi accettare questa richiesta e renderlo revisore?',
+    'mail4'=>'Rendi Revisore',
+
 
 
     

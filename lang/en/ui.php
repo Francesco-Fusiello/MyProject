@@ -50,13 +50,17 @@ return[
     'acc' => 'Accept',
     'rif' => 'Refuse',
     'annu' => 'Undo last action',
-    'scoprili' => 'check them out!',
+    'scoprili' => 'Check them out!',
     'titRev' => 'Here are the announcements to review',
     'titRev1' => 'There are no announcement to review',
     'annuncio' => 'Announcement',
     'EspCat'=>'View the category',
     'success'=>'Announcement created successfully, will be published after review',
     'noann'=>"There are no announcements for the selected category!",
+    'titMail'=>'A user asked to work with us',
+    'mail2'=>'Here are his dates',
+    'mail3'=>'Do you want to accept this request and make it a reviewer?',
+    'mail4'=>'Make reviewer',
 
     
     

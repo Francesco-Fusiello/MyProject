@@ -30,7 +30,7 @@ class BecomeRevisor extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('presto.it@noreply.com'),
+            from: new Address('FLAY.it@noreply.com'),
             subject: 'Become Revisor',
         );
     }
