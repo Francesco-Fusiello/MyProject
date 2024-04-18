@@ -20,24 +20,29 @@ class RevisorController extends Controller
     public function acceptAnnouncement(Announcement $announcement)
     {
         $announcement->setAccepted(true);
-        return redirect()->back()->with('message', "Complimenti, hai accettato l'annuncio");
+        $ui= __('ui.mess1');
+        return redirect()->back()->with('message', $ui);
+
     }
 
     public function rejectAnnouncement(Announcement $announcement)
     {
         $announcement->setAccepted(false);
-        return redirect()->back()->with('message', "Hai rifiutato l'annuncio");
+        $ui= __('ui.mess2');
+        return redirect()->back()->with('message', $ui);
     }
 
     public function becomeRevisor(){
         Mail::to('admin@FLAY.it')->send(new BecomeRevisor(Auth::user()));
-        return redirect()->back()->with('message','Complimenti! Hai richiesto di diventare revisore correttamente');
+        $ui= __('ui.mess3');
+        return redirect()->back()->with('message', $ui);
     }
 
     public function makeRevisor(User $user)
     {
     Artisan::call('presto:makeUserRevisor',['email'=> $user->email]);
-      return redirect('/')->with('message',"Complimenti! L'utente {$user->name} è diventato revisore ");
+        $ui= __('ui.mess4');
+      return redirect('/')->with('message',"{$user->name} ,$ui" );
     }
 
     public function resetLastAcceptedAnnouncement()

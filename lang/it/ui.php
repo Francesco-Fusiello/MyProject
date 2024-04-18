@@ -62,6 +62,10 @@ return[
     'mail2'=>'Ecco i suoi dati',
     'mail3'=>'Vuoi accettare questa richiesta e renderlo revisore?',
     'mail4'=>'Rendi Revisore',
+    'mess1'=>"Complimenti, hai accettato l'annuncio!",
+    'mess2'=>"Hai rifiutato l'annuncio",
+    'mess3'=>'Complimenti! Hai richiesto di diventare revisore correttamente',
+    'mess4'=>'Complimenti! Sei diventato Revisore',
 
 
 

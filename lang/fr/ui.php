@@ -62,5 +62,10 @@ return[
     'mail2'=>'Voici ses dates',
     'mail3'=>'Souhaitez-vous accepter cette demande et en faire un évaluateur ?',
     'mail4'=>'Faire un réviseur',
+    'mess1'=>"Félicitations, vous avez accepté l'annonce!",
+    'mess2'=>"Annonce rejetée",
+    'mess3'=>'Félicitations ! Vous avez postulé avec succès pour devenir évaluateur',
+    'mess4'=>'Félicitations! Vous êtes devenu Réviseur',
+
 
 ];
