@@ -52,7 +52,8 @@ class RevisorController extends Controller
         // Se è stato trovato un annuncio, resetta il campo 'is_accepted' a null
         $announcement->is_accepted=null;          
         $announcement->save();
-        return redirect()->back()->with('message', 'annuncio recuperato');
+        $ui= __('ui.mess5');
+        return redirect()->back()->with('message',$ui );
             
             
             

@@ -66,6 +66,7 @@ return[
     'mess2'=>"Annonce rejetée",
     'mess3'=>'Félicitations ! Vous avez postulé avec succès pour devenir évaluateur',
     'mess4'=>'Félicitations! Vous êtes devenu Réviseur',
+    'mess5'=>'Annonce récupérée',
 
 
 ];
