@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'accepted' => "Il :attribute dev'essere accettato.",
+    'accepted' => "Le :attribute doit etre accepté.",
     'accepted_if' => 'The :attribute field must be accepted when :other is :value.',
     'active_url' => 'The :attribute field must be a valid URL.',
     'after' => 'The :attribute field must be a date after :date.',
@@ -94,7 +94,7 @@ return [
         'array' => 'The :attribute field must not have more than :max items.',
         'file' => 'The :attribute field must not be greater than :max kilobytes.',
         'numeric' => 'The :attribute field must not be greater than :max.',
-        'string' => 'Il campo non può essere più lungo di :max caratteri.',
+        'string' => 'Le champ ne peut pas être plus long que :max caractères.',
     ],
     'max_digits' => 'Il campo non può avere più di :max caratteri.',
     'mimes' => 'The :attribute field must be a file of type: :values.',
@@ -132,7 +132,7 @@ return [
     'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
     'prohibits' => 'The :attribute field prohibits :other from being present.',
     'regex' => 'The :attribute field format is invalid.',
-    'required' => 'Campo da compilare',
+    'required' => 'Champ à remplir',
     'required_array_keys' => 'The :attribute field must contain entries for: :values.',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_if_accepted' => 'The :attribute field is required when :other is accepted.',

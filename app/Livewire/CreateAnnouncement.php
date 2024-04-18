@@ -21,14 +21,14 @@ class CreateAnnouncement extends Component
     public $annoncement;
 
     #[Validate('required', )]
-    #[Validate('max:50', message:'Il titolo è troppo lungo')] 
+    #[Validate('max:50',)] 
     public $title;
-    #[Validate('required',message:'La descrizione è richiesta')]
-    #[Validate('max:300', message:'La descrizione è troppo lunga')]  
+    #[Validate('required',)]
+    #[Validate('max:300',)]  
     public $body;
-    #[Validate('required', message:'Il prezzo è richiesto')] 
+    #[Validate('required',)] 
     public $price;
-    #[Validate('required', message:'La Categoria è richiesta')]
+    #[Validate('required',)]
     public $category_id;
 
 

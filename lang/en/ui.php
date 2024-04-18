@@ -30,6 +30,7 @@ return[
     'Telefonia'=>'Telephony',
     'Servizi'=>'Services',
     'Arredamento'=>'Furniture',
+    'Sport'=>'Sport',
     'VideoGame'=>'VideoGames',
     'banner'=>'\Banner\2.EN.png',
     'tuttiAnn' => 'All our announcements',
@@ -54,7 +55,8 @@ return[
     'titRev1' => 'There are no announcement to review',
     'annuncio' => 'Announcement',
     'EspCat'=>'View the category',
-    'success'=>'Announcement created successfully, will be published after review'
+    'success'=>'Announcement created successfully, will be published after review',
+    'noann'=>"There are no announcements for the selected category!",
 
     
     

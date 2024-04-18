@@ -31,6 +31,7 @@ return[
     'Telefonia'=>'Telefonia',
     'Servizi'=>'Servizi',
     'Arredamento'=>'Arredamento',
+    'Sport'=>'Sport',
     'VideoGame'=>'VideoGames',
     'banner'=>'\Banner\1-IT.png',
     'tuttiAnn' => 'Tutti i nostri Annunci',
@@ -55,7 +56,8 @@ return[
     'titRev1' => 'Non ci sono annunci da revisionare',
     'annuncio' => 'Annuncio',
     'EspCat'=>'Esplora la categoria',
-    'success'=>'Annuncio creato con successo, sarà pubblicato dopo la revisione'
+    'success'=>'Annuncio creato con successo, sarà pubblicato dopo la revisione',
+    'noann'=>'Non ci sono annunci per la categoria selezionata!',
 
 
     

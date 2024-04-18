@@ -31,6 +31,7 @@ return[
     'Telefonia'=>'Téléphonie',
     'Servizi'=>'Services',
     'Arredamento'=>'Meubles',
+    'Sport'=>'Sport',
     'VideoGame'=>'JeuxVideo',
     'tuttiAnn' => 'Toutes nos annonces',
     'nessA' => 'Aucun article trouvé',
@@ -55,7 +56,6 @@ return[
     'titRev1' => "Il n'y a aucune annonce à examiner",
     'annuncio' => 'Annonce',
     'EspCat'=>'Explorez la catégorie',
-    'success'=>'Annonce créée avec succès, sera publiée après examen'
-
-    
+    'success'=>'Annonce créée avec succès, sera publiée après examen',
+    'noann'=>"Il n'y a aucune annonce pour la catégorie sélectionnée!",
 ];
