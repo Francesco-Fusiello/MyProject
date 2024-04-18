@@ -23,15 +23,15 @@ return[
     'cPassword'=>'Conferma Password',
     'account'=>'Hai già un account?',
     'author'=>'Autore:',
-    'abbigliamento'=>'Abbigliamento',
-    'informatica'=>'Informatica',
-    'elettrodom'=>'Elettrodomestici',
-    'libri'=>'Libri',
-    'giochi'=>'Giochi',
-    'tel'=>'Telefonia',
-    'serv'=>'Servizi',
-    'arred'=>'Arredamento',
-    'videog'=>'VideoGames',
+    'Abbigliamento'=>'Abbigliamento',
+    'Informatica'=>'Informatica',
+    'Elettrodomestici'=>'Elettrodomestici',
+    'Libri'=>'Libri',
+    'Giochi'=>'Giochi',
+    'Telefonia'=>'Telefonia',
+    'Servizi'=>'Servizi',
+    'Arredamento'=>'Arredamento',
+    'VideoGame'=>'VideoGames',
     'banner'=>'\Banner\1-IT.png',
     'tuttiAnn' => 'Tutti i nostri Annunci',
     'nessA' => 'Nessun articolo trovato',
@@ -51,6 +51,13 @@ return[
     'rif' => 'Rifiuta',
     'annu' => 'Annula ultima azione',
     'scoprili' => 'Scoprili tutti!',
+    'titRev' => 'Ecco gli annunci da revisionare',
+    'titRev1' => 'Non ci sono annunci da revisionare',
+    'annuncio' => 'Annuncio',
+    'EspCat'=>'Esplora la categoria',
+    'success'=>'Annuncio creato con successo, sarà pubblicato dopo la revisione'
+
+
     
 
 

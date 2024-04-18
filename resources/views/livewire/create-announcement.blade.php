@@ -12,7 +12,7 @@
     <h2 class="text-center">{{ __('ui.creaA') }}</h2>
     @if (session()->has('success'))
     <div class="alert alert-success">
-    {{session('success')}}
+    {{session('success')}} {{__('ui.success')}} 
     </div>
     @endif
 

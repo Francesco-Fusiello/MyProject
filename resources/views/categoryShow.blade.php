@@ -3,7 +3,7 @@
 
     <x-button_category />
 
-<h1 class="p-4 text-center  ">Esplora la categoria: {{ __("ui.$category->name")}}</h1>
+<h1 class="p-4 text-center  ">{{ __('ui.'.$category->name)}}</h1>
     <div class="mt-5 col-12">
         <div class="row">
             @forelse($category->announcements as $announcement)
@@ -16,10 +16,10 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $announcement->title }}</h5>
                             <p class="card-text">{{ $announcement->body }}</p>
-                            <p class="card-text">Valore: {{ $announcement->price }}</p>
-                            <a href="{{route('announcements.show', $announcement)}}" class="btn btn-primary shadow m-3">Visualizza</a>
-                            <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/y') }}</p>
-                            <p class="card-text fs-6 fst-italic ">Autore: {{ $announcement->user->name ?? '' }}</p>
+                            <p class="card-text">{{ __('ui.value')}} {{ $announcement->price }}</p>
+                            <a href="{{route('announcements.show', $announcement)}}" class="btn btn-primary shadow m-3">{{ __('ui.visua')}}</a>
+                            <p class="card-footer">{{ __('ui.pub')}}: {{ $announcement->created_at->format('d/m/y') }}</p>
+                            <p class="card-text fs-6 fst-italic ">{{ __('ui.author')}} {{ $announcement->user->name ?? '' }}</p>
                         </div>
                     </div>
                 </div>
