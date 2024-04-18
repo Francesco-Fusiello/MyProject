@@ -1,14 +1,10 @@
 <x-layout>
 
-
-
-
     @if (session()->has('access.denied'))
         <div class="alert alert-danger" role="alert">
             {{ session('access.denied') }}
         </div>
     @endif
-
 
     @if (session()->has('message'))
         <div class="alert alert-success" role="alert">
