@@ -71,14 +71,6 @@ background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(1
     background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(170, 241, 4) 0%, rgba(253,253,255,1) 100%);
 }
 
-
-/* .login{
-    width: 50vh;
-    background: rgb(252,252,255);
-    background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(13, 26, 102) 0%, rgba(253,253,255,1) 100%);
-    
-    } */
-
     .bn632-hover {
         width: 160px;
         font-size: 16px;
@@ -251,7 +243,6 @@ background: linear-gradient(0deg, rgba(252,252,255,0.8799894957983193) 0%, rgb(1
   
      .card-img-left {
         width: 45%;
-        /* Link to your background image using in the property below! */
         background: scroll center url('https://picsum.photos/700');
         background-size: cover;
       }
@@ -834,12 +825,11 @@ a, a:hover {
     height: 100%;  */
 } 
 
-
- /* Bottone Banner */
+ /* BOTTONE BANNER */
  .button-1 {
   position: absolute;
-  top: 100%;
-  left: 25%;
+   top: 75%;
+  left: 6%; 
   text-decoration: none;
 
   border: none;
@@ -861,6 +851,8 @@ a, a:hover {
   animation: ani 8s linear infinite;
   border: none;
 }
+
+
 
 @keyframes ani {
   0% {
@@ -893,3 +885,9 @@ a, a:hover {
 .button-1:active {
   background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
+@media (max-width: 768px) {
+  .button-1 {
+      display: none;
+  }
+}
+

@@ -13,32 +13,36 @@
     @endif
 
     <x-barraricerca />
-        <x-button_category />
-    
+
+    <x-button_category />
+
+    {{-- Banner  --}}
+
     <div class="container-fluid">
-        <div class="row justify-content-center ">
-            <div class="col-11">
-                <img style="position-relative" class="img-fluid rounded-5 "src="{{ __('ui.banner') }}"  alt="">
-                <a href="{{ route('categoryShow', 9) }}"><button class="button-1">{{__('ui.scoprili')}}</button></a>
-
+        <div class="row justify-content-center">
+            <div class="col-11" style="position: relative;">
+                <a href="{{ route('categoryShow', 9) }}">
+                    <img  class="img-fluid rounded-5" src="{{ __('ui.banner') }}" alt="">
+                </a>
+                <a href="{{ route('categoryShow', 9) }}">
+                    <button class="button-1">{{__('ui.scoprili')}}</button>
+                </a>
             </div>
-
         </div>
     </div>
 
+  
+
+{{-- Testo ultimi annunci --}}
     <section class="light">
-        <div class="container py-2">
-            <div class="h1 text-center text-dark raleway-Thin" id="pageHeaderTitle">{{ __('ui.allAnnouncements') }}
+        <div class="container py-1">
+            <div class="h2 text-center text-dark raleway-Thin" id="pageHeaderTitle">{{ __('ui.allAnnouncements') }}
             </div>
 
-
+{{-- Carosello --}}
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
-
-
-
                 <div class="carousel-inner">
                     @foreach ($announcements as $announcement)
-
                         <div class="carousel-item active">
                             <article class="postcard light red">
                                 <a class="postcard__img_link" href="#">
@@ -76,7 +80,6 @@
                         </div>
                     @endforeach
                 </div>
-
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -87,10 +90,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-
             </div>
-
-
         </div>
     </section>
 

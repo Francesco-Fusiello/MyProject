@@ -1,7 +1,10 @@
-REGISTRAZIONE:
-    tradurre i messaggi in italiano delgli errori
-    Colorare in rosso la barra dove è presente l'errore
-    scrivere il messaggio di errore in italic
-
-PAGINA REVISORE:
-    Sistemare bottone annulla operazione 
+  
+Codice vecchio banner
+    {{-- <div class="container-fluid">
+            <div class="row justify-content-center ">
+                <div class="col-11">
+                    <img style="position-relative" class="img-fluid rounded-5 "src="{{ __('ui.banner') }}"  alt="">
+                    <a href="{{ route('categoryShow', 9) }}"><button class="button-1">{{__('ui.scoprili')}}</button></a>
+                </div>
+            </div>
+        </div> --}}
