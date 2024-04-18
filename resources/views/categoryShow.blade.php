@@ -51,7 +51,9 @@
                 @forelse($category->announcements as $announcement)
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                         <div class="card shadow mb-3">
-                            <img src="{{ !$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200' }}"
+                            <img src="{{ !$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(256,256) 
+                            //  Storage::url($announcement->images()->first()->path) 
+                             : 'https://picsum.photos/200' }}"
                                 alt="" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $announcement->title }}</h5>
