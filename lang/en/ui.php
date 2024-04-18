@@ -61,6 +61,11 @@ return[
     'mail2'=>'Here are his dates',
     'mail3'=>'Do you want to accept this request and make it a reviewer?',
     'mail4'=>'Make reviewer',
+    'mess1'=>"Congratulations, you have accepted the announcement!",
+    'mess2'=>"Announcement rejected",
+    'mess3'=>'Compliments! You have successfully applied to become a reviewer',
+    'mess4'=>'Compliments! You have become an Reviewer',
+    'mess5'=>'Announcement recovered',
 
     
     
