@@ -10,7 +10,7 @@
               <!-- Background image for card set in CSS! -->
             </div>
             <div class="card-body p-4 p-sm-5">
-              <h5 class="card-title text-center mb-5 fw-light fs-5">{{__('ui.reg')}}</h5>
+              <h5 class="card-title text-center mb-5 fw-light fs-5">{{__('ui.register')}}</h5>
               <form method="POST" action="/register">
                 @csrf
   

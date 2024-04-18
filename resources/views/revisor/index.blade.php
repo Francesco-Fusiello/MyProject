@@ -3,21 +3,12 @@
         <div class="row">
             <div class="col-12 p-2">
                 <h2 class="text-center">
-                   @if($announcement_to_check)
-                   {{__('ui.titRev')}}
-                   @else
-                   {{__('ui.titRev1')}}
-                   @endif
-
-            
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   {{-- {{ $announcement_to_check  "{{__('ui.titolo')}}" : 'Non ci sono annunci da revisionare' }} --}}
+                @if($announcement_to_check)
+                {{__('ui.titRev')}}
+                @else
+                {{__('ui.titRev1')}}
+                @endif
+                {{-- {{ $announcement_to_check  "{{__('ui.titolo')}}" : 'Non ci sono annunci da revisionare' }} --}}
                 </h2>
             </div>
         </div>
