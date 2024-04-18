@@ -46,7 +46,7 @@
        <div class="row">
 
         @forelse($category->announcements as $announcement)
-       <div class="col-lg-3 mb-4">
+       <div class="col-lg-4 mb-4">
        <div class="card">
          <img src="{{ !$announcement->images()->get()->isEmpty()  ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200' }}" alt="" class="card-img-top">
          <div class="card-body">
