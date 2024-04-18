@@ -47,7 +47,9 @@
                             <div class="postcard light red">
                                 <div class="postcard__img_link">
                                     <img class="postcard__img"
-                                        src="{{ !$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200' }}"
+                                        src="{{ !$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300)
+                                        // Storage::url($announcement->images()->first()->path) 
+                                        : 'https://picsum.photos/200' }}"
                                         alt="Image Title" />
                                 </div>
                                 <div class="postcard__text t-dark">
