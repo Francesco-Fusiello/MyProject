@@ -67,7 +67,7 @@ return[
     'mess3'=>'Complimenti! Hai richiesto di diventare revisore correttamente',
     'mess4'=>'Complimenti! Sei diventato Revisore',
     'mess5'=>'Annuncio recuperato',
-    'Accanimali' => 'AccessoriPerAnimali',
+    'AccessoriPerAnimali' => 'AccessoriPerAnimali',
     'Televisori' => 'Televisori',
 
 

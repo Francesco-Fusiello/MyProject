@@ -53,8 +53,8 @@
                     <span><a class="iconaante" href="{{ route('categoryShow', 10) }}"><i
                                 class="fa-solid fa-gamepad"></a></i></span>
                 </li>
-                {{-- <li class="icon animal">
-                    <span class="tooltip">{{ __('ui.Accanimali') }}</span>
+                <li class="icon animal">
+                    <span class="tooltip">{{ __('ui.AccessoriPerAnimali') }}</span>
                     <span><a class="iconaante" href="{{ route('categoryShow', 11) }}"><i
                                 class="fa-solid fa-paw"></a></i></span>
                 </li>
@@ -62,7 +62,7 @@
                     <span class="tooltip">{{ __('ui.Televisori') }}</span>
                     <span><a class="iconaante" href="{{ route('categoryShow', 12) }}"><i
                                 class="fa-solid fa-tv"></a></i></span>
-                </li> --}}
+                </li>
             </ul>
         </div>
     </div>
