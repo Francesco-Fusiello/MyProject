@@ -31,7 +31,7 @@
                             <p>
                                 <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
                                     class="w-100 my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-success ">{{ __('ui.category') }}
-                                    {{ $announcement->category->name }}</a>
+                                    {{ __('ui.' . $announcement->category->name) }}</a>
                             </p>
                             <p class="card-footer">{{ __('ui.pub') }}
                                 {{ $announcement->created_at->format('d/m/y') }}</p>

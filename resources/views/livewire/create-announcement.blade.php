@@ -60,14 +60,14 @@
             <p class="text-danger mt-2">{{$message}}</p>
             @enderror
         </div>         
+        <button type="submit" class=" btn btn-primary w-50 shadow ">{{ __('ui.crea') }}</button>
         @if (!empty($images))
-            <div class="row">
-                <div class="div col-12">
-                    <div class=" d-flex flex-nowrap mb-3">
+        <div class="row">
+            <div class="div col-12">
+                <div class=" d-flex flex-nowrap mb-3">
+                        
+                                                <p>{{ __('ui.phoPrew') }}:</p>  
 
-
-                        <p>{{ __('ui.phoPrew') }}:</p>  
-                        <button type="submit" class="ms-5 btn btn-primary w-50 shadow ">{{ __('ui.crea') }}</button>
 
                     </div>
                     <div class="row border border-4 border-info rounded shadow py-4">
