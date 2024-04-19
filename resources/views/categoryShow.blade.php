@@ -36,7 +36,7 @@
         </div>
     </div> --}}
 
-
+    <img src="{{ $category->image }}" class="d-block w-100" alt="...">
     <section id="header" class="jumbotron text-center">
         <h1 class="display-3">{{ __('ui.' . $category->name) }}</h1>
         {{-- <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> --}}
