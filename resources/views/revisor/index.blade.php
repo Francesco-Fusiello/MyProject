@@ -7,8 +7,8 @@
     @endif
 
     <div class='container-fluid bg-gradient shadow mb-3'>
-        <div class="row">
-            <div class="col-12 p-2">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-sd-12 col-lg-9 p-2">
                 <h2 class="text-center">
                     @if ($announcement_to_check)
                         {{ __('ui.titRev') }}
@@ -21,10 +21,10 @@
         </div>
     </div>
 
-    @if ($announcement_to_check)
-        <div class="container">
-            <div class="row" >
-                <div class="col-12" >
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sd-12 col-lg-9">
+                @if ($announcement_to_check)
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
                         @if ($announcement_to_check && $announcement_to_check->images && $announcement_to_check->images->count() > 0)
                             <div class="container">
@@ -32,7 +32,7 @@
                                     @foreach ($announcement_to_check->images as $image)
                                         <div class="carousel-item @if ($loop->first) active @endif">
                                             <img src="{{ Storage::url($image->path) }}" class="img-fluid p-3 rounded"
-                                            style="object-fit: cover; object-position: center; width: 100%; height: 100%;"
+                                                style="object-fit: cover; object-position: center; width: 100%; height: 100%;"
                                                 alt="...">
                                         </div>
                                     @endforeach
@@ -65,52 +65,52 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
-
-                <div class="card shadow ms-3" style='width: 75rem;'>
-                    <div class="card-body">
 
 
-                        <h5 class="card-title">{{ __('ui.titolo') }}: {{ $announcement_to_check->title }}</h5>
-                        <p class="card-text">{{ __('ui.descri') }}: {{ $announcement_to_check->body }}</p>
-                        <p class="card-footer">{{ __('ui.pub') }}
-                            {{ $announcement_to_check->created_at->format('d/m/y') }}</p>
+                    <div class="card shadow ms-3" style='width: 58rem;'>
+                        <div class="card-body">
 
+
+                            <h5 class="card-title">{{ __('ui.titolo') }}: {{ $announcement_to_check->title }}</h5>
+                            <p class="card-text">{{ __('ui.descri') }}: {{ $announcement_to_check->body }}</p>
+                            <p class="card-footer">{{ __('ui.pub') }}
+                                {{ $announcement_to_check->created_at->format('d/m/y') }}</p>
+                        </div>
                     </div>
-                </div>
 
 
+
+                    <div class="row d-flex justify-content-between ">
+                        <div class="col-6 text-center ">
+                            <form
+                                action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
+                                method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="bn632-hover bn22">{{ __('ui.acc') }}</button>
+                            </form>
+                        </div>
+                        <div class="col-6 text-center">
+                            <form
+                                action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
+                                method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="bn632-hover bn28">{{ __('ui.rif') }}</button>
+                            </form>
+                        </div>
+                    </div>
+
+                @endif
                 <div class="row">
-                    <div class="col-12 col-md-6 text-center ">
-                        <form
-                            action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
-                            method="POST">
+                    <div class="col-12 text-center justify-content-center">
+                        <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
                             @csrf
-                            @method('PATCH')
-                            <button type="submit" class="bn632-hover bn22">{{ __('ui.acc') }}</button>
-                        </form>
-                    </div>
-                    <div class="col-12 col-md-6 text-center">
-                        <form
-                            action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
-                            method="POST">
-                            @csrf
-                            @method('PATCH')
-                            <button type="submit" class="bn632-hover bn28">{{ __('ui.rif') }}</button>
+                            <button type="submit" class="bn632-hover yellow">{{ __('ui.annu') }}</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    @endif
-    <div class="row">
-        <div class="col-12 col-md-12 text-center justify-content-center">
-            <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
-                @csrf
-                <button type="submit" class="bn632-hover yellow">{{ __('ui.annu') }}</button>
-            </form>
-        </div>
     </div>
-
 </x-layout>
