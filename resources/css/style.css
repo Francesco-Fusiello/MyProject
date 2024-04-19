@@ -900,3 +900,9 @@ a, a:hover {
   }
 }
 
+.category-header {
+  background-image: url('url_dell_immagine_di_sfondo');
+  background-size: cover;
+  background-position: center;
+  color: white; /* Cambia il colore del testo per renderlo leggibile sopra l'immagine di sfondo */
+}

@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-12 p-2">
                 <h1 class="display-2">{{__('ui.annuncio')}} {{ $announcement->title }}</h1>
+                
             </div>
         </div>
     </div>
