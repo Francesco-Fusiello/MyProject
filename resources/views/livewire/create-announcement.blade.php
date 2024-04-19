@@ -33,20 +33,20 @@
             @enderror
         </div>
 
-        <div class="mb-3">
-            <label  class="form-label">{{ __('ui.value1') }}</label>
-            <input wire:model.change='price' type="number" class="form-control" min="1">
+        <div class="m-3 d-flex flex-nowrap justify-content-between ">
+            <label  class="form-label ">{{ __('ui.value1') }}</label>
+            <input wire:model.change='price' type="number" class="form-control w-25 " min="1">
             @error('price')
             <span class="text-danger">{{$message}}</span>
             @enderror
-        </div>
+        {{-- </div>
 
-        <div class="mb-3">
-            <label  class="form-label color-primary">{{ __('ui.category') }}</label>
-            <select wire:model.change='category_id' class="form-select @error('category_id') is-invalid @enderror">
+        <div class="mb-3"> --}}
+            <label  class="ms-5 form-label color-primary">{{ __('ui.category') }}</label>
+            <select wire:model.change='category_id' class="form-select w-50 @error('category_id') is-invalid @enderror">
                 <option value="">{{ __('ui.selCat') }}</option>
                 @foreach (App\Models\Category::all() as $category)
-                    <option value="{{$category->id}}">{{$category->name}}</option>
+                    <option value="{{$category->id}}">{{ __('ui.' . $category->name) }}</option>
                 @endforeach
             </select>
             @error('category_id')
@@ -54,16 +54,22 @@
             @enderror
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 w-50">
             <input wire:model="temporary_images" type="file" name="images" multiple class="form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img"/>
             @error('temporary_images.*')
             <p class="text-danger mt-2">{{$message}}</p>
             @enderror
-        </div> 
+        </div>         
         @if (!empty($images))
             <div class="row">
                 <div class="div col-12">
-                    <p>{{ __('ui.phoPrew') }}:</p>
+                    <div class=" d-flex flex-nowrap mb-3">
+
+
+                        <p>{{ __('ui.phoPrew') }}:</p>  
+                        <button type="submit" class="ms-5 btn btn-primary w-50 shadow ">{{ __('ui.crea') }}</button>
+
+                    </div>
                     <div class="row border border-4 border-info rounded shadow py-4">
                         @foreach($images as $key => $image)
                         <div class="col my-3">
@@ -75,7 +81,7 @@
                 </div>
             </div>
             @endif
-        <button type="submit" class="btn btn-primary">{{ __('ui.crea') }}</button>
+
     </form>
 
 </div>
