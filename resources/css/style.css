@@ -664,7 +664,6 @@ a, a:hover {
   /* list-style: none; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .wrapper .icon {
@@ -742,7 +741,7 @@ a, a:hover {
 .wrapper .libri:hover,
 .wrapper .libri:hover .tooltip,
 .wrapper .libri:hover .tooltip::before {
-  background: #E4405F;
+  background: #6e1226;
   color: #ffffff;
   box-shadow: 0 10px 10px rgba(255, 0, 0, 0.496);
 }
@@ -790,7 +789,7 @@ a, a:hover {
 .wrapper .arredo:hover,
 .wrapper .arredo:hover .tooltip,
 .wrapper .arredo:hover .tooltip::before {
-  background: #cd731f;
+  background: #613f1f;
   color: #ffffff;
   box-shadow: 0 10px 10px rgba(255, 157, 0, 0.552);
 }
@@ -801,6 +800,22 @@ a, a:hover {
   background: #00058a;
   color: #ffffff;
   box-shadow: 0 10px 10px rgba(0, 140, 255, 0.579);
+}
+
+.wrapper .animal:hover,
+.wrapper .animal:hover .tooltip,
+.wrapper .animal:hover .tooltip::before {
+  background: #cf0101;
+  color: #ffffff;
+  box-shadow: 0 10px 10px rgba(255, 0, 0, 0.579);
+}
+
+.wrapper .televisori:hover,
+.wrapper .televisori:hover .tooltip,
+.wrapper .televisori:hover .tooltip::before {
+  background: #ff8000;
+  color: #ffffff;
+  box-shadow: 0 10px 10px rgba(255, 149, 0, 0.579);
 }
 
 .iconaante {

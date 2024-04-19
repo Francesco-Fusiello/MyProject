@@ -18,7 +18,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <title>Presto_Gruppo03</title>
+    <title>FLAY</title>
 </head>
 
 <body class="raleway-regular">

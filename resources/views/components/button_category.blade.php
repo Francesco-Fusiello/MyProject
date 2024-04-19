@@ -16,7 +16,7 @@
                 <li class="icon elettro">
                     <span class="tooltip">{{ __('ui.Elettrodomestici') }}</span>
                     <span><a class="iconaante" href="{{ route('categoryShow', 3) }}"><i
-                                class="fa-solid fa-blender-phone"></a></i></span>
+                                class="fa-solid fa-blender"></a></i></span>
                 </li>
                 <li class="icon libri">
                     <span class="tooltip">{{ __('ui.Libri') }}</span>
@@ -26,7 +26,7 @@
                 <li class="icon giochi">
                     <span class="tooltip">{{ __('ui.Giochi') }}</span>
                     <span><a class="iconaante" href="{{ route('categoryShow', 5) }}"><i
-                                class="fa-solid fa-table-tennis-paddle-ball"></a></i></span>
+                                class="fa-solid fa-chess"></a></i></span>
                 </li>
                 <li class="icon sport">
                     <span class="tooltip">Sport</span>
@@ -52,6 +52,16 @@
                     <span class="tooltip">{{ __('ui.VideoGame') }}</span>
                     <span><a class="iconaante" href="{{ route('categoryShow', 10) }}"><i
                                 class="fa-solid fa-gamepad"></a></i></span>
+                </li>
+                <li class="icon animal">
+                    <span class="tooltip">{{ __('ui.Accanimali') }}</span>
+                    <span><a class="iconaante" href="{{ route('categoryShow', 11) }}"><i
+                                class="fa-solid fa-paw"></a></i></span>
+                </li>
+                <li class="icon televisori">
+                    <span class="tooltip">{{ __('ui.Televisori') }}</span>
+                    <span><a class="iconaante" href="{{ route('categoryShow', 12) }}"><i
+                                class="fa-solid fa-tv"></a></i></span>
                 </li>
             </ul>
         </div>

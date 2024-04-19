@@ -66,6 +66,8 @@ return[
     'mess3'=>'Compliments! You have successfully applied to become a reviewer',
     'mess4'=>'Compliments! You have become an Reviewer',
     'mess5'=>'Announcement recovered',
+    'Televisori' => 'TV',
+    'Accanimali' => 'AnimalAccessories',
 
     
     
