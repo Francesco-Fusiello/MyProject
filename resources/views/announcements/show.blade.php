@@ -72,7 +72,7 @@
 
 
 
-
+{{-- 
     {{-- <!-- Page Content -->
 <div class="container">
 
@@ -137,7 +137,7 @@
   
   </div>
   <!-- /.container -->
-  
- --}}
+   --}}
+ 
 
 </x-layout>

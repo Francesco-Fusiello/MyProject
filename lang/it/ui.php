@@ -69,6 +69,7 @@ return[
     'mess5'=>'Annuncio recuperato',
     'AccessoriPerAnimali' => 'AccessoriPerAnimali',
     'Televisori' => 'Televisori',
+    'ling'=> 'Lingue',
 
 
 

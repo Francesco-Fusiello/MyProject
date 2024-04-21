@@ -69,6 +69,7 @@ return[
     'mess5'=>'Annonce récupérée',
     'Televisori' => 'Téléviseurs',
     'AccessoriPerAnimali' => 'AccessoiresPourAnimaux',
+    'ling'=> 'Langues',
 
 
 ];
