@@ -33,24 +33,59 @@
 
 }
 
-
-.title_login{
-    
-        -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-        box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-        background: #a4d3f5;
-        color: rgb(60, 87, 175);
-        text-shadow: 2px 3px 2px rgb(51, 43, 42);
+/* footer in piè pagina */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(48, 7, 231);
+  color: white;
+  text-align: center;
 }
 
-.title_cat{
-    
-    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    background: #045a53;
-    color: rgb(239, 240, 243);
-    text-shadow: 2px 3px 2px rgb(51, 43, 42);
+/* testo sopra immagine categorie */
+#header {
+  position: relative;
+  overflow: hidden;
 }
+
+#header img {
+
+  object-fit: cover; /* Assicura che l'immagine copra completamente l'elemento mantenendo le proporzioni */
+  z-index: 1;
+  background-size: cover; /* Assicura che l'immagine copra completamente l'elemento */
+  background-position: center; /* Centra l'immagine */
+}
+
+#header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Colore bianco semi-trasparente */
+  z-index: 2;
+}
+
+#header h1 {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+
+
 
 .foto{
     width:20%;
@@ -672,7 +707,7 @@ a, a:hover {
   background: #ffffff;
   border-radius: 50%;
   padding: 15px;
-  margin: 10px;
+  margin: 5px;
   width: 50px;
   height: 50px;
   font-size: 18px;
