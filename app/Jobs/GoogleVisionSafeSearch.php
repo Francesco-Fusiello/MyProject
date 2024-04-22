@@ -8,6 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
 class GoogleVisionSafeSearch implements ShouldQueue
 {
@@ -34,9 +35,9 @@ class GoogleVisionSafeSearch implements ShouldQueue
         putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
 
         $imageAnnotator = new ImageAnnotatorClient();
-        $responde = $imageAnnotator->safeSearchDetection($image);
+        $response = $imageAnnotator->safeSearchDetection($image);
         $imageAnnotator->close();
-
+        
         $safe = $response->getSafeSearchAnnotation();
 
         $adult = $safe->getAdult();
@@ -46,8 +47,16 @@ class GoogleVisionSafeSearch implements ShouldQueue
         $racy = $safe->getRacy();
 
         $likelihoodName=[
-            
+            'text-secondary fas fa-circle', 'text-success fas fa-circle', 'text-success fas fa-circle', 'text-warning fas fa-circle', 'text-warning fas fa-circle', 'text-danger fas fa-circle'
         ];
+
+        $i->adult= $likelihoodName[$adult];
+        $i->medical= $likelihoodName[$medical];
+        $i->spoof= $likelihoodName[$spoof];
+        $i->violence= $likelihoodName[$violence];
+        $i->racy= $likelihoodName[$racy];
+
+        $i-> save();
     }
 }
 

@@ -31,12 +31,36 @@
                                 <div class="carousel-inner">
                                     @foreach ($announcement_to_check->images as $image)
                                         <div class="carousel-item @if ($loop->first) active @endif">
-                                            <img src="{{ Storage::url($image->path) }}" class="img-fluid p-3 rounded"
-                                                style="object-fit: cover; object-position: center; width: 100%; height: 100%;"
+                                            <img src="{{ $image->getUrl(256, 256) }}" class="img-fluid p-3 rounded"
                                                 alt="...">
                                         </div>
+                                    </div>
+
+{{-- tag per google Vision --}}
+                                        <div class="col-md-3  border-end">
+                                            <h5 class="tc-accent mt-3">Tags</h5>
+                                                <div class="p-2">
+                                                    @if($image->labels)
+                                                    @foreach ($image->labels as $label)
+                                                    <p class="d-inline">{{$label}},</p>
+                                                    @endforeach
+                                                    @endif
+                                                </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card-body">
+                                                <h5 class="tc-accent">Revisione Immagini</h5>
+                                                <p>Adulti: <span class="{{$image->adult}}"></span> </p>
+                                                <p>Satira: <span class="{{$image->spoof}}"></span> </p>
+                                                <p>Medicina: <span class="{{$image->medical}}"></span> </p>
+                                                <p>Violenza: <span class="{{$image->violence}}"></span> </p>
+                                                <p>Conenuto Ammiccante: <span class="{{$image->racy}}"></span> </p>
+                                            </div>
+                                        </div>
+
                                     @endforeach
-                                </div>
+
                             @else
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
