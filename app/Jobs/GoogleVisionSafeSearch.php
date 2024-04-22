@@ -47,6 +47,7 @@ class GoogleVisionSafeSearch implements ShouldQueue
 
         $likelihoodName=[
             
-        ]
+        ];
     }
 }
+
