@@ -951,3 +951,12 @@ a, a:hover {
 .footer-nav li:last-child {
   margin-right: 0; 
 }
+
+.footer-nav a {
+  color: white;
+  text-decoration: none; 
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}

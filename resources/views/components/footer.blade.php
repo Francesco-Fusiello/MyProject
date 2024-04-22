@@ -26,14 +26,13 @@
             <div class="container d-flex flex-nowrap">
                 <div class="row col-12">
             <ul class="footer-nav" style="background-color: #0851b1">
-                <li><a href="#about">Privacy Policy</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
                 <li><a href="#chi-siamo">Chi Siamo</a></li>
                 <li><a href="#recensioni">Recensioni</a></li>
                 <li><a href="#faqs">FAQs</a></li>
             </ul>
                 </div>
             </div>
-        
     <!-- Grid container -->
 
     <!-- Copyright -->
