@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        $categories =['Abbigliamento','Informatica','Elettrodomestici','Libri','Giochi','Sport','Telefonia','Servizi','Arredamento','VideoGame','AccessoriPerAnimali','Televisori'];
+        $categories =['Abbigliamento','Informatica','Elettrodomestici','Libri','Giochi','Sport','Telefonia','Servizi','Arredamento','Videogames','AccessoriPerAnimali','Televisori'];
         $images =['\images\Category\abbigliamento1 (5).png','\images\Category\ImmagineInformatica (6).png','\images\Category\ImmagineElettrodomestici (9).png','\images\Category\ImmagineLibri (2).png','\images\Category\abbigliamento1 (5).png','\images\Category\ImmagineSport (6).png','\images\Category\ImmagineTelefoni (4).png','\images\Category\abbigliamento1 (5).png','\images\Category\ImmagineArredamento (4).png','\images\Category\ImmagineVideoGames (3).png','\images\Category\ImmagineAccPerAnimali (5).png','\images\Category\ImmagineTelevisori (4).png'];
         foreach ($categories as $index => $category) {
             Category::create([
