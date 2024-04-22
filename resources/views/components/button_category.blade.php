@@ -4,7 +4,7 @@
             <div class="col-3 mt-2 p-2">
                 <h4>{{ __('ui.exporaCat') }}</h4>
             </div>
-            
+
             <div class="col-9">
                 <ul class="wrapper">
                     <li class="icon abbigl">
@@ -53,7 +53,7 @@
                                     class="fa-solid fa-couch"></a></i></span>
                     </li>
                     <li class="icon vgame">
-                        <span class="tooltip">{{ __('ui.VideoGame') }}</span>
+                        <span class="tooltip">{{ __('ui.Videogames') }}</span>
                         <span><a class="iconaante" href="{{ route('categoryShow', 10) }}"><i
                                     class="fa-solid fa-gamepad"></a></i></span>
                     </li>

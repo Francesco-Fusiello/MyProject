@@ -32,7 +32,7 @@ return[
     'Servizi'=>'Services',
     'Arredamento'=>'Meubles',
     'Sport'=>'Sport',
-    'VideoGame'=>'JeuxVideo',
+    'Videogames'=>'Jeuxvideo',
     'tuttiAnn' => 'Toutes nos annonces',
     'nessA' => 'Aucun article trouvé',
     'visua' => 'Voir',

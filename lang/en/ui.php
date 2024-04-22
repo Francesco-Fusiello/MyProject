@@ -31,7 +31,7 @@ return[
     'Servizi'=>'Services',
     'Arredamento'=>'Furniture',
     'Sport'=>'Sport',
-    'VideoGame'=>'VideoGames',
+    'Videogames'=>'Videogames',
     'banner'=>'\Banner\2.EN.png',
     'tuttiAnn' => 'All our announcements',
     'nessA' => 'No articles found',
