@@ -37,7 +37,7 @@
                                     </div>
 
 {{-- tag per google Vision --}}
-                                        <div class="col-md-3  border-end">
+                                        <div class="col-md-3  d-flex justify-content-end">
                                             <h5 class="tc-accent mt-3">Tags</h5>
                                                 <div class="p-2">
                                                     @if($image->labels)
