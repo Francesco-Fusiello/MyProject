@@ -5,10 +5,13 @@
         {{ session('message') }}
     </div>
 @endif
-
-
-
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Immagine grande sulla sinistra -->
+            <img src="\images\ImmagineAnnuncio.png" class="img-fluid" alt="Immagine Grande">
+        </div>
+        <div class="col-md-6">
     <h2 class="text-center">{{ __('ui.creaA') }}</h2>
     @if (session()->has('success'))
     <div class="alert alert-success">
@@ -83,3 +86,4 @@
     </form>
 
 </div>
+    </div>
