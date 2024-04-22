@@ -36,15 +36,15 @@
             @enderror
         </div>
 
-        <div class="m-3 d-flex flex-nowrap justify-content-between ">
+        <div class="m-3 d-flex flex-nowrap">
             <label  class="form-label ">{{ __('ui.value1') }}</label>
             <input wire:model.change='price' type="number" class="form-control w-25 " min="1">
             @error('price')
             <span class="text-danger">{{$message}}</span>
             @enderror
-        {{-- </div>
+            </div>
 
-        <div class="mb-3"> --}}
+        <div class="mb-3">
             <label  class="ms-5 form-label color-primary">{{ __('ui.category') }}</label>
             <select wire:model.change='category_id' class="form-select w-50 @error('category_id') is-invalid @enderror">
                 <option value="">{{ __('ui.selCat') }}</option>
@@ -57,7 +57,7 @@
             @enderror
         </div>
 
-        <div class="mb-3 w-50">
+        <div class="col-md-12">
             <input wire:model="temporary_images" type="file" name="images" multiple class="form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img"/>
             @error('temporary_images.*')
             <p class="text-danger mt-2">{{$message}}</p>
