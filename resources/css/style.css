@@ -941,3 +941,13 @@ a, a:hover {
   background-position: center;
   color: white; /* Cambia il colore del testo per renderlo leggibile sopra l'immagine di sfondo */
 }
+
+
+.footer-nav li {
+  display: inline-block; 
+  margin-right: 20px; 
+}
+
+.footer-nav li:last-child {
+  margin-right: 0; 
+}

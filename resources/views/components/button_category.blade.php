@@ -1,9 +1,10 @@
     {{-- BUTTON CON ICONE --}}
-    <div class="container d-flex flex-nowrap ">
+    <div class="container d-flex flex-nowrap">
         <div class="row col-10">
             <div class="col-3 mt-2 p-2">
                 <h4>{{ __('ui.exporaCat') }}</h4>
             </div>
+            
             <div class="col-9">
                 <ul class="wrapper">
                     <li class="icon abbigl">
