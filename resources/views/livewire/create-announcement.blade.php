@@ -5,7 +5,16 @@
             {{ session('message') }}
         </div>
     @endif
-    <div class="container">
+
+    
+
+    {{-- <section id="header" class="jumbotron text-center position-relative">
+        <img src="\images\Category\abbigliamento1 (5).png" class="d-block w-100 h-25" alt="...">
+        <h1 class="display-3 position-absolute top-50 start-50 translate-middle text-white">{{ __('ui.creaA') }}</h1>
+    </section> --}}
+
+
+    <div class="container mt-5">
         <div class="row">
             <div class="col-md-7">
                 <h2 class="text-center">{{ __('ui.creaA') }}</h2>
@@ -14,7 +23,6 @@
                         {{ session('success') }} {{ __('ui.success') }}
                     </div>
                 @endif
-
                 <form wire:submit.prevent="store" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label class="form-label">{{ __('ui.titolo') }}</label>
