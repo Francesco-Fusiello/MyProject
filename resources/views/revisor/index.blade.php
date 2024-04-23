@@ -28,13 +28,12 @@
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
                         @if ($announcement_to_check && $announcement_to_check->images && $announcement_to_check->images->count() > 0)
                             <div class="container">
-                                <div class="carousel-inner">
+                                <div class="carousel-inner row">
+
                                     @foreach ($announcement_to_check->images as $image)
                                         <div class="carousel-item @if ($loop->first) active @endif">
-                                            <img src="{{ $image->getUrl(256, 256) }}" class="img-fluid p-3 rounded"
+                                            <img src="{{ $image->getUrl(256, 256) }}" class=" col-md-6 img-fluid p-3 rounded"
                                                 alt="...">
-                                        </div>
-                                    </div>
 
 {{-- tag per google Vision --}}
                                         <div class="col-md-3  d-flex justify-content-end">
@@ -59,6 +58,8 @@
                                             </div>
                                         </div>
 
+                                    </div>
+                                    </div>
                                     @endforeach
 
                             @else
