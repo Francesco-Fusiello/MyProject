@@ -54,7 +54,6 @@
                         @enderror
                     </div>
 
-
                     <div class="col-md-12 mt-4">
                         <input wire:model="temporary_images" type="file" name="images" multiple
                             class="form-control shadow @error('temporary_images.*') is-invalid @enderror"
