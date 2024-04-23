@@ -14,12 +14,12 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mb-2 mb-lg-0">
 
-                <x-_locale lang='it' nation='it' />
+
                 {{-- bandiere --}}
                 <div class="dropdown">
                     <button class="nav-link dropdown-toggle fw-semibold fst-italic" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    {{-- {{ __('ui.ling') }} --}}
+                    {{ __('ui.ling') }}
                 </button>
 
 
