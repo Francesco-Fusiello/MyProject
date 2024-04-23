@@ -26,6 +26,9 @@
   font-style: normal;
 }
 
+.font-mini{
+  font-size: x-small;
+}
 
 .banner{
   display: flex;

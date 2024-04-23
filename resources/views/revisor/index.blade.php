@@ -35,9 +35,9 @@
                                                 <img src="{{ $image->getUrl(256, 256) }}" alt="immagine dell'articolo">
                                             </div>
                                             {{-- tag per google Vision --}}
-                                            <div class="col-12 col-md-3  d-flex justify-content-end">
-                                                <h5 class="tc-accent mt-3">Tags</h5>
-                                                <div class="p-2 fs-6">
+                                            <div class="col-12 col-md-3">
+                                                <h5 class="tc-accent mt-3fs-6 ">Tags</h5>
+                                                <div class="p-2 col-10 font-mini border border-primary">
                                                     @if ($image->labels)
                                                         @foreach ($image->labels as $label)
                                                             <p class="d-inline">{{ $label }},</p>
@@ -47,13 +47,13 @@
                                             </div>
 
                                             <div class="col-12 col-md-3">
-                                                <div class="card-body">
-                                                    <h5 class="tc-accent">Revisione Immagini</h5>
-                                                    <p>Adulti: <span class="{{ $image->adult }}"></span> </p>
-                                                    <p>Satira: <span class="{{ $image->spoof }}"></span> </p>
-                                                    <p>Medicina: <span class="{{ $image->medical }}"></span> </p>
-                                                    <p>Violenza: <span class="{{ $image->violence }}"></span> </p>
-                                                    <p>Conenuto Ammiccante: <span class="{{ $image->racy }}"></span>
+                                                <div class="card-body p-2 border border-success ">
+                                                    <h6 class="tc-accent">Revisione Immagini</h6>
+                                                    <p class="font-mini">Adulti: <span class="{{ $image->adult }}"></span> </p>
+                                                    <p class="font-mini">Satira: <span class="{{ $image->spoof }}"></span> </p>
+                                                    <p class="font-mini">Medicina: <span class="{{ $image->medical }}"></span> </p>
+                                                    <p class="font-mini">Violenza: <span class="{{ $image->violence }}"></span> </p>
+                                                    <p class="font-mini">Contenuto Ammiccante: <span class="{{ $image->racy }}"></span>
                                                     </p>
                                                 </div>
                                             </div>
