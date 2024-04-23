@@ -1,7 +1,7 @@
     {{-- BUTTON CON ICONE --}}
     <div class="container d-flex flex-nowrap">
         <div class="row col-lg-10 col-md-12 col-sd-12">
-            <div class="col-3 mt-2 p-2">
+            <div class="col-3 mt-2 p-2 ">
                 <h4>{{ __('ui.exporaCat') }}</h4>
             </div>
 
