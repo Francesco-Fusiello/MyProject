@@ -9,7 +9,7 @@
     </section>
 
     <section id="gallery">
-        <div class="container mt-3">
+        <div class="container mt-4">
             <div class="row justify-content-center">
 
                 @forelse($category->announcements as $announcement)
