@@ -18,9 +18,11 @@ public function categoryShow(Category $category) {
 }
 
 public function searchAnnouncements(Request $request){
-    $announcements = Announcement::search($request->searched)->where('is_accepted',true)->paginate(10);
-    return view('announcements.index',compact('announcements'));
+    $searchTerm = $request->searched;
+    $announcements = Announcement::search($searchTerm)->where('is_accepted',true)->paginate(10);
+    return view('announcements.index',compact('announcements', 'searchTerm'));
 }
+
 
 public function setLanguage($lang)
 {

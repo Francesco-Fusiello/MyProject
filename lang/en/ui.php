@@ -69,6 +69,7 @@ return[
     'Televisori' => 'TV',
     'AccessoriPerAnimali' => 'AnimalAccessories',
     'ling'=> 'Languages',
+    'risRic'=> 'Search results',
 
     
     

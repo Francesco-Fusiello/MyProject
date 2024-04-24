@@ -70,6 +70,7 @@ return[
     'AccessoriPerAnimali' => 'AccessoriPerAnimali',
     'Televisori' => 'Televisori',
     'ling'=> 'Lingue',
+    'risRic'=> 'Risultati per la ricerca',
 
 
 

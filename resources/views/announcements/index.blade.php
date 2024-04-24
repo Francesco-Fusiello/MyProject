@@ -5,7 +5,13 @@
     <div class="container py-5">
         <!-- For Demo Purpose-->
         <header class="text-center mb-5">
-            <h1 class="display-4 font-weight-bold"> {{ __('ui.tuttiAnn') }}</h1>
+            {{-- <h1 class="display-4 font-weight-bold"> {{ __('ui.tuttiAnn') }}</h1> --}}
+            @if (isset($searchTerm))
+                <h1>{{ __('ui.risRic') }}: {{ $searchTerm }}</h1>
+            @else
+                <h1>{{ __('ui.tuttiAnn') }}</h1>
+            @endif
+
         </header>
 
         <!-- First Row [Prosucts]-->
