@@ -74,7 +74,7 @@
             </div>
             
             <div class="col-md-5">
-                <img src="\images\ImmagineAnnuncio.png" class="img-fluid" alt="Immagine Grande">
+                <img src="\images\ImmagineAnnuncio.png" class="img-fluid d-none d-sm-block" alt="Immagine Grande">
             </div>
         </div>
     </div>

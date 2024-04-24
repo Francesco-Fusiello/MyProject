@@ -91,7 +91,7 @@
                     </div>
                         {{-- </div>
                     </div> --}}
-                    <div class="card shadow ms-3" style='width: 58rem;'>
+                    <div class="col-12 card shadow d-flex" style='width: 100%;'>
                         <div class="card-body">
                             <h5 class="card-title">{{ __('ui.titolo') }}: {{ $announcement_to_check->title }}</h5>
                             <p class="card-text">{{ __('ui.descri') }}: {{ $announcement_to_check->body }}</p>
@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="row d-flex justify-content-between ">
-                        <div class="col-6 text-center ">
+                        <div class="col-12 col-md-6 text-center ">
                             <form action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
                                 method="POST">
                                 @csrf
@@ -109,7 +109,7 @@
                                 <button type="submit" class="bn632-hover bn22">{{ __('ui.acc') }}</button>
                             </form>
                         </div>
-                        <div class="col-6 text-center">
+                        <div class="col-12 col-md-6 text-center">
                             <form action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
                                 method="POST">
                                 @csrf
