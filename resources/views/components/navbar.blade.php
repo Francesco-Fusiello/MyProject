@@ -85,7 +85,7 @@
                 @else
                     <li>
                         <a class="nav-link active" aria-current="page"
-                            href="{{ route('announcements.create') }}">{{ __('ui.creaNav') }}</a>
+                            href="{{ route('announcements.create') }}"><i class="fa-solid text-info fa-bullhorn"></i> {{ __('ui.creaNav') }}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-semibold fst-italic text-info" href="#" role="button"
