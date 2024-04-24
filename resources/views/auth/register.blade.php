@@ -15,30 +15,30 @@
                 @csrf
   
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" name="name" id="floatingInputUsername"  value="{{ @old('name') }}" placeholder="myusername" required autofocus>
+                  <input type="text" class="form-control @error('name') is-invalid @enderror"  name="name" id="floatingInputUsername"  value="{{ @old('name') }}" placeholder="myusername" required autofocus>
                   <label for="floatingInputUsername">{{__('ui.name')}}</label>
                   @error('name')
-                      <span> {{ $message }} </span>
+                      <span class="text-danger"> {{ $message }} </span>
                   @enderror
                 </div>
 
 
   
                 <div class="form-floating mb-3">
-                  <input type="email" name="email" class="form-control" id="floatingInputEmail" value="{{ @old('email') }}" placeholder="name@example.com">
+                  <input type="email" name="email" class="form-control  @error('email') is-invalid @enderror" id="floatingInputEmail" value="{{ @old('email') }}" placeholder="name@example.com">
                   <label for="floatingInputEmail">E-mail</label>
                 @error('email')
-                    <span> {{ $message }} </span>
+                    <span class="text-danger"> {{ $message }} </span>
                 @enderror
                 </div>
   
                 <hr>
   
                 <div class="form-floating mb-3">
-                  <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <input type="password" name="password" class="form-control  @error('password') is-invalid @enderror" id="floatingPassword" placeholder="Password">
                   <label for="floatingPassword">{{__('ui.password')}}</label>
                     @error('password')
-                        <span> {{ $message }} </span>
+                        <span class="text-danger"> {{ $message }} </span>
                     @enderror
                 </div>
   
