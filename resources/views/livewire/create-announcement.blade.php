@@ -6,18 +6,15 @@
         </div>
     @endif
 
-    
-
-    <section id="header" class="jumbotron text-center position-relative">
-        <img src="\images\megafono blu.png" class="d-block w-100 h-25" alt="...">
+    {{-- <section id="header" class="jumbotron text-center position-relative">
+        <img src="\images\BannerMegafonoBlu.png" class="d-block w-100 h-25" alt="...">
         <h1 class="display-3 position-absolute top-50 start-50 translate-middle text-white">{{ __('ui.creaA') }}</h1>
-    </section>
-
+    </section> --}}
 
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-7">
-                <h2 class="text-center">{{ __('ui.creaA') }}</h2>
+                {{-- <h2 class="text-center">{{ __('ui.creaA') }}</h2> --}}
                 @if (session()->has('success'))
                     <div class="alert alert-success">
                         {{ session('success') }} {{ __('ui.success') }}
@@ -77,7 +74,6 @@
             </div>
             
             <div class="col-md-5">
-                <!-- Immagine grande sulla sinistra -->
                 <img src="\images\ImmagineAnnuncio.png" class="img-fluid" alt="Immagine Grande">
             </div>
         </div>
