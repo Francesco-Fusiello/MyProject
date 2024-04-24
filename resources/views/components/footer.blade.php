@@ -9,37 +9,37 @@
         <section class="mb-2">
             {{-- @dd({{Auth::user()}}) --}}
             @if (Auth::check() && Auth::user()->is_revisor)
-            <div>
-            <h3 class="m-4">{{__('ui.footer1')}}.<br>
-                🙏 {{__('ui.footer2')}}! 🙏
-            </h3>
-            </div>
+                <div>
+                    <h3 class="m-4">{{ __('ui.footer1') }}.<br>
+                        🙏 {{ __('ui.footer2') }}! 🙏
+                    </h3>
+                </div>
             @else
-                        <div>
-                            <h3>{{__('ui.work')}}</h3>
-                            <p>{{__('ui.cl')}}</p>
-                            <a href="{{route('become.revisor')}}" class='bn5'>{{__('ui.revisor')}}</a>
-                        </div>
+                <div>
+                    <h3>{{ __('ui.work') }}</h3>
+                    <p>{{ __('ui.cl') }}</p>
+                    <a href="{{ route('become.revisor') }}" class='bn5'>{{ __('ui.revisor') }}</a>
+                </div>
             @endif
         </section>
         <!-- Section: Text -->
-            <div class="container d-flex flex-nowrap">
-                <div class="row col-12">
-            <ul class="footer-nav" style="background-color: #0851b1">
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#chi-siamo">Chi Siamo</a></li>
-                <li><a href="#recensioni">Recensioni</a></li>
-                <li><a href="#faqs">FAQs</a></li>
-            </ul>
-                </div>
+        <div class="container d-flex flex-nowrap mt-3">
+            <div class="row col-12">
+                <ul class="footer-nav" style="background-color: #0851b1">
+                    <li>Privacy Policy</li>
+                    <li>Chi Siamo</li>
+                    <li>Recensioni</li>
+                    <li>FAQs</li>
+                </ul>
             </div>
-    <!-- Grid container -->
+        </div>
+        <!-- Grid container -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: #0851b1">
-        © 2024 by Flay
-    </div>
-    <!-- Copyright -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #0851b1">
+            © 2024 by Flay
+        </div>
+        <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
