@@ -18,7 +18,7 @@
                   <input type="text" class="form-control @error('name') is-invalid @enderror"  name="name" id="floatingInputUsername"  value="{{ @old('name') }}" placeholder="myusername" required autofocus>
                   <label for="floatingInputUsername">{{__('ui.name')}}</label>
                   @error('name')
-                      <span class="text-danger"> {{ $message }} </span>
+                      <span class="text-danger fst-italic"> {{ $message }} </span>
                   @enderror
                 </div>
 
@@ -28,7 +28,7 @@
                   <input type="email" name="email" class="form-control  @error('email') is-invalid @enderror" id="floatingInputEmail" value="{{ @old('email') }}" placeholder="name@example.com">
                   <label for="floatingInputEmail">E-mail</label>
                 @error('email')
-                    <span class="text-danger"> {{ $message }} </span>
+                    <span class="text-danger fst-italic"> {{ $message }} </span>
                 @enderror
                 </div>
   
@@ -38,7 +38,7 @@
                   <input type="password" name="password" class="form-control  @error('password') is-invalid @enderror" id="floatingPassword" placeholder="Password">
                   <label for="floatingPassword">{{__('ui.password')}}</label>
                     @error('password')
-                        <span class="text-danger"> {{ $message }} </span>
+                        <span class="text-danger fst-italic"> {{ $message }} </span>
                     @enderror
                 </div>
   

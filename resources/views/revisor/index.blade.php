@@ -1,7 +1,7 @@
 <x-layout>
 
     @if (session()->has('message'))
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-success fst-italic" role="alert">
             {{ session('message') }}
         </div>
     @endif

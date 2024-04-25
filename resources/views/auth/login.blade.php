@@ -11,18 +11,18 @@
                         <form method="POST" action="/login">
                             @csrf
                             <div class="form-floating mb-3">
-                      <input type="email" name="email" class="form-control" id="floatingInput"  value="{{ @old('email') }}" placeholder="name@example.com">
+                      <input type="email" name="email" class="form-control  @error('email') is-invalid @enderror" id="floatingInput"  value="{{ @old('email') }}" placeholder="name@example.com">
                       <label for="floatingInput">E-mail</label>
                     @error('email')
-                        <span> {{ $message }} </span>
+                        <span class= "text-danger fst-italic"> {{ $message }} </span>
                     @enderror
     
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <input type="password" name="password" class="form-control  @error('password') is-invalid @enderror" id="floatingPassword" placeholder="Password">
                       <label for="floatingPassword">{{__('ui.password')}}</label>
                       @error('password')
-                        <span> {{ $message }} </span>
+                        <span class=" text-danger fst-italic"> {{ $message }} </span>
                     @enderror
                     </div>
       

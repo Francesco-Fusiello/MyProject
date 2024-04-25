@@ -1,7 +1,7 @@
 <div>
 
     @if (session()->has('message'))
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-success fst-italic" role="alert">
             {{ session('message') }}
         </div>
     @endif
@@ -16,24 +16,24 @@
             <div class="col-md-7">
                 {{-- <h2 class="text-center">{{ __('ui.creaA') }}</h2> --}}
                 @if (session()->has('success'))
-                    <div class="alert alert-success">
+                    <div class="alert alert-success fst-italic">
                         {{ session('success') }} {{ __('ui.success') }}
                     </div>
                 @endif
                 <form wire:submit.prevent="store" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label class="form-label">{{ __('ui.titolo') }}</label>
-                        <input wire:model.change='title' type="text" class="form-control">
+                        <input wire:model.change='title' type="text" class="form-control  @error('title') is-invalid @enderror">
                         @error('title')
-                            <span class="text-danger">{{ $message }}</span>
+                            <span class="text-danger fst-italic">{{ $message }}</span>
                         @enderror
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">{{ __('ui.descri') }}</label>
-                        <input wire:model.change='body' type="text" class="form-control">
+                        <input wire:model.change='body' type="text" class="form-control  @error('body') is-invalid @enderror">
                         @error('body')
-                            <span class="text-danger">{{ $message }}</span>
+                            <span class="text-danger fst-italic">{{ $message }}</span>
                         @enderror
                     </div>
 
@@ -47,15 +47,15 @@
                             @endforeach
                         </select>
                         @error('category_id')
-                            <span class="text-danger fw-bold">{{ $message }}</span>
+                            <span class="text-danger fst-italic">{{ $message }}</span>
                         @enderror
                     </div>
 
                     <div class="mt-4 d-flex flex-nowrap">
                         <label class="form-label me-3 ">{{ __('ui.value1') }}</label>
-                        <input wire:model.change='price' type="number" class="form-control w-25 " min="1">
+                        <input wire:model.change='price' type="number" class="form-control w-25  @error('price') is-invalid @enderror " min="1">
                         @error('price')
-                            <span class="text-danger">{{ $message }}</span>
+                            <span class="text-danger fst-italic">{{ $message }}</span>
                         @enderror
                     </div>
 
@@ -64,7 +64,7 @@
                             class="form-control shadow @error('temporary_images.*') is-invalid @enderror"
                             placeholder="Img" />
                             @error('temporary_images.*')
-                            <p class="text-danger">{{ $message }}</p>
+                            <p class="text-danger fst-italic">{{ $message }}</p>
                         @enderror
                     </div>
                     <button type="submit" class=" btn btn-primary w-100 shadow mt-5 ">{{ __('ui.crea') }}</button>

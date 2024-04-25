@@ -66,6 +66,7 @@
 
     </div>
 
+ 
     {{-- <div class=" m-3">
       {{ $announcements->links() }}
   </div> --}}
