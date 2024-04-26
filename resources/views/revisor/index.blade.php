@@ -15,6 +15,7 @@
     </h2>
 
     @if ($announcement_to_check)
+
          <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
                 <tr>
@@ -80,6 +81,8 @@
 
             </tbody>
         </table>
+
+
 
         <!-- Modal -->
         <div id="myModal" class="modal fade modal-lg" role="dialog">
@@ -227,7 +230,8 @@
                 </div>
             </div>
         </div>
-    @endif
+
+        @endif
     <div class="row">
         <div class="col-12 text-center justify-content-center">
             <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
