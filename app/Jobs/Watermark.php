@@ -3,9 +3,10 @@
 namespace App\Jobs;
 
 use App\Models\Image;
-use Spatie\Image\Image as SpatieImage;
 use Illuminate\Bus\Queueable;
+use Spatie\Image\Manipulations;
 use Illuminate\Queue\SerializesModels;
+use Spatie\Image\Image as SpatieImage;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -16,6 +17,7 @@ class Watermark implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     private $announcement_image_id;
+    
 
 
     /**
@@ -42,12 +44,11 @@ class Watermark implements ShouldQueue
 
         putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
 
-        $imageAnnotator = new ImageAnnotatorClient();
         $image = SpatieImage::load($srcPath);
-        $image->watermark('\logo.png')
-        ->watermarkOpacity(50);
+        $image->watermark(base_path('public/logo.png'))->watermarkPosition(Manipulations::POSITION_BOTTOM)->watermarkOpacity(50);
+        
 
         $image->save($srcPath); 
-        $imageAnnotator->close();
+      
   }
 }
