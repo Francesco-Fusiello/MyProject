@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Jobs\Watermark;
 use Livewire\Component;
 use App\Models\Category;
 use App\Jobs\RemoveFaces;
@@ -98,6 +99,7 @@ class CreateAnnouncement extends Component
                     new ResizeImage($newImage->path , 256 , 256),
                     new GoogleVisionSafeSearch($newImage->id),
                     new GoogleVisionLabelImage($newImage->id),
+                    new Watermark($newImage->id),
                 ])->dispatch($newImage->id);
             }
 
