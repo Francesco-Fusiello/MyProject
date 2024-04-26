@@ -45,10 +45,10 @@ class Watermark implements ShouldQueue
         putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
 
         $image = SpatieImage::load($srcPath);
-        $image->watermark(base_path('public/logo.png'))->watermarkPosition(Manipulations::POSITION_BOTTOM)->watermarkOpacity(50);
+        $image->watermark(base_path('/logo.png'))->watermarkPosition(Manipulations::POSITION_BOTTOM)->watermarkOpacity(50);
         
 
         $image->save($srcPath); 
-      
+
   }
 }
