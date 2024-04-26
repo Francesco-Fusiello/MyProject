@@ -16,11 +16,11 @@
 
 
                 {{-- bandiere --}}
-                <div class="dropdown">
-                    <button class="nav-link dropdown-toggle fw-semibold fst-italic" type="button"
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold fst-italic" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     {{ __('ui.ling') }}
-                </button>
+                    </a>
 
 
                     <ul class="dropdown-menu">
@@ -28,9 +28,7 @@
                         <li><a class="dropdown-item" href="#"><x-_locale lang='en' nation='gb' /></a></li>
                         <li><a class="dropdown-item" href="#"><x-_locale lang='fr' nation='fr' /></a></li>
                     </ul>
-                </div>
-
-             
+                </li>
                 
 
                 {{-- <li class="nav-item">

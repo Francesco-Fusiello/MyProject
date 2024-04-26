@@ -50,7 +50,7 @@ return[
     'footer2' => 'Grazie',
     'acc' => 'Accetta',
     'rif' => 'Rifiuta',
-    'annu' => 'Annula ultima azione',
+    'annu' => 'Annulla ultima azione',
     'scoprili' => 'Scoprili tutti!',
     'titRev' => 'Ecco gli annunci da revisionare',
     'titRev1' => 'Non ci sono annunci da revisionare',
