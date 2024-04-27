@@ -10,7 +10,7 @@
             {{-- @dd({{Auth::user()}}) --}}
             @if (Auth::check() && Auth::user()->is_revisor)
                 <div>
-                    <h3 class="m-4">{{ __('ui.footer1') }}.<br>
+                    <h3 class="m-4 fst-italic">{{ __('ui.footer1') }}.<br>
                         🙏 {{ __('ui.footer2') }}! 🙏
                     </h3>
                 </div>

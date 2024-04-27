@@ -13,12 +13,13 @@
     <div class="container justify-content-center fst-italic ">
         <h5 class=" d-flex justify-content-center fst-italic">FLAY è un acronimo, dei fondatori Francesco, Luana, Antony, ed Yvan..</h5> 
         <p class="d-flex justify-content-center fst-italic"> Siamo un gruppo di imprenditori molto giovani ma con alle spalle l'esperienza della nostra (Luana),  partiti con l'idea di creare una
-            piattaforma di vendita di prodotti nuovi, usati, e di servizi intellettuali, il quele ormai diventata REALTA'... </p> 
-        <p class="d-flex justify-content-center fst-italic">FLAY è guidata da quattro principi: l’ossessione per il cliente piuttosto che l'attenzione alla concorrenza, la passione per l'innovazione,
+            piattaforma di vendita di prodotti nuovi, usati, e di servizi intellettuali, il quele ormai diventata REALTA'... <br>
+            FLAY è guidata da quattro principi: l’ossessione per il cliente piuttosto che l'attenzione alla concorrenza, la passione per l'innovazione,
             l'impegno per l'eccellenza operativa e la visione a lungo termine. FLAY punta ad essere l’azienda più attenta al cliente al mondo,
-             il miglior datore di lavoro al mondo e il luogo di lavoro più sicuro al mondo.</p>
-
+             il miglior datore di lavoro al mondo e il luogo di lavoro più sicuro al mondo.</p> 
     </div>
+        
+
     
 
     <div class="containerCard">
