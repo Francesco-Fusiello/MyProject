@@ -13,13 +13,19 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mb-2 mb-lg-0">
+                {{-- home --}}
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}"><i class="fa-solid fa-house" style="color: #127DC5; border: 1px,   color: white;
+                        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"></i></a>
+                </li>
 
 
                 {{-- bandiere --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle fw-semibold fst-italic" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    {{ __('ui.ling') }}
+                    <i class="fa-solid fa-language fa-xl" style="color: #127DC5;"></i>
+                    {{-- {{ __('ui.ling') }} --}}
                     </a>
 
 
@@ -44,9 +50,7 @@
                 </li> --}}
 
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
-                </li>
+
 
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page"
@@ -83,10 +87,10 @@
                 @else
                     <li>
                         <a class="nav-link active" aria-current="page"
-                            href="{{ route('announcements.create') }}"><i class="fa-solid text-info fa-bullhorn"></i> {{ __('ui.creaNav') }}</a>
+                            href="{{ route('announcements.create') }}"><i class="fa-solid fa-bullhorn" style="color: #127DC5;"></i> {{ __('ui.creaNav') }}</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-semibold fst-italic text-info" href="#" role="button"
+                        <a class="nav-link dropdown-toggle fw-semibold fst-italic" style="color: #127DC5;" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{ Auth::user()->name }}
                         </a>

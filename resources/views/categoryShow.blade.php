@@ -16,8 +16,8 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                         <div class="card shadow mb-3">
                             <img src="{{ !$announcement->images()->get()->isEmpty()
-                                ? $announcement->images()->first()->getUrl(256, 256)
-                                : //  Storage::url($announcement->images()->first()->path)
+                                ? Storage::url($announcement->images()->first()->path)
+                                : //  $announcement->images()->first()->getUrl(256, 256)
                                 'https://picsum.photos/200' }}"
                                 alt="" class="card-img-top">
                             <div class="card-body">

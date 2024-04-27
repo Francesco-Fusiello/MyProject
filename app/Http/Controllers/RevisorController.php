@@ -13,15 +13,9 @@ use Illuminate\Support\Facades\Artisan;
 class RevisorController extends Controller
 {
     public function index(){
-        $announcement_to_check = Announcement::where('is_accepted',null)->get();
-        $announcement = Announcement::all();
-        return view('revisor.index',compact('announcement_to_check', 'announcement')); 
+        $announcement_to_check = Announcement::where('is_accepted', null)->get();
+        return view('revisor.index',compact('announcement_to_check')); 
     }
-
-    public function showRevisor (Announcement $ann_ck){
-        return view ('revisor.dett_modal', compact('ann_ck'));
-    }
-
 
     public function acceptAnnouncement(Announcement $announcement)
     {

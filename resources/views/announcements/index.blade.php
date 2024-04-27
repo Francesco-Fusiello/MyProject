@@ -23,9 +23,9 @@
                     <div class="card rounded shadow-sm border-0">
                         <div class="card-body p-4"> <img class="postcard__img img-fluid "
                                 src="{{ !$announcement->images()->get()->isEmpty()
-                                    ? $announcement->images()->first()->getUrl(256, 256)
-                                    : //  Storage::url($announcement->images()->first()->path)
-                                    'https://picsum.photos/200' }}"
+                                ? Storage::url($announcement->images()->first()->path)
+                                    // ? $announcement->images()->first()->getUrl(256, 256)
+                                    : 'https://picsum.photos/256' }}"
                                 alt="Image Title" />
                             {{-- <img src="https://picsum.photos/200" alt="" class='img-fluid d-block mx-auto mb-3'> --}}
 

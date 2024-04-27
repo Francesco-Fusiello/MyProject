@@ -47,6 +47,20 @@
   text-align: center;
 }
 
+/* Formato immagine tabella revisore */
+.circle-img {
+  width: 50px; /* Imposta la larghezza desiderata del cerchio */
+  height: 50px; /* Imposta l'altezza desiderata del cerchio */
+  border-radius: 50%; /* Rendi il contenitore circolare */
+  overflow: hidden; /* Nasconde le parti dell'immagine al di fuori del cerchio */
+}
+
+.circle-img img {
+  width: 100%; /* Riempie completamente il contenitore circolare con l'immagine */
+  height: auto; /* Imposta l'altezza automaticamente per mantenere l'aspetto originale */
+  display: block; /* Assicura che l'immagine sia visualizzata come blocco */
+}
+
 /* testo sopra immagine categorie */
 #header {
   position: relative;

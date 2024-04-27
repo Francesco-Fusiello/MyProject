@@ -11,54 +11,58 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-
+        <div class="row d-flex ">
+            <div class="col-12  d-flex justify-content-center ">
+              <div class="col-6">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                  @if ( $announcement->images->count() > 0)
-                        <div class="container">
+                      @if ( $announcement->images->count() > 0)
+
                             <div class="carousel-inner">
                                 @foreach ($announcement->images as $image)
                                     <div class="carousel-item @if ($loop->first) active @endif">
-                                        <img src="{{ Storage::url($image->path) }}" class="d-block w-100" alt="..."> 
+                                        <img src="{{ Storage::url($image->path) }}" class="d-block mx-auto" alt="..."> 
                                     </div>   
                                       {{-- img-fluid p-3 rounded --}}
                                 @endforeach
                             </div>
                         @else  
                   
-                  <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://picsum.photos/id/27/1200/200" class="d-block w-100" alt="...">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="https://picsum.photos/id/41/800/500" class="d-block mx-auto" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="https://picsum.photos/id/42/800/500" class="d-block mx-auto" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="https://picsum.photos/800/500" class="d-block mx-auto" alt="...">
+                          </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/id/28/1200/200" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/id/29/1200/200" class="d-block w-100" alt="...">
-                        </div>
+                        @endif
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    @endif
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                  </div>
+                <div class="col-5 m-5 p-5 align-items-center border rounded-4">
 
-                <h5 class="card-title"> {{__('ui.titolo')}}: {{ $announcement->title }}</h5>
-                <p class="card-text">{{__('ui.descri')}}: {{ $announcement->body }}</p>
-                <p class="card-text">{{__('ui.value1')}}: {{ $announcement->price }}</p>
-                <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
-                    class="my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-success ">{{__('ui.category')}}
-                    {{ $announcement->category->name }}</a>
-                <p class="card-footer">{{__('ui.pub')}} {{ $announcement->created_at->format('d/m/y') }}</p>
-                <p class="card-text fs-6 fst-italic ">{{__('ui.author')}} {{ $announcement->user->name }}</p>
+                  <h5 class="card-title"> {{__('ui.titolo')}}: {{ $announcement->title }}</h5>
+                  <p class="card-text">{{__('ui.descri')}}: {{ $announcement->body }}</p>
+                  <p class="card-text">{{__('ui.value1')}}: {{ $announcement->price }}</p>
+                  <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
+                      class="my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-success ">{{__('ui.category')}}
+                      {{ $announcement->category->name }}</a>
+                  <p class="card-footer">{{__('ui.pub')}} {{ $announcement->created_at->format('d/m/y') }}</p>
+                  <p class="card-text fs-6 fst-italic ">{{__('ui.author')}} {{ $announcement->user->name }}</p>
+
+                </div>
 
             </div>
         </div>
