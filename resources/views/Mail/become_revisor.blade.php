@@ -8,6 +8,10 @@
 </head>
 <body>
     <div>
+        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('logo.png') }}" style="width:300px;"
+            alt="Logo del sito"></a>
+    </div>
+    <div>
         <h1>{{__('ui.titMail')}}</h1>
         <h2>{{__('ui.mail2')}}:</h2>
         <p>{{__('ui.name')}} {{$user->name}}</p>
