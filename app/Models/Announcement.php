@@ -14,7 +14,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Announcement extends Model
 {
     use HasFactory, Searchable;
-    protected $fillable=['title', 'body', 'price', 'category_id', 'user_id'];
+    protected $fillable=['title', 'body', 'price', 'category_id', 'user_id', 'created_at'];
 
     public function toSearchableArray()
     {

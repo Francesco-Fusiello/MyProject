@@ -15,74 +15,72 @@
     </h2>
 
     @if ($announcement_to_check)
+            <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        {{-- <th>{{ __('ui.acc') }}  Rifiutato</th> --}}
+                        <th>{{ __('ui.titolo') }}: </th>
+                        <th>{{ __('ui.descri') }}</th>
+                        <th>{{ __('ui.value') }}</th>
+                        <th>{{ __('ui.category') }}</th>
+                        <th>{{ __('ui.pub') }}</th>
+                        <th></th>
+                        <th class="text-center ">{{ __('ui.acc') }}/{{ __('ui.rif') }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($announcement_to_check as $ann_ck)                
+                    <tr>
+                        <td>{{ $ann_ck->title }}</td>
+                        <td> {{ $ann_ck->body }}</td>
+                        <td>{{ $ann_ck->price }}</td>
+                        <td>{{ $ann_ck->category->name }}</td>
+                        <td>{{ $ann_ck->created_at->format('d/m/y') }}</td>
+                        <td>
+                            <div class="d-flex col-12 justify-content-center">
+                                {{-- <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;" data-bs-toggle="modal" data-bs-target="#myModal" title="{{ __('ui.visua') }}">
+                                    <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #eceff4;"></i>
+                                </button> --}}
+                                {{-- <form
+                                action="{{ route('revisor.announcements.show', ['announcement' => $ann_ck['id']]) }}"
+                                method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;" title="{{ __('ui.visua') }}">
+                                    <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #eceff4;"></i>
+                                </button>
+                            </form> --}}
 
-         <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-            <thead>
-                <tr>
-                    {{-- <th>{{ __('ui.acc') }}  Rifiutato</th> --}}
-                    <th>{{ __('ui.titolo') }}: </th>
-                    <th>{{ __('ui.descri') }}</th>
-                    <th>{{ __('ui.value') }}</th>
-                    <th>{{ __('ui.category') }}</th>
-                    <th>{{ __('ui.pub') }}</th>
+                                <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;" data-bs-toggle="modal" data-bs-target="#myModal" title="{{ __('ui.visua') }}">
+                                    <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #eceff4;"></i>
+                                </button>
 
-                    <th></th>
-                    <th class="text-center ">{{ __('ui.acc') }}/{{ __('ui.rif') }}</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    {{-- <td>
-                    <div class="form-check">
-                        <input class="form-check-input ms-3" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                        <input class="form-check-input ms-5" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                </td> --}}
-                    <td>{{ $announcement_to_check->title }}</td>
-                    <td> {{ $announcement_to_check->body }}</td>
-                    <td>{{ $announcement_to_check->price }}</td>
-                    <td>{{ $announcement_to_check->category->name }}</td>
-                    <td>{{ $announcement_to_check->created_at->format('d/m/y') }}</td>
-                    <td>
-                        <div class="d-flex col-12 justify-content-center">
-
-                            <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;" data-bs-toggle="modal" data-bs-target="#myModal" title="{{ __('ui.visua') }}">
-                                <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #eceff4;"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-danger btn-xs dt-delete" title="{{ __('ui.canc') }}">
-                                <i class="fa-solid fa-trash fa-sm" style="color: #eceff4;"></i>
-                            </button>
-                    <td class="d-flex col-12 justify-content-center">
-                        <form
-                            action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
-                            method="POST">
-                            @csrf
-                            @method('PATCH')
-                            <button type="submit" class="ms-3 btn btn-outline-success btn-xs dt-edit"
-                                title="{{ __('ui.acc') }} "><i
-                                    class="fa-regular fa-square-check fa-sm"></i></i></button>
-                        </form>
-                        <form
-                            action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
-                            method="POST">
-                            @csrf
-                            @method('PATCH')
-                            <button type="submit" class="ms-3 btn btn-outline-danger btn-xs dt-edit"
-                                title="{{ __('ui.rif') }}"><i
-                                    class="fa-regular fa-thumbs-down fa-sm"></i></i></button>
-                        </form>
-
-                    </td>
-
-                    </div>
-
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-
-
+                                <button type="button" class="btn btn-danger btn-xs dt-delete" title="{{ __('ui.canc') }}">
+                                    <i class="fa-solid fa-trash fa-sm" style="color: #eceff4;"></i>
+                                </button>
+                        <td class="d-flex col-12 justify-content-center">
+                            <form
+                                action="{{ route('revisor.accept_announcement', ['announcement' => $ann_ck]) }}"
+                                method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="ms-3 btn btn-outline-success btn-xs dt-edit"
+                                    title="{{ __('ui.acc') }} "><i
+                                        class="fa-regular fa-square-check fa-sm"></i></i></button>
+                            </form>
+                            <form
+                                action="{{ route('revisor.reject_announcement', ['announcement' => $ann_ck]) }}"
+                                method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="ms-3 btn btn-outline-danger btn-xs dt-edit"
+                                    title="{{ __('ui.rif') }}"><i
+                                        class="fa-regular fa-thumbs-down fa-sm"></i></i></button>
+                            </form>
+                        </td>
+                        </div>
+                        </td>
+                    </tr>
 
         <!-- Modal -->
         <div id="myModal" class="modal fade modal-lg" role="dialog">
@@ -98,12 +96,12 @@
                         <div class="container">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-12 col-md-9 col-lg-9">
-                                    @if ($announcement_to_check)
+                                    @if ($ann_ck)
                                         <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                                            @if ($announcement_to_check && $announcement_to_check->images && $announcement_to_check->images->count() > 0)
+                                            @if ($ann_ck && $ann_ck->images && $ann_ck->images->count() > 0)
                                                 <div class="container d-flex ">
                                                     <div class="carousel-inner">
-                                                        @foreach ($announcement_to_check->images as $image)
+                                                        @foreach ($ann_ck->images as $image)
                                                             <div
                                                                 class="carousel-item  d-flex @if ($loop->first) active @endif">
                                                                 <div class="col-12 col-md-6 img-fluid p-3 rounded"
@@ -152,15 +150,15 @@
                                             @else
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
+                                                        <img src="https://picsum.photos/1200/400"
+                                                            class="img-fluid p-3 rounded" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
                                                         <img src="https://picsum.photos/id/28/1200/400"
                                                             class="img-fluid p-3 rounded" alt="...">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="https://picsum.photos/id/29/1200/400"
-                                                            class="img-fluid p-3 rounded" alt="...">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="https://picsum.photos/id/29/1200/400"
+                                                        <img src="https://picsum.photos/id/31/1200/400"
                                                             class="img-fluid p-3 rounded" alt="...">
                                                     </div>
                                                 </div>
@@ -182,18 +180,18 @@
                                         <div class="col-12 card shadow d-flex" style='width: 100%;'>
                                             <div class="card-body">
                                                 <h5 class="card-title">{{ __('ui.titolo') }}:
-                                                    {{ $announcement_to_check->title }}</h5>
+                                                    {{ $ann_ck->title }}</h5>
                                                 <p class="card-text">{{ __('ui.descri') }}:
-                                                    {{ $announcement_to_check->body }}</p>
+                                                    {{ $ann_ck->body }}</p>
                                                 <p class="card-footer">{{ __('ui.pub') }}
-                                                    {{ $announcement_to_check->created_at->format('d/m/y') }}</p>
+                                                    {{ $ann_ck->created_at->format('d/m/y') }}</p>
                                             </div>
                                         </div>
 
                                         <div class="row d-flex justify-content-between ">
                                             <div class="col-12 col-md-6 text-center ">
                                                 <form
-                                                    action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
+                                                    action="{{ route('revisor.accept_announcement', ['announcement' => $ann_ck]) }}"
                                                     method="POST">
                                                     @csrf
                                                     @method('PATCH')
@@ -203,7 +201,7 @@
                                             </div>
                                             <div class="col-12 col-md-6 text-center">
                                                 <form
-                                                    action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
+                                                    action="{{ route('revisor.reject_announcement', ['announcement' => $ann_ck]) }}"
                                                     method="POST">
                                                     @csrf
                                                     @method('PATCH')
@@ -231,15 +229,19 @@
             </div>
         </div>
 
-        @endif
-    <div class="row">
-        <div class="col-12 text-center justify-content-center">
-            <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
-                @csrf
-                <button type="submit" class="bn632-hover yellow">{{ __('ui.annu') }}</button>
-            </form>
+        @endforeach
+    </tbody>
+</table>
+
+    @endif
+        <div class="row">
+            <div class="col-12 text-center justify-content-center">
+                <form method="GET" action="{{ route('announcements.reset-last-accepted') }}">
+                    @csrf
+                    <button type="submit" class="bn632-hover yellow">{{ __('ui.annu') }}</button>
+                </form>
+            </div>
         </div>
-    </div>
 
 </x-layout>
 
@@ -258,12 +260,12 @@
         <div class="row d-flex justify-content-center ">
             <div class="col-12 p-2">
                 <h2 class="text-center">
-                    @if ($announcement_to_check)
+                    @if ($ann_ck)
                         {{ __('ui.titRev') }}
                     @else
                         {{ __('ui.titRev1') }}
                     @endif
-                    {{-- {{ $announcement_to_check  "{{__('ui.titolo')}}" : 'Non ci sono annunci da revisionare' }} --}}
+                    {{-- {{ $ann_ck  "{{__('ui.titolo')}}" : 'Non ci sono annunci da revisionare' }} --}}
                 </h2>
             </div>
         </div>
@@ -272,12 +274,12 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-9 col-lg-9">
-                @if ($announcement_to_check)
+                @if ($ann_ck)
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                        @if ($announcement_to_check && $announcement_to_check->images && $announcement_to_check->images->count() > 0)
+                        @if ($ann_ck && $ann_ck->images && $ann_ck->images->count() > 0)
                             <div class="container d-flex ">
                                 <div class="carousel-inner">
-                                    @foreach ($announcement_to_check->images as $image)
+                                    @foreach ($ann_ck->images as $image)
                                         <div
                                             class="carousel-item  d-flex @if ($loop->first) active @endif">
                                             <div class="col-12 col-md-6 img-fluid p-3 rounded" alt="...">
@@ -348,17 +350,17 @@
                     </div> --}}
                     <div class="col-12 card shadow d-flex" style='width: 100%;'>
                         <div class="card-body">
-                            <h5 class="card-title">{{ __('ui.titolo') }}: {{ $announcement_to_check->title }}</h5>
-                            <p class="card-text">{{ __('ui.descri') }}: {{ $announcement_to_check->body }}</p>
+                            <h5 class="card-title">{{ __('ui.titolo') }}: {{ $ann_ck->title }}</h5>
+                            <p class="card-text">{{ __('ui.descri') }}: {{ $ann_ck->body }}</p>
                             <p class="card-footer">{{ __('ui.pub') }}
-                                {{ $announcement_to_check->created_at->format('d/m/y') }}</p>
+                                {{ $ann_ck->created_at->format('d/m/y') }}</p>
                         </div>
                     </div>
 
                     <div class="row d-flex justify-content-between ">
                         <div class="col-12 col-md-6 text-center ">
                             <form
-                                action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
+                                action="{{ route('revisor.accept_announcement', ['announcement' => $ann_ck]) }}"
                                 method="POST">
                                 @csrf
                                 @method('PATCH')
@@ -367,7 +369,7 @@
                         </div>
                         <div class="col-12 col-md-6 text-center">
                             <form
-                                action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
+                                action="{{ route('revisor.reject_announcement', ['announcement' => $ann_ck]) }}"
                                 method="POST">
                                 @csrf
                                 @method('PATCH')

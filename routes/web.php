@@ -27,6 +27,8 @@ Route::get('/tutti/annunci', [AnnouncementController::class, 'indexAnnouncement'
 
 Route::get('/revisor/home',[RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
 
+Route::patch('/visual/annuncio/{announcement}', [RevisorController::class, 'showRevisor'])->name('revisor.announcements.show');
+
 Route::patch('/accetta/annuncio/{announcement}',[RevisorController::class, 'acceptAnnouncement'])->name('revisor.accept_announcement');
 
 Route::patch('/rifiuta/annuncio/{announcement}',[RevisorController::class, 'rejectAnnouncement'])->name('revisor.reject_announcement');
