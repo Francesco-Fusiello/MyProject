@@ -27,7 +27,7 @@
             <div class="row col-12">
                 <ul class="footer-nav" style="background-color: #0851b1">
                     <li>Privacy Policy</li>
-                    <li>Chi Siamo</li>
+                    <li><a href="{{ route('chiSiamo') }}">Chi Siamo</a></li>
                     <li>Recensioni</li>
                     <li>FAQs</li>
                 </ul>

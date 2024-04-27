@@ -30,4 +30,8 @@ public function setLanguage($lang)
     return redirect()->back();
 }
 
+public function chiSiamo(){
+    return view('chiSiamo');
+}
+
 }
