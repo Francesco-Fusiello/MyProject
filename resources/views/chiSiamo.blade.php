@@ -34,7 +34,7 @@
         </div>
         <div class="box col-12  me-md-5">
             <div class="imgBoxCard">
-                <img src="https://image.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" alt="">
+                <img src="\images\lu white 002_sm.jpg" alt="">
             </div>
             <div class="contentCard">
                 <h2>Luana Canozzi</br>

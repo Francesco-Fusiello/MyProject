@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AnnouncementController extends Controller
 {
@@ -20,5 +21,15 @@ class AnnouncementController extends Controller
         return view ('announcements.index', compact('announcements'));
     }
 
+    public function deleteAnnouncement(Announcement $announcement){
+        $user=Auth::user();
+        if ($user->id !=$announcement->user->id){
+            abort(403);
+        };
+    
+        // $announcement->categories()->detach();
+        $announcement->delete();
+        return redirect()->route('announcements.index')->with(['success'=>'Articolo cancellato con successo']);
+    }
 
 }

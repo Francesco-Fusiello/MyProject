@@ -22,7 +22,7 @@
                             <div class="carousel-inner">
                                 @foreach ($announcement->images as $image)
                                     <div class="carousel-item @if ($loop->first) active @endif">
-                                        <img src="{{ Storage::url($image->path) }}" class="d-block mx-auto" alt="..."> 
+                                        <img src="{{ Storage::url($image->path) }}" class="d-block  w-100 h-auto" alt="..."> 
                                     </div>   
                                       {{-- img-fluid p-3 rounded --}}
                                 @endforeach
@@ -63,6 +63,16 @@
                       {{ $announcement->category->name }}</a>
                   <p class="card-footer">{{__('ui.pub')}} {{ $announcement->created_at->format('d/m/y') }}</p>
                   <p class="card-text fs-6 fst-italic ">{{__('ui.author')}} {{ $announcement->user->name }}</p>
+                    {{-- cancellazione articolo da parte dell'autore --}}
+                @if (Auth::user()->id == $announcement->user_id)
+                  <form action="{{ route('announcements.destroy', $announcement) }}" method="POST">
+                      @method('DELETE')
+                      @csrf
+                      <button class="btn btn-danger" type="submit">ELIMINA</button>
+                  </form>
+              @endif
+
+
 
                 </div>
 

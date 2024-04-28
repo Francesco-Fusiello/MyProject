@@ -2,6 +2,13 @@
     <x-barraricerca />
     <x-button_category />
 
+    @if (session()->has('success'))
+        <div class="alert alert-success fst-italic" role="alert">
+            {{ session('success') }}
+        </div>
+    @endif
+
+
     <div class="container py-5">
         <!-- For Demo Purpose-->
         <header class="text-center mb-5">
@@ -21,11 +28,12 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-4">
                     <!-- Card-->
                     <div class="card rounded shadow-sm border-0">
-                        <div class="card-body p-4"> <img class="postcard__img img-fluid "
+                        <div class="card-body p-4"> <img class="postcard__img img-fluid w-100 h-auto"
                                 src="{{ !$announcement->images()->get()->isEmpty()
-                                ? Storage::url($announcement->images()->first()->path)
-                                    // ? $announcement->images()->first()->getUrl(256, 256)
-                                    : 'https://picsum.photos/256' }}"
+                                    ? $announcement->images()->first()->getUrl(256, 256)
+                                    // ? Storage::url($announcement->images()->first()->path)
+                                    : // ? $announcement->images()->first()->getUrl(256, 256)
+                                    'https://picsum.photos/256' }}"
                                 alt="Image Title" />
                             {{-- <img src="https://picsum.photos/200" alt="" class='img-fluid d-block mx-auto mb-3'> --}}
 

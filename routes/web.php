@@ -25,6 +25,9 @@ Route::get('/dettaglio/annuncio/{announcement}', [AnnouncementController::class,
 
 Route::get('/tutti/annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcements.index');
 
+Route::delete('/annuncio/{announcement}/delete',[AnnouncementController::class,'deleteAnnouncement'])->middleware('auth')->name('announcements.destroy');
+
+
 Route::get('/revisor/home',[RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
 
 Route::patch('/accetta/annuncio/{announcement}',[RevisorController::class, 'acceptAnnouncement'])->name('revisor.accept_announcement');
