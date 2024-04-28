@@ -5,7 +5,9 @@
     <div class="container-fluid p-2 bg-gradient  shadow mb-4">
         <div class="row">
             <div class="col-12 p-2">
-                <h1 class="display-3 text-center ">{{__('ui.annuncio')}} {{ $announcement->title }}</h1>
+                <h1 class="display-3 text-center ">
+                  {{-- {{__('ui.annuncio')}} --}}
+                  {{ $announcement->title }}</h1>
                 
             </div>
         </div>
@@ -53,7 +55,7 @@
                   </div>
                 <div class="col-5 m-5 p-5 align-items-center border rounded-4">
 
-                  <h5 class="card-title"> {{__('ui.titolo')}}: {{ $announcement->title }}</h5>
+                  {{-- <h5 class="card-title"> {{__('ui.titolo')}}: {{ $announcement->title }}</h5> --}}
                   <p class="card-text">{{__('ui.descri')}}: {{ $announcement->body }}</p>
                   <p class="card-text">{{__('ui.value1')}}: {{ $announcement->price }}</p>
                   <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
