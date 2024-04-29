@@ -133,7 +133,7 @@
                                                                                 </div>
 
                                                                                 <div class="col-12 col-md-3">
-                                                                                    <div class="col-12 card-body p-1 border border-success">
+                                                                                    <div class="col-12 card-body p-1 border border-success  ">
                                                                                         <h6 class="tc-accent">Revisione Immagini</h6>
                                                                                         <p class="font-mini">Adulti: <span
                                                                                                 class="{{ $image->adult }}"></span>
@@ -173,14 +173,14 @@
                                                                 </div>
                                                             @endif
 
-                                                            <button class="carousel-control-prev" type="button"
+                                                            <button class="carousel-control-prev " type="button"
                                                                 data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
+                                                                <span class="carousel-control-prev-icon  bg-primary " aria-hidden="true"></span>
+                                                                <span class="visually-hidden ">Previous</span>
                                                             </button>
                                                             <button class="carousel-control-next" type="button"
                                                                 data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="carousel-control-next-icon   bg-primary " aria-hidden="true"></span>
                                                                 <span class="visually-hidden">Next</span>
                                                             </button>
                                                         </div>

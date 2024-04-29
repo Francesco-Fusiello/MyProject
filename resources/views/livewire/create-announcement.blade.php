@@ -81,7 +81,7 @@
     @if (!empty($images))
         <div class="row">
             <div class="div col-12">
-                <div class=" d-flex flex-nowrap mb-3">
+                <div class=" d-flex flex-nowrap m-3">
 
                     <p>{{ __('ui.phoPrew') }}:</p>
                 </div>
