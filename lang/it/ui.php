@@ -71,7 +71,9 @@ return[
     'Televisori' => 'Televisori',
     'ling'=> 'Lingue',
     'risRic'=> 'Risultati per la ricerca',
-    
+    'chiS1'=> 'Chi siamo',
+    'chiS2'=> 'FLAY è un acronimo, dei fondatori Francesco, Luana, Anthony, ed Yvan..',
+    'chiS3'=> "Siamo un gruppo di imprenditori molto giovani, ma con alle spalle l'esperienza della nostra (Luana) ",
 
 
 

@@ -4,14 +4,14 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 <h3 class="display-3">
-                Chi siamo...
+                    {{ __('ui.chiS1') }}...
                 </h3>
             </div>
         </div>
     </header>
 
     <div class="container justify-content-center fst-italic col-9 ">
-        <h5 class="text-center fst-italic">FLAY è un acronimo, dei fondatori Francesco, Luana, Anthony, ed Yvan..</h5> 
+        <h5 class="text-center fst-italic">{{ __('ui.chiS2') }}</h5> 
         <p class="d-flex justify-content-center fst-italic"> Siamo un gruppo di imprenditori molto giovani, ma con alle spalle l'esperienza della nostra (Luana)  <br>
             Partiti con l'idea di creare una piattaforma di vendita di prodotti nuovi, usati, e di servizi intellettuali, ormai diventata REALTA'... <br>
             FLAY è guidata da quattro principi: l’ossessione per il cliente piuttosto che l'attenzione alla concorrenza, la passione per l'innovazione,

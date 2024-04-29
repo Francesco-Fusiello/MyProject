@@ -70,6 +70,8 @@ return[
     'AccessoriPerAnimali' => 'AnimalAccessories',
     'ling'=> 'Languages',
     'risRic'=> 'Search results',
+    'chiS1'=> 'Who we are',
+    'chiS2'=> 'FLAY is an acronym, of the founders Francesco, Luana, Anthony, and Yvan..',
 
 
     
