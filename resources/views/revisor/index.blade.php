@@ -186,7 +186,7 @@
                                                         </div>
                                                         {{-- </div>
                                                     </div> --}}
-                                                        <div class="col-12 card shadow d-flex" style='width: 100%;'>
+                                                        <div class="col-12 card shadow d-flex mt-3 " style='width: 100%;'>
                                                             <div class="card-body">
                                                                 <h5 class="card-title">{{ __('ui.titolo') }}:
                                                                     {{ $ann_ck->title }}</h5>
