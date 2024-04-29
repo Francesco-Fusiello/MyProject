@@ -11,7 +11,6 @@
         @else
             {{ __('ui.titRev1') }}
         @endif
-        {{-- {{ $announcement_to_check  "{{__('ui.titolo')}}" : 'Non ci sono annunci da revisionare' }} --}}
     </h2>
 
 
