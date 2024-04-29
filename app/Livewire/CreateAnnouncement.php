@@ -100,6 +100,8 @@ class CreateAnnouncement extends Component
                     new GoogleVisionLabelImage($newImage->id),
                     new Watermark($newImage->id, $newImage->path, 256, 256),
                     new ResizeImage($newImage->path , 256 , 256),
+
+                    
                 ])->dispatch($newImage->id);
             }
 

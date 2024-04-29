@@ -26,7 +26,7 @@
         });
     </script>
 
-            <table id="example" class="col-11 table table-striped table-bordered" cellspacing="0" width="100%">
+            <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         {{-- <th>{{ __('ui.acc') }}  Rifiutato</th> --}}
