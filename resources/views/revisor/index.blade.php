@@ -16,7 +16,9 @@
 
 
 
-
+    @if ($announcement_to_check->isEmpty())
+    <div class="text-center">{{ __('NON CI SONO ANNUNCI DA REVISIONARE') }}</div>
+@else
 
     @if ($announcement_to_check)
     <!-- Script per aggiornare dinamicamente il contenuto della modal -->
@@ -243,6 +245,7 @@
                 </tbody>
             </table>
 
+    @endif
     @endif
         <div class="row">
             <div class="col-12 text-center justify-content-center">
