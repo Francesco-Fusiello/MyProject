@@ -57,8 +57,8 @@
                             <td>{{ $ann_ck->created_at->format('d/m/y') }}</td>
                             <td>
                                 <div class="d-flex col-12 justify-content-center">
-                                    <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;" data-bs-toggle="modal" data-bs-target="#myModal{{ $ann_ck->id }}" title="{{ __('ui.visua') }}">
-                                        <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #eceff4;"></i>
+                                    <button type="button" class="btn btn-outline-primary btn-xs dt-edit" style="margin-right:16px;" data-bs-toggle="modal" data-bs-target="#myModal{{ $ann_ck->id }}" title="{{ __('ui.visua') }}">
+                                        <i class="fa-regular fa-eye fa-sm" ></i>
                                     </button>
                                         {{-- 
                                     <button type="button" class="btn btn-danger btn-xs dt-delete" title="{{ __('ui.canc') }}">
