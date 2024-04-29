@@ -12,9 +12,9 @@
 
     <div class="container justify-content-center fst-italic col-9 ">
         <h5 class="text-center fst-italic">{{ __('ui.chiS2') }}</h5> 
-        <p class="d-flex justify-content-center fst-italic"> {{ __('ui.chiS3') }} <br>
+        <h6 class="d-flex justify-content-center fst-italic"> {{ __('ui.chiS3') }} <br>
             {{ __('ui.chiS4') }} <br>
-            {{ __('ui.chiS5') }} <br>{{ __('ui.chiS6') }}.</p> 
+            {{ __('ui.chiS5') }} <br>{{ __('ui.chiS6') }}.</h6> 
     </div>
         
 

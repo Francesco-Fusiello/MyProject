@@ -15,8 +15,7 @@
             <ul class="navbar-nav mb-2 mb-lg-0">
                 {{-- home --}}
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}"><i class="fa-solid fa-house" style="color: #127DC5; border: 1px,   color: white;
-                        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"></i></a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}"><i class="fa-solid fa-house fs-lg" style="color: #127DC5; border: 1px,   color: white;"></i></a>
                 </li>
 
 
@@ -24,7 +23,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle fw-semibold fst-italic" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-earth-americas fa-xl" style="color: #127DC5;"></i>
+                    <i class="fa-solid fa-earth-americas " style="color: #127DC5;"></i>
                     {{-- {{ __('ui.ling') }} --}}
                     </a>
 
