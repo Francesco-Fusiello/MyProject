@@ -52,7 +52,7 @@ return[
     'annu' => 'Undo last action',
     'scoprili' => 'Check them out!',
     'titRev' => 'Here are the announcements to review',
-    'titRev1' => 'There are no announcement to review',
+    'NonAnnunci' => 'There are no announcements to review',
     'annuncio' => 'Announcement',
     'EspCat'=>'View the category',
     'success'=>'Announcement created successfully, will be published after review',
@@ -70,7 +70,7 @@ return[
     'AccessoriPerAnimali' => 'AnimalAccessories',
     'ling'=> 'Languages',
     'risRic'=> 'Search results',
-    'NonAnnunci' => 'There are no ads to review',
+
 
     
     

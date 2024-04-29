@@ -53,7 +53,7 @@ return[
     'banner'=>'\Banner\3.FR.png',
     'scoprili' => 'Découvrez-les tous!',
     'titRev' => 'Voici les annonces à examiner',
-    'titRev1' => "Il n'y a aucune annonce à examiner",
+    'NonAnnunci' => "Il n'y a aucune annonce à examiner",
     'annuncio' => 'Annonce',
     'EspCat'=>'Explorez la catégorie',
     'success'=>'Annonce créée avec succès, sera publiée après examen',
@@ -71,7 +71,7 @@ return[
     'AccessoriPerAnimali' => 'AccessoiresPourAnimaux',
     'ling'=> 'Langues',
     'risRic'=> 'Résultats de recherche',
-    'NonAnnunci' => "Il n'y a aucune annonce à examiner",
+    
 
 
 ];

@@ -53,7 +53,7 @@ return[
     'annu' => 'Annulla ultima azione',
     'scoprili' => 'Scoprili tutti!',
     'titRev' => 'Ecco gli annunci da revisionare',
-    'titRev1' => 'Non ci sono annunci da revisionare',
+    'NonAnnunci' => 'Non ci sono annunci da revisionare',
     'annuncio' => 'Annuncio',
     'EspCat'=>'Esplora la categoria',
     'success'=>'Annuncio creato con successo, sarà pubblicato dopo la revisione',
@@ -71,7 +71,7 @@ return[
     'Televisori' => 'Televisori',
     'ling'=> 'Lingue',
     'risRic'=> 'Risultati per la ricerca',
-    'NonAnnunci' => 'Non ci sono annunci da revisionare',
+    
 
 
 
