@@ -53,7 +53,7 @@
                             <td>{{ $ann_ck->title }}</td>
                             <td> {{ $ann_ck->body }}</td>
                             <td>{{ $ann_ck->price }}</td>
-                            <td>{{ $ann_ck->category->name }}</td>
+                            <td> {{ __('ui.' . $ann_ck->category->name) }}</td>
                             <td>{{ $ann_ck->created_at->format('d/m/y') }}</td>
                             <td>
                                 <div class="d-flex col-12 justify-content-center">
@@ -72,7 +72,8 @@
                                     @method('PATCH')
                                     <button type="submit" class="ms-3 btn btn-outline-success btn-xs dt-edit"
                                         title="{{ __('ui.acc') }} "><i
-                                            class="fa-regular fa-square-check fa-sm"></i></i></button>
+                                            class="fa-regular fa-square-check fa-sm"></i>
+                                    </button>
                                 </form>
                                 <form
                                     action="{{ route('revisor.reject_announcement', ['announcement' => $ann_ck]) }}"
@@ -81,7 +82,8 @@
                                     @method('PATCH')
                                     <button type="submit" class="ms-3 btn btn-outline-danger btn-xs dt-edit"
                                         title="{{ __('ui.rif') }}"><i
-                                            class="fa-regular fa-thumbs-down fa-sm"></i></i></button>
+                                            class="fa-regular fa-thumbs-down fa-sm"></i>
+                                    </button>
                                 </form>
                             </td>
                             </div>

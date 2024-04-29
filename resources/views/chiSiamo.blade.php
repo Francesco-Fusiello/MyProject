@@ -23,7 +23,7 @@
     <div class="containerCard mt-5">
         <div class="box col-12 me-md-5">
             <div class="imgBoxCard">
-                <img src="https://img.freepik.com/free-photo/portrait-handsome-young-man-makes-okay-gesture-demonstrates-agreement-likes-idea-smiles-happily-wears-optical-glasses-yellow-hat-t-shirt-models-indoor-its-fine-thank-you-hand-sign_273609-30676.jpg?size=626&ext=jpg" alt="">
+                <img src="\images\io1.jpg"  alt="">
             </div>
             <div class="contentCard">
                 <h2>Francesco Fusiello</br>
