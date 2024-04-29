@@ -70,6 +70,7 @@ return[
     'AccessoriPerAnimali' => 'AnimalAccessories',
     'ling'=> 'Languages',
     'risRic'=> 'Search results',
+    'NonAnnunci' => 'There are no ads to review',
 
     
     

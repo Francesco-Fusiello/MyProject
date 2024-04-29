@@ -71,6 +71,7 @@ return[
     'Televisori' => 'Televisori',
     'ling'=> 'Lingue',
     'risRic'=> 'Risultati per la ricerca',
+    'NonAnnunci' => 'Non ci sono annunci da revisionare',
 
 
 

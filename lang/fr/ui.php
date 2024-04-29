@@ -71,6 +71,7 @@ return[
     'AccessoriPerAnimali' => 'AccessoiresPourAnimaux',
     'ling'=> 'Langues',
     'risRic'=> 'Résultats de recherche',
+    'NonAnnunci' => "Il n'y a aucune annonce à examiner",
 
 
 ];
