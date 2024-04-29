@@ -76,6 +76,11 @@ return[
     'chiS4'=> 'We started with the idea of creating a sales platform for new and used products and intellectual services, which has now become REALITY...',
     'chiS5'=> "FLAY is guided by four principles: customer obsession over competition, a passion for innovation, a commitment to operational excellence and a long-term vision.",
     'chiS6'=> "FLAY aims to be the world's most customer-focused company, the world's best employer and the world's safest workplace.",
-    
+    'rev1'=> 'Image Review',
+    'rev2'=> 'Adults',
+    'rev3'=> 'Satire',
+    'rev4'=> 'Medicine',
+    'rev5'=> 'Violence',
+    'rev6'=> 'Winking',
 
 ];

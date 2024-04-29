@@ -23,7 +23,7 @@
     <div class="containerCard mt-5">
         <div class="box col-12 me-md-5">
             <div class="imgBoxCard">
-                <img src="\images\io1.jpg"  alt="">
+                <img src="\images\io2.jpg"  alt="">
             </div>
             <div class="contentCard">
                 <h2>Francesco Fusiello</br>

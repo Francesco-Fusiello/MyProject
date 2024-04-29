@@ -77,7 +77,12 @@ return[
     'chiS4'=> "Partiti con l'idea di creare una piattaforma di vendita di prodotti nuovi, usati, e di servizi intellettuali, ormai diventata REALTA'...",
     'chiS5'=> "FLAY è guidata da quattro principi: l’ossessione per il cliente piuttosto che l'attenzione alla concorrenza, la passione per l'innovazione, l'impegno per l'eccellenza operativa e la visione a lungo termine.",
     'chiS6'=> " FLAY punta ad essere l’azienda più attenta al cliente al mondo, il miglior datore di lavoro al mondo e il luogo di lavoro più sicuro al mondo.",
-
+    'rev1'=> 'Revisione Immagini',
+    'rev2'=> 'Adulti',
+    'rev3'=> 'Satira',
+    'rev4'=> 'Medicina',
+    'rev5'=> 'Violenza',
+    'rev6'=> 'Ammiccante',
     
 
 

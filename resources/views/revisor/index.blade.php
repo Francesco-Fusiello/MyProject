@@ -134,20 +134,20 @@
 
                                                                                 <div class="col-12 col-md-3">
                                                                                     <div class="col-12 card-body p-1 border border-success  ">
-                                                                                        <h6 class="tc-accent">Revisione Immagini</h6>
-                                                                                        <p class="font-mini">Adulti: <span
+                                                                                        <h6 class="tc-accent">{{ __('ui.rev1') }}</h6>
+                                                                                        <p class="font-mini">{{ __('ui.rev2') }}: <span
                                                                                                 class="{{ $image->adult }}"></span>
                                                                                         </p>
-                                                                                        <p class="font-mini">Satira: <span
+                                                                                        <p class="font-mini">{{ __('ui.rev3') }}: <span
                                                                                                 class="{{ $image->spoof }}"></span>
                                                                                         </p>
-                                                                                        <p class="font-mini">Medicina: <span
+                                                                                        <p class="font-mini">{{ __('ui.rev4') }}: <span
                                                                                                 class="{{ $image->medical }}"></span>
                                                                                         </p>
-                                                                                        <p class="font-mini">Violenza: <span
+                                                                                        <p class="font-mini">{{ __('ui.rev5') }}: <span
                                                                                                 class="{{ $image->violence }}"></span>
                                                                                         </p>
-                                                                                        <p class="font-mini">Osè: <span
+                                                                                        <p class="font-mini">{{ __('ui.rev6') }}: <span
                                                                                                 class="{{ $image->racy }}"></span>
                                                                                         </p>
                                                                                     </div>
