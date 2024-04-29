@@ -64,12 +64,14 @@
                   <p class="card-footer">{{__('ui.pub')}} {{ $announcement->created_at->format('d/m/y') }}</p>
                   <p class="card-text fs-6 fst-italic ">{{__('ui.author')}} {{ $announcement->user->name }}</p>
                     {{-- cancellazione articolo da parte dell'autore --}}
-                @if (Auth::user()->id == $announcement->user_id)
+                @if (Auth::user())   
+                @if (Auth::user()->id == $announcement->user_id )
                   <form action="{{ route('announcements.destroy', $announcement) }}" method="POST">
                       @method('DELETE')
                       @csrf
                       <button class="btn btn-danger" type="submit">ELIMINA</button>
                   </form>
+                  @endif
               @endif
 
 
