@@ -25,7 +25,7 @@
 
     <x-navbar />
 
-    <main class="min-vh-75">
+    <main class="min-vh-100">
         {{ $slot }}
     </main>
 
