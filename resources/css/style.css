@@ -1072,7 +1072,7 @@ body {
   display: block;
   font-size: 0.9rem;
   color: #111;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2rem;
   letter-spacing: 1px;
 }
@@ -1080,7 +1080,7 @@ body {
 .contentCard span {
   color: #413e3e;
   font-size: 0.7rem;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 

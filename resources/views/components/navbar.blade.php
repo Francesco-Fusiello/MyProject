@@ -24,7 +24,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle fw-semibold fst-italic" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-language fa-xl" style="color: #127DC5;"></i>
+                    <i class="fa-solid fa-earth-americas fa-xl" style="color: #127DC5;"></i>
                     {{-- {{ __('ui.ling') }} --}}
                     </a>
 

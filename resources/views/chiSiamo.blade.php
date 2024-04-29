@@ -12,11 +12,9 @@
 
     <div class="container justify-content-center fst-italic col-9 ">
         <h5 class="text-center fst-italic">{{ __('ui.chiS2') }}</h5> 
-        <p class="d-flex justify-content-center fst-italic"> Siamo un gruppo di imprenditori molto giovani, ma con alle spalle l'esperienza della nostra (Luana)  <br>
-            Partiti con l'idea di creare una piattaforma di vendita di prodotti nuovi, usati, e di servizi intellettuali, ormai diventata REALTA'... <br>
-            FLAY è guidata da quattro principi: l’ossessione per il cliente piuttosto che l'attenzione alla concorrenza, la passione per l'innovazione,
-            l'impegno per l'eccellenza operativa e la visione a lungo termine. <br> FLAY punta ad essere l’azienda più attenta al cliente al mondo,
-             il miglior datore di lavoro al mondo e il luogo di lavoro più sicuro al mondo.</p> 
+        <p class="d-flex justify-content-center fst-italic"> {{ __('ui.chiS3') }} <br>
+            {{ __('ui.chiS4') }} <br>
+            {{ __('ui.chiS5') }} <br>{{ __('ui.chiS6') }}.</p> 
     </div>
         
 

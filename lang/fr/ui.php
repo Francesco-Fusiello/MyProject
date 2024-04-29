@@ -73,8 +73,10 @@ return[
     'risRic'=> 'Résultats de recherche',
     'chiS1'=> 'Qui nous sommes',
     'chiS2'=> 'FLAY est un acronyme des fondateurs Francesco, Luana, Anthony et Yvan.',
-    'chiS3'=> 'Chi siamo',
-    
+    'chiS3'=> 'Nous sommes un groupe de très jeunes entrepreneurs, mais avec notre expérience derrière nous (Luana)',
+    'chiS4'=> "Nous sommes partis de l'idée de créer une plateforme de vente de produits neufs et d'occasion et de services intellectuels, qui est aujourd'hui devenue RÉALITÉ...",
+    'chiS5'=> "FLAY est guidé par quatre principes : l'obsession du client face à la concurrence, une passion pour l'innovation, un engagement envers l'excellence opérationnelle et une vision à long terme.",
+    'chiS6'=> "FLAY vise à être l'entreprise la plus axée sur le client, le meilleur employeur au monde et le lieu de travail le plus sûr au monde.",
 
 
 ];

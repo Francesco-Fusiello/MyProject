@@ -72,10 +72,10 @@ return[
     'risRic'=> 'Search results',
     'chiS1'=> 'Who we are',
     'chiS2'=> 'FLAY is an acronym, of the founders Francesco, Luana, Anthony, and Yvan..',
-    'chiS3'=> 'Chi siamo',
-
-
-    
+    'chiS3'=> 'We are a group of very young entrepreneurs, but with the experience of ours behind us (Luana)',
+    'chiS4'=> 'We started with the idea of creating a sales platform for new and used products and intellectual services, which has now become REALITY...',
+    'chiS5'=> "FLAY is guided by four principles: customer obsession over competition, a passion for innovation, a commitment to operational excellence and a long-term vision.",
+    'chiS6'=> "FLAY aims to be the world's most customer-focused company, the world's best employer and the world's safest workplace.",
     
 
 ];
