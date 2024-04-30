@@ -50,7 +50,7 @@
         </div>
         <div class="box col-12 me-md-5">
             <div class="imgBoxCard">
-                <img src="https://image.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg" alt="">
+                <img src="\images\Yvan_curriculum.JPG" alt="">
             </div>
             <div class="contentCard">
                 <h2>Yvan Saccotelli</br>
