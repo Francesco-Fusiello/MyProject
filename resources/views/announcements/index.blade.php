@@ -40,8 +40,8 @@
                                 alt="Image Title" />
                             {{-- <img src="https://picsum.photos/200" alt="" class='img-fluid d-block mx-auto mb-3'> --}}
 
-                            <h5 class="card-title mt-2 text-dark" title='{{$announcement->title}}' style='text-black '>
-                                <a class="postcard__title red" href="{{ route('announcements.show', $announcement) }}">
+                            <h5 class="card-title mt-2 x" title='{{$announcement->title}}'>
+                                <a class="titleAnn" href="{{ route('announcements.show', $announcement) }}">
                                 {{ Str::limit($announcement->title, 20,'...') }}</a>
                             </h5>
                             <p class="card-text"title='{{$announcement->body}}'>{{ Str::limit($announcement->body, 25,'...') }}</p>
@@ -51,7 +51,7 @@
             
                             <p>
                                 <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
-                                    class="w-100 my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-success ">{{ __('ui.category') }}
+                                    class="w-100 my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-primary ">{{ __('ui.category') }}
                                     {{ __('ui.' . $announcement->category->name) }}</a>
                             </p>
                             <p class="card-footer">{{ __('ui.pub') }}
