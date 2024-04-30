@@ -12,7 +12,7 @@
         <div class="container mt-4">
             <div class="row justify-content-center">
 
-                @forelse($category->announcements as $announcement)
+                @forelse($announcements as $announcement)
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                         <div class="card shadow mb-3">
                             <img src="{{ !$announcement->images()->get()->isEmpty()
@@ -42,4 +42,7 @@
             </div>
         </div>
     </section>
+    <div class=" m-3">
+        {{ $announcements->links() }}
+    </div>
 </x-layout>

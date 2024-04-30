@@ -29,6 +29,7 @@ class AnnouncementController extends Controller
     
         // $announcement->categories()->detach();
         $announcement->delete();
+        // Storage delete($announcement->images()->'path');
         return redirect()->route('announcements.index')->with(['success'=>'Articolo cancellato con successo']);
     }
 

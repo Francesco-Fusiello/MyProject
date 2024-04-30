@@ -60,11 +60,9 @@
                                     <button type="button" class="btn btn-outline-primary btn-xs dt-edit" style="margin-right:16px;" data-bs-toggle="modal" data-bs-target="#myModal{{ $ann_ck->id }}" title="{{ __('ui.visua') }}">
                                         <i class="fa-regular fa-eye fa-sm" ></i>
                                     </button>
-                                        {{-- 
-                                    <button type="button" class="btn btn-danger btn-xs dt-delete" title="{{ __('ui.canc') }}">
-                                        <i class="fa-solid fa-trash fa-sm" style="color: #eceff4;"></i>
-                                    </button> --}}
-                            <td class="d-flex col-12 justify-content-center">
+                            </td>
+                            <td>
+                                <div class="d-flex col-12 justify-content-center">
                                 <form
                                     action="{{ route('revisor.accept_announcement', ['announcement' => $ann_ck]) }}"
                                     method="POST">
@@ -85,9 +83,9 @@
                                             class="fa-regular fa-thumbs-down fa-sm"></i>
                                     </button>
                                 </form>
-                            </td>
                             </div>
                             </td>
+                            </div>
                         </tr>
 
                         <!-- Modal -->

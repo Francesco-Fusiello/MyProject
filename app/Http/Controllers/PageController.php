@@ -14,13 +14,16 @@ class PageController extends Controller
 }
 
 public function categoryShow(Category $category) {
-    return view('categoryShow',compact('category'));
+    $announcements= Announcement::where('is_accepted', true)->orderBy('created_at','desc')->paginate(8);
+    // dd($announcements);
+    return view('categoryShow',compact('category','announcements'));
 }
 
 public function searchAnnouncements(Request $request){
     $searchTerm = $request->searched;
-    $announcements = Announcement::search($searchTerm)->where('is_accepted',true)->paginate(10);
-    return view('announcements.index',compact('announcements', 'searchTerm'));
+    $announcements = Announcement::search($searchTerm)->where('is_accepted',true)->orderBy('created_at','desc')->paginate(12)->withQueryString();
+   
+    return view('announcements.index',compact('announcements'));
 }
 
 

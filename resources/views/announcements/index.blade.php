@@ -64,6 +64,7 @@
             <div class=" m-3">
                 {{ $announcements->links() }}
             </div>
+            
         </div>
     </div>
 </x-layout>
