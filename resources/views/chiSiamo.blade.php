@@ -50,7 +50,7 @@
         </div>
         <div class="box col-12 me-md-5">
             <div class="imgBoxCard">
-                <img src="\images\Yvan_curriculum.JPG" alt="">
+                <img src="\images\Yvan_curriculum3.png" alt="">
             </div>
             <div class="contentCard">
                 <h2>Yvan Saccotelli</br>
