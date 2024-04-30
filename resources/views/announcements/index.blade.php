@@ -1,3 +1,7 @@
+@php
+    use Illuminate\Support\Str;
+@endphp
+
 <x-layout>
     <x-barraricerca />
     <x-button_category />
@@ -32,13 +36,12 @@
                                 src="{{ !$announcement->images()->get()->isEmpty()
                                     ? $announcement->images()->first()->getUrl(256, 256)
                                     // ? Storage::url($announcement->images()->first()->path)
-                                    : // ? $announcement->images()->first()->getUrl(256, 256)
-                                    'https://picsum.photos/256' }}"
+                                    :'https://picsum.photos/256' }}"
                                 alt="Image Title" />
                             {{-- <img src="https://picsum.photos/200" alt="" class='img-fluid d-block mx-auto mb-3'> --}}
 
-                            <h5 class="card-title text-center ">{{ $announcement->title }}</h5>
-                            <p class="card-text">{{ $announcement->body }}</p>
+                            <h5 class="card-title text-center mt-2" title='{{$announcement->title}}'>{{ Str::limit($announcement->title, 20,'...') }}</h5>
+                            <p class="card-text"title='{{$announcement->body}}'>{{ Str::limit($announcement->body, 30,'...') }}</p>
                             <p class="card-text">{{ __('ui.value') }} {{ $announcement->price }}</p>
                             <a href="{{ route('announcements.show', $announcement) }}"
                                 class="btn btn-primary shadow w-50">{{ __('ui.visua') }}</a>
