@@ -69,7 +69,7 @@
                   <form action="{{ route('announcements.destroy', $announcement) }}" method="POST">
                       @method('DELETE')
                       @csrf
-                      <button class="btn btn-danger" type="submit">ELIMINA</button>
+                      <button class="btn btn-danger" type="submit">{{__('ui.eli')}}</button>
                   </form>
                   @endif
               @endif

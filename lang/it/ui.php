@@ -83,6 +83,10 @@ return[
     'rev4'=> 'Medicina',
     'rev5'=> 'Violenza',
     'rev6'=> 'Ammiccante',
+    'eli'=> 'Elimina',
+    'messN'=> 'Messaggio non letto',
+    
+
     
 
     
