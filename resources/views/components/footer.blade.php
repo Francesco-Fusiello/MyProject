@@ -23,7 +23,7 @@
             @endif
         </section>
         <!-- Section: Text -->
-        <div class="container d-flex  justify-content-center flex-nowrap mt-3">
+        <div class="container d-flex flex-nowrap mt-3">
             <div class="row col-12">
                 <ul class="footer-nav" style="background-color: #0851b1">
                     <li>Privacy Policy</li>
@@ -124,8 +124,8 @@
               <div class="tooltip">Youtube</div>
             </li> --}}
           </ul>
-        </div>
           
+        </div>
           <!-- Copyright -->
           <div class="text-center p-3" style="background-color: #0851b1">
             © 2024 by Flay
