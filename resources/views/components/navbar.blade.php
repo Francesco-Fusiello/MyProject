@@ -114,7 +114,7 @@
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     {{ App\Models\Announcement::toBeRevisionedCount() }}
-                                    <span class="visually-hidden">Messaggio non letto</span>
+                                    <span class="visually-hidden"> {{ __('ui.messN') }}</span>
                                 </span>
                             </a>
                         </li>
