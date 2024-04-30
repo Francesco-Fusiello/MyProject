@@ -1,3 +1,6 @@
+@php
+    use Illuminate\Support\Str;
+@endphp
 <x-layout>
     <x-barraricerca />
 
@@ -16,12 +19,12 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                         <div class="card shadow mb-3">
                             <img src="{{ !$announcement->images()->get()->isEmpty()
-                                ? Storage::url($announcement->images()->first()->path)
-                                : //  $announcement->images()->first()->getUrl(256, 256)
+                                ? $announcement->images()->first()->getUrl(256, 256)
+                                : //   Storage::url($announcement->images()->first()->path)
                                 'https://picsum.photos/200' }}"
                                 alt="" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">{{ $announcement->title }}</h5>
+                                <h5 class="card-title" title='{{$announcement->title}}'>{{ Str::limit($announcement->title, 20,'...') }}</h5>
                                 <p class="tag__item"><i class="fas fa-tag mr-2"> </i>{{ __('ui.value') }}
                                     {{ $announcement->price }}</p>
                                 <p class="card-text fs-6 fst-italic ">{{ __('ui.author') }}
