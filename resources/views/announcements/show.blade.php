@@ -59,7 +59,7 @@
                   <p class="card-text">{{__('ui.descri')}}: {{ $announcement->body }}</p>
                   <p class="card-text">{{__('ui.value1')}}: {{ $announcement->price }}</p>
                   <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
-                      class="my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-success ">{{__('ui.category')}}
+                      class="my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-primary ">{{__('ui.category')}}
                       {{ $announcement->category->name }}</a>
                   <p class="card-footer">{{__('ui.pub')}} {{ $announcement->created_at->format('d/m/y') }}</p>
                   <p class="card-text fs-6 fst-italic ">{{__('ui.author')}} {{ $announcement->user->name }}</p>

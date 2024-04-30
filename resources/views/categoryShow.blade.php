@@ -24,13 +24,17 @@
                                 'https://picsum.photos/200' }}"
                                 alt="" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title text-primary" title='{{$announcement->title}}'>{{ Str::limit($announcement->title, 20,'...') }}</h5>
+                                {{-- <h5 class="card-title text-primary" title='{{$announcement->title}}'>{{ Str::limit($announcement->title, 20,'...') }}</h5> --}}
+                                <h5 class="card-title mt-2 x" title='{{$announcement->title}}'>
+                                    <a class="titleAnn" href="{{ route('announcements.show', $announcement) }}">
+                                    {{ Str::limit($announcement->title, 20,'...') }}</a>
+                                </h5>
                                 <p class="tag__item"><i class="fas fa-tag mr-2"> </i>{{ __('ui.value') }}
                                     {{ $announcement->price }}</p>
                                 <p class="card-text fs-6 fst-italic ">{{ __('ui.author') }}
                                     {{ $announcement->user->name }}</p>
                                 <a href="{{ route('announcements.show', $announcement) }}"
-                                    class="col-6 btn btn-outline-success btn-sm">{{ __('ui.visua') }}</a>
+                                    class="col-6 btn btn-outline-primary btn-sm">{{ __('ui.visua') }}</a>
                                 {{-- <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a> --}}
                             </div>
                         </div>
