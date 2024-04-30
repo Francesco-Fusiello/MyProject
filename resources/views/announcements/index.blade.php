@@ -40,11 +40,15 @@
                                 alt="Image Title" />
                             {{-- <img src="https://picsum.photos/200" alt="" class='img-fluid d-block mx-auto mb-3'> --}}
 
-                            <h5 class="card-title text-center mt-2" title='{{$announcement->title}}'>{{ Str::limit($announcement->title, 20,'...') }}</h5>
-                            <p class="card-text"title='{{$announcement->body}}'>{{ Str::limit($announcement->body, 30,'...') }}</p>
+                            <h5 class="card-title mt-2 text-dark" title='{{$announcement->title}}' style='text-black '>
+                                <a class="postcard__title red" href="{{ route('announcements.show', $announcement) }}">
+                                {{ Str::limit($announcement->title, 20,'...') }}</a>
+                            </h5>
+                            <p class="card-text"title='{{$announcement->body}}'>{{ Str::limit($announcement->body, 25,'...') }}</p>
                             <p class="card-text">{{ __('ui.value') }} {{ $announcement->price }}</p>
-                            <a href="{{ route('announcements.show', $announcement) }}"
-                                class="btn btn-primary shadow w-50">{{ __('ui.visua') }}</a>
+                            {{-- <a href="{{ route('announcements.show', $announcement) }}"
+                                class="btn btn-primary shadow w-50">{{ __('ui.visua') }}</a> --}}
+            
                             <p>
                                 <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
                                     class="w-100 my-2 border-top pt-2 border-dark card-link shadow btn btn-outline-success ">{{ __('ui.category') }}

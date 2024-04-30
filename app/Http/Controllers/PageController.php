@@ -14,7 +14,7 @@ class PageController extends Controller
 }
 
 public function categoryShow(Category $category) {
-    $announcements= Announcement::where('is_accepted', true)->orderBy('created_at','desc')->paginate(8);
+    $announcements= Announcement::where('is_accepted', true)->latest()->get();
     // dd($announcements);
     return view('categoryShow',compact('category','announcements'));
 }
