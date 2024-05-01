@@ -896,8 +896,8 @@ a, a:hover {
  /* BOTTONE BANNER */
  .button-1 {
   position: absolute;
-   top: 75%;
-  left: 6%; 
+  top: 75%;
+  left: 25%; 
   text-decoration: none;
 
   border: none;

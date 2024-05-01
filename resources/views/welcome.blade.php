@@ -19,8 +19,8 @@
     {{-- Banner  --}}
 
     <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10 position-relative">
+        <div class="row position-relative">
+            <div class="col-12 d-flex justify-content-center  ">
                 <a href="{{ route('categoryShow', 9) }}">
                     <img class="img-fluid banner rounded-5 shadow "  src="{{ __('ui.banner') }}" alt="">
                 </a>
