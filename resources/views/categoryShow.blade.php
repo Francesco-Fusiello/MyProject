@@ -50,4 +50,9 @@
         </div>
     </section>
 
+    {{-- <div class=" m-3">
+        {{ $announcements->links() }}
+    </div> --}}
+    
+
 </x-layout>
