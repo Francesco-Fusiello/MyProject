@@ -43,7 +43,8 @@
             <tbody>
                 @foreach ($announcement_to_check as $ann_ck)
                     <tr>
-                        <td class="d-flex justify-content-center ">
+                        <td>
+                            <div class="d-flex justify-content-center ">
                             <div class="circle-img">
                                 <img src="{{ !$ann_ck->images()->get()->isEmpty()
                                     ? Storage::url($ann_ck->images()->first()->path)
@@ -51,6 +52,7 @@
                                     'https://picsum.photos/200' }}"
                                     alt="Immagine dell'articolo">
                             </div>
+                        </div>
                         </td>
                         <td>{{ $ann_ck->title }}</td>
                         <td class="d-none d-sm-table-cell"> {{ $ann_ck->body }}</td>
@@ -112,8 +114,8 @@
                                                                         <div
                                                                             class="carousel-item  d-flex @if ($loop->first) active @endif">
                                                                             <div class="col-12 col-md-6 rounded">
-                                                                                <img src="{{ $image->getUrl(256, 256) }}"
-                                                                                    {{-- {{ Storage::url($image->path) }} --}}
+                                                                                <img src=" {{ Storage::url($image->path) }}" class="img-fluid w-100 h-100"
+                                                                                    {{-- {{ $image->getUrl(256, 256) }}--}}
                                                                                     alt="immagine dell'articolo">
                                                                             </div>
                                                                             {{-- tag per google Vision --}}
