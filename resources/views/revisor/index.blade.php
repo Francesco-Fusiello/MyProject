@@ -111,7 +111,6 @@
                                                                     
                                                                     @foreach ($ann_ck->images as $image)
                                                                         {{-- @dd($ann_ck->images) --}}
-<<<<<<< HEAD
                                                                         <div class="carousel-item  d-flex @if ($loop->first) active @endif">
 =======
                                                                         <div class="carousel-item d-flex @if ($loop->first) active @endif">
