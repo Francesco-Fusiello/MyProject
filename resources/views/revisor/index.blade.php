@@ -118,8 +118,8 @@
                                                                                         alt="immagine dell'articolo">
                                                                                 </div>
                                                                                 {{-- tag per google Vision --}}
-                                                                                <div class="col-12 col-md-3">
-                                                                                    <h5 class="tc-accent ms-2 mt-3 fs-6 ">
+                                                                                <div class="col-12 col-md-3 ms-2">
+                                                                                    <h5 class="tc-accent mt-3 fs-6 ">
                                                                                         Tags</h5>
                                                                                     <div class="p-2 col-10 font-mini border border-primary">
                                                                                         @if ($image->labels)
@@ -172,7 +172,7 @@
                                                                             class="img-fluid p-3 rounded" alt="...">
                                                                     </div>
                                                                     <div class="carousel-item">
-                                                                        <img src="https://picsum.photos/id/31/1200/400"
+                                                                        <img src="https://picsum.photos/id/43/1200/400"
                                                                             class="img-fluid p-3 rounded" alt="...">
                                                                     </div>
                                                                 </div>
