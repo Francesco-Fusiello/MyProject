@@ -112,9 +112,6 @@
                                                                     @foreach ($ann_ck->images as $image)
                                                                         {{-- @dd($ann_ck->images) --}}
                                                                         <div class="carousel-item  d-flex @if ($loop->first) active @endif">
-=======
-                                                                        <div class="carousel-item d-flex @if ($loop->first) active @endif">
->>>>>>> 2e07ff64a905ace36a8f89a70f7dbd8fbb945a2e
                                                                             <div class="col-12 col-md-6 rounded">
                                                                                 <img src=" {{ Storage::url($image->path) }}" class="d-block w-100 h-100"
                                                                                     {{-- {{ $image->getUrl(256, 256) }}--}}
