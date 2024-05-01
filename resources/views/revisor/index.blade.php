@@ -104,25 +104,24 @@
                                             <div class="row d-flex justify-content-center">
                                                 <div class="col-12 col-md-9 col-lg-9">
                                                     @if ($ann_ck)
-
                                                         <div id="carouselExampleFade" class="carousel slide carousel-fade">
                                                             @if ($ann_ck && $ann_ck->images && $ann_ck->images->count() > 0)
+                                                            <div class="container d-flex">
                                                                 <div class="carousel-inner">
-                                                                    <div class="container d-flex ">
                                                                         @foreach ($ann_ck->images as $image)
                                                                             {{-- @dd($ann_ck->images) --}}
-                                                                            <div class="carousel-item d-flex @if ($loop->first) active @endif">                                                                                <div class="col-12 col-md-6 rounded">
-                                                                                    <img src=" {{ Storage::url($image->path) }}"
+                                                                            <div class="carousel-item d-flex @if ($loop->first) active @endif">
+                                                                                <div class="col-12 col-md-6">                     
+                                                                                    <img src="{{ $image->getUrl(256, 256) }} "
                                                                                         class="d-block w-100 h-100"
-                                                                                        {{-- {{ $image->getUrl(256, 256) }} --}}
+                                                                                        {{-- {{ $image->getUrl(256, 256) }} {{ Storage::url($image->path) }} --}}
                                                                                         alt="immagine dell'articolo">
                                                                                 </div>
                                                                                 {{-- tag per google Vision --}}
                                                                                 <div class="col-12 col-md-3">
                                                                                     <h5 class="tc-accent ms-2 mt-3 fs-6 ">
                                                                                         Tags</h5>
-                                                                                    <div
-                                                                                        class="p-2 col-10 font-mini border border-primary">
+                                                                                    <div class="p-2 col-10 font-mini border border-primary">
                                                                                         @if ($image->labels)
                                                                                             @foreach ($image->labels as $label)
                                                                                                 <p class="d-inline">
@@ -130,11 +129,10 @@
                                                                                                 </p>
                                                                                             @endforeach
                                                                                         @endif
-                                                                                    </div>i                                                                                </div>
-
+                                                                                    </div>
+                                                                                </div>
                                                                                 <div class="col-12 col-md-3">
-                                                                                    <div
-                                                                                        class="col-12 card-body p-1 border border-success  ">
+                                                                                    <div class="col-12 card-body p-1 border border-primary">
                                                                                         <h6 class="tc-accent">
                                                                                             {{ __('ui.rev1') }}</h6>
                                                                                         <p class="font-mini">
@@ -179,21 +177,15 @@
                                                                     </div>
                                                                 </div>
                                                             @endif
-
-                                                            <button class="carousel-control-prev" type="button"
-                                                                data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                                                <span class="carousel-control-prev-icon bg-primary"
-                                                                    aria-hidden="true"></span>
+                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                                                <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
                                                                 <span class="visually-hidden ">Previous</span>
                                                             </button>
-                                                            <button class="carousel-control-next" type="button"
-                                                                data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                                                <span class="carousel-control-next-icon bg-primary "
-                                                                    aria-hidden="true"></span>
+                                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                                                <span class="carousel-control-next-icon bg-primary " aria-hidden="true"></span>
                                                                 <span class="visually-hidden">Next</span>
                                                             </button>
                                                         </div>
-
                                                         <div class="col-12 card shadow d-flex mt-3 " style='width: 100%;'>
                                                             <div class="card-body">
                                                                 <h5 class="card-title">{{ __('ui.titolo') }}:
@@ -204,7 +196,6 @@
                                                                     {{ $ann_ck->created_at->format('d/m/y') }}</p>
                                                             </div>
                                                         </div>
-
                                                         <div class="row d-flex justify-content-between ">
                                                             <div class="col-12 col-lg-6 text-center ">
                                                                 <form
@@ -222,8 +213,7 @@
                                                                     method="POST">
                                                                     @csrf
                                                                     @method('PATCH')
-                                                                    <button type="submit"
-                                                                        class="bn632-hover bn28">{{ __('ui.rif') }}</button>
+                                                                    <button type="submit" class="bn632-hover bn28">{{ __('ui.rif') }}</button>
                                                                 </form>
                                                             </div>
                                                         </div>
