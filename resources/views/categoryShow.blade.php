@@ -43,7 +43,7 @@
                     <div class="col-12">
                         <p class="h1">{{ __('ui.noann') }}</p>
                         <p class="h2 mt-5">{{ __('ui.creaNav') }}: <a href="{{ route('announcements.create') }}"
-                                class="btn btn-success shadow">{{ __('ui.annuncio') }}</a> </p>
+                                class="btn btn-primary shadow">{{ __('ui.annuncio') }}</a> </p>
                     </div>
                 @endforelse
             </div>
