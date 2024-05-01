@@ -14,11 +14,11 @@ class PageController extends Controller
 }
 
 public function categoryShow(Category $category) {
-    $announcements= Announcement::where('is_accepted', true)->orderBy('created_at','desc')->get();
-    // $ann_cat= $category->announcements()->where('is_accepted', true)->orderBy('created_at','desc')->paginate(4);;
-    // dd($categories);
+    // $announcements= Announcement::where('is_accepted', true)->orderBy('created_at','desc')->get();
+    $ann_cat= $category->announcements()->where('is_accepted', true)->orderBy('created_at','desc')->paginate(4);;
+    // dd($ann_cat);
     // dd($announcements);
-    return view('categoryShow',compact('category','announcements'));
+    return view('categoryShow',compact('category','ann_cat'));
 }
 
 public function searchAnnouncements(Request $request){
