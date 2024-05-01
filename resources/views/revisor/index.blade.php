@@ -111,8 +111,7 @@
                                                                 <div class="carousel-inner">
                                                                     @foreach ($ann_ck->images as $image)
                                                                         {{-- @dd($ann_ck->images) --}}
-                                                                        <div
-                                                                            class="carousel-item  d-flex @if ($loop->first) active @endif">
+                                                                        <div class="carousel-item  d-flex @if ($loop->first) active @endif">
                                                                             <div class="col-12 col-md-6 rounded">
                                                                                 <img src=" {{ Storage::url($image->path) }}" class="img-fluid w-100 h-100"
                                                                                     {{-- {{ $image->getUrl(256, 256) }}--}}
