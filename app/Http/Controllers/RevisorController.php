@@ -31,10 +31,13 @@ class RevisorController extends Controller
         $ui= __('ui.mess2');
         return redirect()->back()->with('message', $ui);
     }
-
     public function becomeRevisor(){
         Mail::to('admin@FLAY.it')->send(new BecomeRevisor(Auth::user()));
         $ui= __('ui.mess3');
+        
+        // Imposta una variabile di sessione per indicare che il pulsante deve essere nascosto
+        session()->put('hide_revisor_button', true);
+    
         return redirect()->back()->with('message', $ui);
     }
 
