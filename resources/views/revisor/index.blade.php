@@ -100,20 +100,20 @@
                                     <h4 class="modal-title"></h4>
                                 </div>
                                 <div class="modal-body">
-
                                     <div class="container">
                                         <div class="row d-flex justify-content-center">
                                             <div class="col-12 col-md-9 col-lg-9">
                                                 @if ($ann_ck)
                                                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
                                                         @if ($ann_ck && $ann_ck->images && $ann_ck->images->count() > 0)
-                                                            <div class="container d-flex ">
-                                                                <div class="carousel-inner">
+                                                            <div class="carousel-inner">
+                                                                <div class="container d-flex ">
+                                                                    
                                                                     @foreach ($ann_ck->images as $image)
                                                                         {{-- @dd($ann_ck->images) --}}
-                                                                        <div class="carousel-item  d-flex @if ($loop->first) active @endif">
+                                                                        <div class="carousel-item d-flex @if ($loop->first) active @endif">
                                                                             <div class="col-12 col-md-6 rounded">
-                                                                                <img src=" {{ Storage::url($image->path) }}" class="img-fluid w-100 h-100"
+                                                                                <img src=" {{ Storage::url($image->path) }}" class="d-block w-100 h-100"
                                                                                     {{-- {{ $image->getUrl(256, 256) }}--}}
                                                                                     alt="immagine dell'articolo">
                                                                             </div>
