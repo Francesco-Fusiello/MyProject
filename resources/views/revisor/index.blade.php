@@ -91,7 +91,7 @@
                     </tr>
 
                     <!-- Modal -->
-                    <div id="myModal{{ $ann_ck->id }}" class="modal fade modal-lg" role="dialog">
+                    <div id="myModal{{ $ann_ck->id }}" class="modal fade modal-lg col-12 " role="dialog">
                         <div class="modal-dialog">
                             <!-- Modal content-->
                             <div class="modal-content">
