@@ -104,9 +104,9 @@
                                             <div class="row d-flex justify-content-center">
                                                 <div class="col-12 col-md-9 col-lg-9">
                                                     @if ($ann_ck)
-                                                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                                                        <div id="{{$ann_ck->id}}" class="carousel slide carousel-fade">
                                                             @if ($ann_ck && $ann_ck->images && $ann_ck->images->count() > 0)
-                                                            <div class="container d-flex">
+                                                                        {{-- <div class="container d-flex"> --}}
                                                                 <div class="carousel-inner">
                                                                         @foreach ($ann_ck->images as $image)
                                                                             {{-- @dd($ann_ck->images) --}}
@@ -159,8 +159,8 @@
                                                                                 </div>
                                                                             </div>
                                                                         @endforeach
-                                                                    </div>
                                                                 </div>
+                                                                {{-- </div> --}}
                                                             @else
                                                                 <div class="carousel-inner">
                                                                     <div class="carousel-item active">
@@ -177,11 +177,11 @@
                                                                     </div>
                                                                 </div>
                                                             @endif
-                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                                            <button class="carousel-control-prev" type="button" data-bs-target="#{{$ann_ck->id}}" data-bs-slide="prev">
                                                                 <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
                                                                 <span class="visually-hidden ">Previous</span>
                                                             </button>
-                                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                                            <button class="carousel-control-next" type="button" data-bs-target="#{{$ann_ck->id}}" data-bs-slide="next">
                                                                 <span class="carousel-control-next-icon bg-primary " aria-hidden="true"></span>
                                                                 <span class="visually-hidden">Next</span>
                                                             </button>
