@@ -118,7 +118,7 @@
                                                                                         alt="immagine dell'articolo">
                                                                                 </div>
                                                                                 {{-- tag per google Vision --}}
-                                                                                <div class="col-12 col-md-3 ms-2">
+                                                                                <div class="col-12 col-md-3">
                                                                                     <h5 class="tc-accent mt-3 fs-6 ">
                                                                                         Tags</h5>
                                                                                     <div class="p-2 col-10 font-mini border border-primary">
