@@ -36,24 +36,13 @@
                 </li>
                 
 
-                {{-- <li class="nav-item">
-                    <x-_locale lang='it' nation='it' />
-                </li>
-
-                <li class="nav-item">
-                    <x-_locale lang='en' nation='gb' />
-                </li>
-
-                <li class="nav-item">
-                    <x-_locale lang='fr' nation='fr' />
-                </li> --}}
 
 
 
 
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page"
-                        href="{{ route('announcements.index') }}">{{ __('ui.nav_ann') }}</a>
+                        href="{{ route('announcements.index') }}"><i class="fa-solid fa-bag-shopping me-2 " style="color: #127DC5;"></i>{{ __('ui.nav_ann') }}</a>
                 </li>
 
                 {{-- DropDown categorie --}}

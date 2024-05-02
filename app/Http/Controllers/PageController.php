@@ -39,4 +39,7 @@ public function chiSiamo(){
     return view('chiSiamo');
 }
 
+public function grazie(){
+    return view('grazie');
+}
 }

@@ -50,3 +50,5 @@ Route::get('/ricerca/annuncio', [PageController::class, 'searchAnnouncements'])-
 Route::post('/lingua/{lang}', [PageController::class, 'setLanguage'])->name('set_language_locale');
 //Chi siamo
 Route::get('/chi/siamo', [PageController::class, 'chiSiamo'])->name('chiSiamo');
+//Ringraziamenti
+Route::get('/grazie', [PageController::class, 'grazie'])->name('grazie');
