@@ -12,6 +12,15 @@
 
 }
 
+
+.faq{
+  color:#0851B1;
+}
+
+.faq:hover{
+  color: white;
+}
+
 .titleAnn{
   color: black;
 

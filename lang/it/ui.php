@@ -64,7 +64,7 @@ return[
     'mail4'=>'Rendi Revisore',
     'mess1'=>"Complimenti, hai accettato l'annuncio!",
     'mess2'=>"Hai rifiutato l'annuncio",
-    'mess3'=>'Complimenti! Hai richiesto di diventare revisore correttamente',
+    'mess3'=>'Complimenti! Hai richiesto di diventare revisore correttamente. La tua richiesta sarà elaborata entro 24 ore',
     'mess4'=>'Complimenti! Sei diventato Revisore',
     'mess5'=>'Annuncio recuperato',
     'AccessoriPerAnimali' => 'AccessoriPerAnimali',

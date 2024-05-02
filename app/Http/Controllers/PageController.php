@@ -25,7 +25,7 @@ public function searchAnnouncements(Request $request){
     $searchTerm = $request->searched;
     $announcements = Announcement::search($searchTerm)->where('is_accepted',true)->orderBy('created_at','desc')->paginate(12)->withQueryString();
    
-    return view('announcements.index',compact('announcements'));
+    return view('announcements.index',compact('announcements', 'searchTerm'));
 }
 
 

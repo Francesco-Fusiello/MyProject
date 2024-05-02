@@ -36,7 +36,7 @@
                 <ul class="footer-nav" style="background-color: #0851b1">
                     <li>Privacy Policy</li>
                     <li><a href="{{ route('chiSiamo') }}">{{ __('ui.chiS1') }}</a></li>
-                    <li><a href="{{ route('grazie') }}">FAQs</a></li>
+                    <li  class="faq"><a href="{{ route('grazie') }}">FAQs</a></li>
                 </ul>
             </div>
         </div>
