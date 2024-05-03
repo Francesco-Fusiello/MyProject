@@ -42,7 +42,7 @@
         </div>
 
         <!-- Grid container -->
-        <div class="container d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
 
           <ul class="example-2">
             <li class="icon-content">
@@ -134,7 +134,7 @@
           
         </div>
           <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: #0851b1">
+          <div class="d-flex justify-content-center  p-3" style="background-color: #0851b1">
             © 2024 by Flay
         </div>
         <!-- Copyright -->
