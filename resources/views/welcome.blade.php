@@ -8,7 +8,7 @@
 
     @if (session()->has('message'))
         <div class="alert alert-success fst-italic" role="alert">
-            {{ session('message') }}
+        {{ session('message') }}
         </div>
     @endif
 
